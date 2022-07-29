@@ -1,0 +1,37 @@
+.about {
+  &__inner {
+    padding: 120px 0;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &-box {
+      max-width: 530px;
+    }
+  }
+  &__photo {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      border: 1px solid $colorBlue;
+      width: 471px;
+      height: 314px;
+      border-radius: 30px;
+    }
+    &-img {
+      position: relative;
+      margin: 15px 0 0 31px;
+      border-radius: 30px;
+      filter: drop-shadow(0px 2px 10px rgba(56, 52, 52, 0.25));
+    }
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

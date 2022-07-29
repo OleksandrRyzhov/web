@@ -1,0 +1,43 @@
+.tax {
+  &__inner {
+    padding: 120px 0;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  &__item {
+    text-align: center;
+    &-link {
+      display: inline-flex;
+      background-color: $colorPink;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin-bottom: 21px;
+      justify-content: center;
+      align-items: center;
+    }
+    // &-img {
+    // }
+    &-title {
+      display: block;
+      font-size: 22px;
+      line-height: 27px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    &-text {
+      width: 271px;
+      font-size: 17px;
+      line-height: 21px;
+      font-weight: 500;
+    }
+  }
+}

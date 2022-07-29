@@ -1,0 +1,42 @@
+.advantage {
+  background-color: $colorSky;
+  &__inner {
+    padding: 120px 0;
+  }
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 271px);
+    gap: 50px;
+    justify-content: center;
+  }
+  &__item {
+    text-align: center;
+    &-link {
+      display: inline-flex;
+      margin-bottom: 10px;
+      background-color: $colorBlue;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    // &-img {
+    // }
+    &-title {
+      display: block;
+      font-size: 22px;
+      line-height: 27px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &-text {
+      width: 271px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+$colorBlue: #002d62;
+$colorAqua: #1991e8;
+$colorSky: #c8dcf0;
+$colorPink: #c9666b;
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #002d62;
+  line-height: 18px;
+}
+a,
+button {
+  color: inherit;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.contact-btn {
+  padding: 10px;
+  width: 200px;
+  height: 45px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 700;
+  color: #002d62;
+  text-align: center;
+}
+
+.btn-more {
+  display: flex;
+  margin: 0 auto;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 500;
+  background-color: $colorAqua;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/img/arrow-down.png) 0 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    right: 12px;
+  }
+}

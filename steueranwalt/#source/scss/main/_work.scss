@@ -1,0 +1,34 @@
+.work {
+  background-color: $colorBlue;
+  color: #fff;
+  &__inner {
+    padding: 120px 0;
+  }
+  &__title {
+    color: inherit;
+    margin-bottom: 60px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    gap: 50px;
+    justify-content: center;
+  }
+  &__item {
+    background-color: #fff;
+    color: $colorBlue;
+    border-radius: 30px;
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 92px;
+    }
+    // &-img {
+    // }
+    &-text {
+      padding: 0 5px 21px;
+      text-align: center;
+    }
+  }
+}
