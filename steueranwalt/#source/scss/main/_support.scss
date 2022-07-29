@@ -1,5 +1,5 @@
 .support {
-  background: url("/img/support-bg.png") 0 0 no-repeat scroll;
+  background: url("../img/support-bg.png") 0 0 no-repeat scroll;
   background-size: cover;
   &__inner {
     padding: 120px 0;
@@ -21,7 +21,7 @@
     position: relative;
     &::before {
       content: "";
-      background: url("/img/support-img.jpg") no-repeat;
+      background: url("../img/support-img.jpg") no-repeat;
       background-size: cover;
       opacity: 0.7;
       border-radius: 20px;

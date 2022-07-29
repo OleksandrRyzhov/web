@@ -63,7 +63,7 @@ button {
   &::after {
     content: "";
     position: absolute;
-    background: url(/img/arrow-down.png) 0 0 no-repeat;
+    background: url("../img/arrow-down.png") 0 0 no-repeat;
     width: 25px;
     height: 25px;
     right: 12px;

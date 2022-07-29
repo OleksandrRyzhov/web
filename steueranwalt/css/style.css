@@ -160,7 +160,7 @@ button {
 .btn-more::after {
   content: "";
   position: absolute;
-  background: url(/img/arrow-down.png) 0 0 no-repeat;
+  background: url("../img/arrow-down.png") 0 0 no-repeat;
   width: 25px;
   height: 25px;
   right: 12px;
@@ -371,7 +371,7 @@ button {
 /* </ABOUT> ========== */
 /* <SUPPORT> ========== */
 .support {
-  background: url("/img/support-bg.png") 0 0 no-repeat scroll;
+  background: url("../img/support-bg.png") 0 0 no-repeat scroll;
   background-size: cover;
 }
 .support__inner {
@@ -397,7 +397,7 @@ button {
 }
 .support__item::before {
   content: "";
-  background: url("/img/support-img.jpg") no-repeat;
+  background: url("../img/support-img.jpg") no-repeat;
   background-size: cover;
   opacity: 0.7;
   border-radius: 20px;
@@ -572,7 +572,7 @@ button {
 }
 .criminal__item::before {
   content: "";
-  background: url("/img/criminal.jpg") no-repeat;
+  background: url("../img/criminal.jpg") no-repeat;
   background-size: cover;
   opacity: 0.6;
   border-radius: 20px;
