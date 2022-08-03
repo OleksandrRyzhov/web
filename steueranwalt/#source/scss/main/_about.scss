@@ -1,10 +1,9 @@
 .about {
   &__inner {
-    @include adaptive-value(padding-top, 120, 61.8);
-    @include adaptive-value(padding-bottom, 120, 61.8);
+    padding: 120px 0;
   }
   &__title {
-    @include adaptive-value(margin-bottom, 60, 30.9);
+    margin-bottom: 60px;
   }
   &__content {
     display: flex;
@@ -23,8 +22,6 @@
       position: absolute;
       border: 1px solid $colorBlue;
       border-radius: 30px;
-      // right: 33px;
-      // bottom: 5.15%;
       top: 0;
       left: 0;
       z-index: 0;
@@ -42,7 +39,7 @@
   }
   &__text {
     font-family: "Roboto", sans-serif;
-    @include adaptive-font(16, 11.5);
+    font-size: 16px;
     line-height: 1.1875em;
     padding-bottom: 1.1875em;
     &:last-child {

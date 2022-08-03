@@ -12,13 +12,18 @@
   &__list {
     display: grid;
     justify-content: center;
-    grid-template: 1fr 1fr / 279px 279px 279px;
-    gap: 50px;
     margin-bottom: 50px;
+    padding: 0 35px;
+    gap: 50px;
+    grid-template:
+      minmax(130px, 262px) minmax(130px, 262px) / minmax(140px, 279px)
+      minmax(140px, 279px) minmax(140px, 279px);
   }
   &__item {
-    min-height: 262px;
     position: relative;
+    // display: flex;
+    // min-width: 140px;
+
     &::before {
       content: "";
       background: url("../img/support-img.jpg") no-repeat;
@@ -39,9 +44,9 @@
       z-index: 1;
       font-size: 20px;
       font-weight: 700;
-      line-height: 24px;
-      width: 100%;
+      line-height: 1.2em;
       height: 100%;
+      width: 100%;
       padding: 15px;
     }
     &-btn {

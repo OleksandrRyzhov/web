@@ -5,30 +5,17 @@ $colorPink: #c9666b;
 
 $maxWidth: 1130;
 
-@mixin adaptive-font($pcSize, $mobSize) {
-  font-size: $pcSize + px;
+@mixin adaptive-icon($pcSize, $mobSize, $type) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
-  @media (max-width: 1129px) {
-    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
-  }
-  @media (max-width: 767px) {
-    font-size: calc(
-      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
-    );
-  }
-}
-
-@mixin adaptive-icon($pcSize, $mobSize) {
-  width: $pcSize + px;
-  height: $pcSize + px;
-  $addSize: $pcSize - $mobSize;
-  $addMobSize: $addSize + $addSize * 0.7;
-  @media (max-width: 1129px) {
+  // @media (max-width: 1129px) {
+  @if type==1 {
     width: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     height: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
   }
-  @media (max-width: 767px) {
+  // }
+  // @media (max-width: 767px) {
+  @else if type==2 {
     width: calc(
       #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );
@@ -36,18 +23,36 @@ $maxWidth: 1130;
       #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );
   }
+  // }
 }
 
-@mixin adaptive-value($property, $pcSize, $mobSize) {
-  #{$property}: $pcSize + px;
+@mixin adaptive-value($property, $pcSize, $mobSize, $type) {
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
-  @media (max-width: 1129px) {
+  // @media (max-width: 1129px) {
+  @if $type==1 {
     #{$property}: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
   }
-  @media (max-width: 767px) {
+  // }
+  // @media (max-width: 767px) {
+  @else if $type==2 {
     #{$property}: calc(
       #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );
   }
+  // }
 }
+
+// @mixin adaptive-font($pcSize, $mobSize) {
+//   font-size: $pcSize + px;
+//   $addSize: $pcSize - $mobSize;
+//   $addMobSize: $addSize + $addSize * 0.7;
+//   @media (max-width: 1129px) {
+//     font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+//   }
+//   @media (max-width: 767px) {
+//     font-size: calc(
+//       #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
+//     );
+//   }
+// }

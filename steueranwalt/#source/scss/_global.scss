@@ -35,13 +35,13 @@ button {
   border-radius: 50px;
   border: 1px solid #fff;
   background-color: transparent;
-  @include adaptive-font(20, 14.5);
+  font-size: 20px;
   line-height: 1.2em;
   text-align: center;
 }
 
 .title {
-  @include adaptive-font(40, 14);
+  font-size: 40px;
   line-height: 1.225em;
   font-weight: 700;
   color: #002d62;
@@ -67,6 +67,7 @@ button {
     content: "";
     position: absolute;
     background: url("../img/arrow-down.png") 0 0 no-repeat;
+    background-size: cover;
     width: 25px;
     height: 25px;
     right: 12px;

@@ -1,49 +1,43 @@
 .advantage {
   background-color: $colorSky;
   &__inner {
-    // padding: 120px 0;
-    @include adaptive-value(padding-top, 120, 61.8);
-    @include adaptive-value(padding-bottom, 120, 61.8);
+    padding: 120px 0;
   }
   &__title {
-    // margin-bottom: 60px;
-    @include adaptive-value(margin-bottom, 60, 30.9);
+    margin-bottom: 60px;
   }
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 271px);
-    // gap: 50px;
-    @include adaptive-value(gap, 50, 25);
+    gap: 50px;
     justify-content: center;
   }
   &__item {
     text-align: center;
     &-link {
       display: inline-flex;
-      @include adaptive-value(margin-bottom, 10, 22);
+      margin-bottom: 10px;
       background-color: $colorBlue;
       width: 100px;
       height: 100px;
-      @include adaptive-icon(100, 65);
       border-radius: 50%;
       justify-content: center;
       align-items: center;
     }
     &-img {
-      @include adaptive-icon(61, 30);
+      width: 61px;
+      height: 61px;
     }
     &-title {
       display: block;
       font-size: 22px;
-      @include adaptive-font(22, 13.5);
       line-height: 1.227em;
       font-weight: 700;
-      @include adaptive-value(margin-bottom, 10, 16);
+      margin-bottom: 10px;
     }
     &-text {
       width: 271px;
-      // @include adaptive-value(width, 271, 160.4);
-      @include adaptive-font(16, 11.5);
+      font-size: 16px;
       line-height: 1.25em;
       margin: 0 auto;
     }
