@@ -9,13 +9,13 @@ $maxWidth: 1130;
   $addSize: $pcSize - $mobSize;
   $addMobSize: $addSize + $addSize * 0.7;
   // @media (max-width: 1129px) {
-  @if type==1 {
+  @if $type==1 {
     width: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
     height: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
   }
   // }
   // @media (max-width: 767px) {
-  @else if type==2 {
+  @else if $type==2 {
     width: calc(
       #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );

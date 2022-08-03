@@ -21,9 +21,6 @@
   }
   &__item {
     position: relative;
-    // display: flex;
-    // min-width: 140px;
-
     &::before {
       content: "";
       background: url("../img/support-img.jpg") no-repeat;

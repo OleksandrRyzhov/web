@@ -510,15 +510,20 @@ button {
 .tax__item-title {
   display: block;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 1.2273em;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 21px;
 }
 .tax__item-text {
   width: 271px;
   font-size: 17px;
-  line-height: 21px;
+  line-height: 1.2353em;
   font-weight: 500;
+  margin-bottom: 21px;
+  margin: 0 auto;
+}
+.tax__item-text:last-child {
+  margin-bottom: 0;
 }
 
 /* </TAX> ========== */
@@ -883,13 +888,11 @@ button {
 /* </FOOTER> ================================================== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1200px) {
-  /* ==========FOOTER========== */
   .footer__inner {
     margin-left: 0;
   }
 }
 @media (max-width: 1129px) {
-  /* ==========GLOBAL========== */
   .contact-btn {
     font-size: calc(14.5px + 5.5 * (100vw / 1130));
   }
@@ -897,7 +900,6 @@ button {
     font-size: 40px;
     font-size: calc(14px + 26 * (100vw / 1130));
   }
-  /* ==========HEADER========== */
   .header__top {
     padding-top: calc(55.15px + -36.15 * (100vw / 1130));
     padding-bottom: calc(40px + 8 * (100vw / 1130));
@@ -912,13 +914,17 @@ button {
   .header__text {
     font-size: calc(12.5px + 11.5 * (100vw / 1130));
   }
-  /* ==========MAIN========== */
-  /* =====ADVANTAGE===== */
-  .advantage__inner {
+  .advantage__inner,
+.about__inner,
+.support__inner,
+.tax__inner {
     padding-top: calc(61.8px + 58.2 * (100vw / 1130));
     padding-bottom: calc(61.8px + 58.2 * (100vw / 1130));
   }
-  .advantage__title {
+  .advantage__title,
+.about__title,
+.support__title,
+.tax__title {
     margin-bottom: calc(30.9px + 29.1 * (100vw / 1130));
   }
   .advantage__list {
@@ -926,6 +932,12 @@ button {
   }
   .advantage__item-link {
     margin-bottom: calc(22px + -12 * (100vw / 1130));
+    width: calc(65px + 35 * (100vw / 1130));
+    height: calc(65px + 35 * (100vw / 1130));
+  }
+  .advantage__item-img {
+    width: calc(30px + 31 * (100vw / 1130));
+    height: calc(30px + 31 * (100vw / 1130));
   }
   .advantage__item-title {
     font-size: calc(13.5px + 8.5 * (100vw / 1130));
@@ -933,14 +945,6 @@ button {
   }
   .advantage__item-text {
     font-size: calc(11.5px + 4.5 * (100vw / 1130));
-  }
-  /* =====ABOUT===== */
-  .about__inner {
-    padding-top: calc(61.8px + 58.2 * (100vw / 1130));
-    padding-bottom: calc(61.8px + 58.2 * (100vw / 1130));
-  }
-  .about__title {
-    margin-bottom: calc(30.9px + 29.1 * (100vw / 1130));
   }
   .about__content {
     display: grid;
@@ -969,14 +973,6 @@ button {
   .about__text {
     font-size: calc(11.5px + 4.5 * (100vw / 1130));
   }
-  /* =====SUPPORT===== */
-  .support__inner {
-    padding-top: calc(61.8px + 58.2 * (100vw / 1130));
-    padding-bottom: calc(61.8px + 58.2 * (100vw / 1130));
-  }
-  .support__title {
-    margin-bottom: calc(30.9px + 29.1 * (100vw / 1130));
-  }
   .support__list {
     margin-bottom: calc(32.55px + 17.45 * (100vw / 1130));
     gap: calc(15.1px + 34.9 * (100vw / 1130));
@@ -985,22 +981,36 @@ button {
   .support__item-title {
     font-size: calc(11px + 9 * (100vw / 1130));
   }
-  /* =====TAX===== */
-  /* =====INTERNATIONAL===== */
-  /* =====CRIMINAL===== */
-  /* =====WORK===== */
-  /* =====TOPICS===== */
-  /* =====FEEDBACK===== */
-  /* ==========FOOTER========== */
+  .tax__list {
+    margin-bottom: calc(25.1px + 34.9 * (100vw / 1130));
+  }
+  .tax__item-link {
+    width: calc(62.45px + 67.55 * (100vw / 1130));
+    height: calc(62.45px + 67.55 * (100vw / 1130));
+  }
+  .tax__item-img {
+    width: calc(30.73px + 37.27 * (100vw / 1130));
+    height: calc(30.73px + 37.27 * (100vw / 1130));
+  }
+  .tax__item-title {
+    font-size: calc(14px + 8 * (100vw / 1130));
+    margin-bottom: calc(14.2px + 6.8 * (100vw / 1130));
+  }
+  .tax__item-text {
+    font-size: calc(11.3px + 5.7 * (100vw / 1130));
+    margin-bottom: calc(12px + 9 * (100vw / 1130));
+  }
   .footer__inner {
     display: none;
   }
 }
 @media (max-width: 992px) {
-  .advantage__list {
+  .advantage__list,
+.tax__list {
     grid-template: repeat(3, 1fr)/1fr;
   }
-  .advantage__item-text {
+  .advantage__item-text,
+.tax__item-text {
     width: calc(176px + 274 * (100vw / 1130));
   }
 }
@@ -1014,7 +1024,6 @@ button {
   }
 }
 @media (max-width: 767px) {
-  /* ==========GLOBAL========== */
   .contact-btn {
     font-size: calc(
       14.5px + 9.35 * ((100vw - 320px) / 1130)
@@ -1026,7 +1035,6 @@ button {
       14px + 44.2 * ((100vw - 320px) / 1130)
     );
   }
-  /* ==========HEADER========== */
   .header__top {
     padding-top: calc(
       55.15px + -61.455 * ((100vw - 320px) / 1130)
@@ -1058,9 +1066,10 @@ button {
       12.5px + 19.55 * ((100vw - 320px) / 1130)
     );
   }
-  /* ==========MAIN========== */
-  /* =====ADVANTAGE===== */
-  .advantage__inner {
+  .advantage__inner,
+.about__inner,
+.support__inner,
+.tax__inner {
     padding-top: calc(
       61.8px + 98.94 * ((100vw - 320px) / 1130)
     );
@@ -1068,7 +1077,10 @@ button {
       61.8px + 98.94 * ((100vw - 320px) / 1130)
     );
   }
-  .advantage__title {
+  .advantage__title,
+.about__title,
+.support__title,
+.tax__title {
     margin-bottom: calc(
       30.9px + 49.47 * ((100vw - 320px) / 1130)
     );
@@ -1081,6 +1093,20 @@ button {
   .advantage__item-link {
     margin-bottom: calc(
       22px + -20.4 * ((100vw - 320px) / 1130)
+    );
+    width: calc(
+      65px + 59.5 * ((100vw - 320px) / 1130)
+    );
+    height: calc(
+      65px + 59.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .advantage__item-img {
+    width: calc(
+      30px + 52.7 * ((100vw - 320px) / 1130)
+    );
+    height: calc(
+      30px + 52.7 * ((100vw - 320px) / 1130)
     );
   }
   .advantage__item-title {
@@ -1099,37 +1125,9 @@ button {
       176px + 465.8 * ((100vw - 320px) / 1130)
     );
   }
-  /* =====ABOUT===== */
-  .about__inner {
-    padding-top: calc(
-      61.8px + 98.94 * ((100vw - 320px) / 1130)
-    );
-    padding-bottom: calc(
-      61.8px + 98.94 * ((100vw - 320px) / 1130)
-    );
-  }
-  .about__title {
-    margin-bottom: calc(
-      30.9px + 49.47 * ((100vw - 320px) / 1130)
-    );
-  }
   .about__text {
     font-size: calc(
       11.5px + 7.65 * ((100vw - 320px) / 1130)
-    );
-  }
-  /* =====SUPPORT===== */
-  .support__inner {
-    padding-top: calc(
-      61.8px + 98.94 * ((100vw - 320px) / 1130)
-    );
-    padding-bottom: calc(
-      61.8px + 98.94 * ((100vw - 320px) / 1130)
-    );
-  }
-  .support__title {
-    margin-bottom: calc(
-      30.9px + 49.47 * ((100vw - 320px) / 1130)
     );
   }
   .support__list {
@@ -1146,12 +1144,43 @@ button {
       11px + 15.3 * ((100vw - 320px) / 1130)
     );
   }
-  /* =====TAX===== */
-  /* =====INTERNATIONAL===== */
-  /* =====CRIMINAL===== */
-  /* =====WORK===== */
-  /* =====TOPICS===== */
-  /* =====FEEDBACK===== */
+  .tax__list {
+    margin-bottom: calc(
+      25.1px + 59.33 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax__item-link {
+    width: calc(
+      62.45px + 114.835 * ((100vw - 320px) / 1130)
+    );
+    height: calc(
+      62.45px + 114.835 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax__item-img {
+    width: calc(
+      30.73px + 63.359 * ((100vw - 320px) / 1130)
+    );
+    height: calc(
+      30.73px + 63.359 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax__item-title {
+    font-size: calc(
+      14px + 13.6 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      14.2px + 11.56 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax__item-text {
+    font-size: calc(
+      11.3px + 9.69 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      12px + 15.3 * ((100vw - 320px) / 1130)
+    );
+  }
 }
 @media (max-width: 660px) {
   .btn-more {
@@ -1168,7 +1197,7 @@ button {
   }
 }
 @media (max-width: 550px) {
-  .header__logo {
+  .header__logo-img {
     height: 55px;
   }
   .header__nav {

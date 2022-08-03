@@ -29,15 +29,20 @@
     &-title {
       display: block;
       font-size: 22px;
-      line-height: 27px;
+      line-height: 1.2273em;
       font-weight: 700;
-      margin-bottom: 12px;
+      margin-bottom: 21px;
     }
     &-text {
       width: 271px;
       font-size: 17px;
-      line-height: 21px;
+      line-height: 1.2353em;
       font-weight: 500;
+      margin-bottom: 21px;
+      margin: 0 auto;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

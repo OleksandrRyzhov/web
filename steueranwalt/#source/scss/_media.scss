@@ -1,5 +1,5 @@
 @media (max-width: 1200px) {
-  /* ==========FOOTER========== */
+  // ==========FOOTER==========
   .footer {
     &__inner {
       margin-left: 0;
@@ -7,7 +7,7 @@
   }
 }
 @media (max-width: 1129px) {
-  /* ==========GLOBAL========== */
+  // ==========GLOBAL==========
   .contact-btn {
     @include adaptive-value(font-size, 20, 14.5, 1);
   }
@@ -15,7 +15,7 @@
     font-size: 40px;
     @include adaptive-value(font-size, 40, 14, 1);
   }
-  /* ==========HEADER========== */
+  // ==========HEADER==========
   .header {
     &__top {
       @include adaptive-value(padding-top, 19, 55.15, 1);
@@ -32,9 +32,11 @@
       @include adaptive-value(font-size, 24, 12.5, 1);
     }
   }
-  /* ==========MAIN========== */
-  /* =====ADVANTAGE===== */
-  .advantage {
+  // ==========MAIN==========
+  .advantage,
+  .about,
+  .support,
+  .tax {
     &__inner {
       @include adaptive-value(padding-top, 120, 61.8, 1);
       @include adaptive-value(padding-bottom, 120, 61.8, 1);
@@ -42,6 +44,9 @@
     &__title {
       @include adaptive-value(margin-bottom, 60, 30.9, 1);
     }
+  }
+  // =====ADVANTAGE=====
+  .advantage {
     &__list {
       @include adaptive-value(gap, 50, 25, 1);
     }
@@ -62,15 +67,8 @@
       }
     }
   }
-  /* =====ABOUT===== */
+  // =====ABOUT=====
   .about {
-    &__inner {
-      @include adaptive-value(padding-top, 120, 61.8, 1);
-      @include adaptive-value(padding-bottom, 120, 61.8, 1);
-    }
-    &__title {
-      @include adaptive-value(margin-bottom, 60, 30.9, 1);
-    }
     &__content {
       display: grid;
       grid-template-rows: 0.4fr 1fr;
@@ -97,15 +95,8 @@
       @include adaptive-value(font-size, 16, 11.5, 1);
     }
   }
-  /* =====SUPPORT===== */
+  // =====SUPPORT=====
   .support {
-    &__inner {
-      @include adaptive-value(padding-top, 120, 61.8, 1);
-      @include adaptive-value(padding-bottom, 120, 61.8, 1);
-    }
-    &__title {
-      @include adaptive-value(margin-bottom, 60, 30.9, 1);
-    }
     &__list {
       @include adaptive-value(margin-bottom, 50, 32.55, 1);
       @include adaptive-value(gap, 50, 15.1, 1);
@@ -117,19 +108,39 @@
       @include adaptive-value(font-size, 20, 11, 1);
     }
   }
-  /* =====TAX===== */
+  // =====TAX=====
+  .tax {
+    &__list {
+      @include adaptive-value(margin-bottom, 60, 25.1, 1);
+    }
+    &__item {
+      &-link {
+        @include adaptive-icon(130, 62.45, 1);
+      }
+      &-img {
+        @include adaptive-icon(68, 30.73, 1);
+      }
+      &-title {
+        @include adaptive-value(font-size, 22, 14, 1);
+        @include adaptive-value(margin-bottom, 21, 14.2, 1);
+      }
+      &-text {
+        @include adaptive-value(font-size, 17, 11.3, 1);
+        @include adaptive-value(margin-bottom, 21, 12, 1);
+      }
+    }
+  }
+  // =====INTERNATIONAL=====
 
-  /* =====INTERNATIONAL===== */
+  // =====CRIMINAL=====
 
-  /* =====CRIMINAL===== */
+  // =====WORK=====
 
-  /* =====WORK===== */
+  // =====TOPICS=====
 
-  /* =====TOPICS===== */
+  // =====FEEDBACK=====
 
-  /* =====FEEDBACK===== */
-
-  /* ==========FOOTER========== */
+  // ==========FOOTER==========
   .footer {
     &__inner {
       display: none;
@@ -137,10 +148,8 @@
   }
 }
 @media (max-width: 992px) {
-  .btn-more {
-    // font-size: 16px;
-  }
-  .advantage {
+  .advantage,
+  .tax {
     &__list {
       grid-template: repeat(3, 1fr) / 1fr;
     }
@@ -159,7 +168,7 @@
   }
 }
 @media (max-width: 767px) {
-  /* ==========GLOBAL========== */
+  // ==========GLOBAL==========
   .contact-btn {
     @include adaptive-value(font-size, 20, 14.5, 2);
   }
@@ -167,7 +176,7 @@
     font-size: 40px;
     @include adaptive-value(font-size, 40, 14, 2);
   }
-  /* ==========HEADER========== */
+  // ==========HEADER==========
   .header {
     &__top {
       @include adaptive-value(padding-top, 19, 55.15, 2);
@@ -191,9 +200,11 @@
       @include adaptive-value(font-size, 24, 12.5, 2);
     }
   }
-  /* ==========MAIN========== */
-  /* =====ADVANTAGE===== */
-  .advantage {
+  // ==========MAIN==========
+  .advantage,
+  .about,
+  .support,
+  .tax {
     &__inner {
       @include adaptive-value(padding-top, 120, 61.8, 2);
       @include adaptive-value(padding-bottom, 120, 61.8, 2);
@@ -201,6 +212,9 @@
     &__title {
       @include adaptive-value(margin-bottom, 60, 30.9, 2);
     }
+  }
+  // =====ADVANTAGE=====
+  .advantage {
     &__list {
       @include adaptive-value(gap, 50, 25, 2);
     }
@@ -222,28 +236,14 @@
       }
     }
   }
-  /* =====ABOUT===== */
+  // =====ABOUT=====
   .about {
-    &__inner {
-      @include adaptive-value(padding-top, 120, 61.8, 2);
-      @include adaptive-value(padding-bottom, 120, 61.8, 2);
-    }
-    &__title {
-      @include adaptive-value(margin-bottom, 60, 30.9, 2);
-    }
     &__text {
       @include adaptive-value(font-size, 16, 11.5, 2);
     }
   }
-  /* =====SUPPORT===== */
+  // =====SUPPORT=====
   .support {
-    &__inner {
-      @include adaptive-value(padding-top, 120, 61.8, 2);
-      @include adaptive-value(padding-bottom, 120, 61.8, 2);
-    }
-    &__title {
-      @include adaptive-value(margin-bottom, 60, 30.9, 2);
-    }
     &__list {
       @include adaptive-value(margin-bottom, 50, 32.55, 2);
       @include adaptive-value(gap, 50, 15.1, 2);
@@ -253,17 +253,37 @@
       @include adaptive-value(font-size, 20, 11, 2);
     }
   }
-  /* =====TAX===== */
+  // =====TAX=====
+  .tax {
+    &__list {
+      @include adaptive-value(margin-bottom, 60, 25.1, 2);
+    }
+    &__item {
+      &-link {
+        @include adaptive-icon(130, 62.45, 2);
+      }
+      &-img {
+        @include adaptive-icon(68, 30.73, 2);
+      }
+      &-title {
+        @include adaptive-value(font-size, 22, 14, 2);
+        @include adaptive-value(margin-bottom, 21, 14.2, 2);
+      }
+      &-text {
+        @include adaptive-value(font-size, 17, 11.3, 2);
+        @include adaptive-value(margin-bottom, 21, 12, 2);
+      }
+    }
+  }
+  // =====INTERNATIONAL=====
 
-  /* =====INTERNATIONAL===== */
+  // =====CRIMINAL=====
 
-  /* =====CRIMINAL===== */
+  // =====WORK=====
 
-  /* =====WORK===== */
+  // =====TOPICS=====
 
-  /* =====TOPICS===== */
-
-  /* =====FEEDBACK===== */
+  // =====FEEDBACK=====
 }
 @media (max-width: 660px) {
   .btn-more {
@@ -284,7 +304,9 @@
 @media (max-width: 550px) {
   .header {
     &__logo {
-      height: 55px;
+      &-img {
+        height: 55px;
+      }
     }
     &__nav {
       gap: 25px;
