@@ -386,6 +386,7 @@ button {
   bottom: 0;
   left: 0;
   z-index: 0;
+  max-height: 94.86%;
   width: 93.582%;
 }
 .about__photo-img {
@@ -780,54 +781,57 @@ button {
   padding: 120px 0;
 }
 .feedback__title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .feedback__subtitle {
   font-size: 22px;
-  line-height: 27px;
+  line-height: 1.227em;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 }
 .feedback__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template: 1fr/467px 305px;
   gap: 83px;
 }
 .feedback__content-box {
-  margin-top: 20px;
+  margin-top: 42px;
 }
 .feedback__photo {
   position: relative;
   z-index: 2;
-  height: 346px;
-  width: 431px;
-  margin-left: 35px;
+  padding: 21px 0 0 36px;
 }
 .feedback__photo::before {
   content: "";
   position: absolute;
   border: 1px solid #002d62;
-  top: -21px;
-  right: 10px;
-  bottom: 31px;
-  left: -36px;
+  top: 0;
+  bottom: 0;
+  left: 0;
   z-index: 0;
+  width: 97.86%;
+  max-height: 91.55%;
   background-color: #fff;
 }
 .feedback__photo-img {
   position: relative;
   border-radius: 30px;
+  max-width: 431px;
+  width: 100%;
 }
 .feedback__form {
-  max-width: 305px;
+  min-width: 177.5px;
+  width: 305px;
   text-align: center;
 }
 .feedback__form-input {
   margin-bottom: 36px;
+  min-height: 34px;
   height: 60px;
-  max-width: 301px;
+  min-width: 175px;
+  width: 301px;
   width: 100%;
   border-radius: 50px;
   border: 1px solid #002d62;
@@ -835,31 +839,32 @@ button {
 }
 .feedback__form-input::-webkit-input-placeholder {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222em;
   color: rgba(0, 45, 98, 0.7);
 }
 .feedback__form-input::-moz-placeholder {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222em;
   color: rgba(0, 45, 98, 0.7);
 }
 .feedback__form-input:-ms-input-placeholder {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222em;
   color: rgba(0, 45, 98, 0.7);
 }
 .feedback__form-input::-ms-input-placeholder {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222em;
   color: rgba(0, 45, 98, 0.7);
 }
 .feedback__form-input::placeholder {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222em;
   color: rgba(0, 45, 98, 0.7);
 }
 .feedback__form-btn {
   border-radius: 20px;
+  min-height: 34px;
   height: 60px;
   width: 100%;
   background-color: #002d62;
@@ -936,7 +941,8 @@ button {
 .tax__inner,
 .international__inner,
 .criminal__inner,
-.work__inner {
+.work__inner,
+.feedback__inner {
     padding-top: calc(61.8px + 58.2 * (100vw / 1130));
     padding-bottom: calc(61.8px + 58.2 * (100vw / 1130));
   }
@@ -946,7 +952,8 @@ button {
 .tax__title,
 .international__title,
 .criminal__title,
-.work__title {
+.work__title,
+.feedback__title {
     margin-bottom: calc(30.9px + 29.1 * (100vw / 1130));
   }
   .advantage__list {
@@ -985,12 +992,6 @@ button {
   .about__photo {
     margin: 0 auto;
     padding: 3.16% 0 0 5.89%;
-  }
-  .about__photo::before {
-    max-height: 94.86%;
-  }
-  .about__photo-img {
-    max-height: 100%;
   }
   .about__text {
     font-size: calc(11.5px + 4.5 * (100vw / 1130));
@@ -1091,6 +1092,29 @@ button {
   .topics__text {
     font-size: calc(11.0117px + 6.9883 * (100vw / 1130));
   }
+  .feedback__subtitle {
+    font-size: calc(13.847px + 8.153 * (100vw / 1130));
+    margin-bottom: calc(30px + 5 * (100vw / 1130));
+  }
+  .feedback__content {
+    grid-template: 0.4fr 1fr/1fr;
+    justify-items: center;
+    padding: 0 50px;
+    gap: calc(30px + 30 * (100vw / 1130));
+  }
+  .feedback__content-box {
+    margin-top: 0;
+  }
+  .feedback__photo {
+    padding: 24px 0 0 31px;
+  }
+  .feedback__form {
+    width: 42.88vw;
+  }
+  .feedback__form-input {
+    width: 42.316vw;
+    margin-bottom: calc(18px + 18 * (100vw / 1130));
+  }
   .footer__inner {
     display: none;
   }
@@ -1182,7 +1206,8 @@ button {
 .international__inner,
 .criminal__inner,
 .work__inner,
-.topics__inner {
+.topics__inner,
+.feedback__inner {
     padding-top: calc(
       61.8px + 98.94 * ((100vw - 320px) / 1130)
     );
@@ -1197,7 +1222,8 @@ button {
 .international__title,
 .criminal__title,
 .work__title,
-.topics__title {
+.topics__title,
+.feedback__title {
     margin-bottom: calc(
       30.9px + 49.47 * ((100vw - 320px) / 1130)
     );
@@ -1399,6 +1425,29 @@ button {
       11.0117px + 11.88011 * ((100vw - 320px) / 1130)
     );
   }
+  .feedback__subtitle {
+    font-size: calc(
+      13.847px + 13.8601 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      30px + 8.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .feedback__content {
+    gap: calc(
+      30.7px + 49.81 * ((100vw - 320px) / 1130)
+    );
+  }
+  .feedback__form-input {
+    margin-bottom: calc(
+      18px + 30.6 * ((100vw - 320px) / 1130)
+    );
+  }
+}
+@media (max-width: 720px) {
+  .feedback__form-input, .feedback__form-btn {
+    height: 8.29vw;
+  }
 }
 @media (max-width: 660px) {
   .btn-more {
@@ -1426,6 +1475,21 @@ button {
     padding-top: 5.363vw;
     padding-left: 4.5145vw;
   }
+  .feedback__form-input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .feedback__form-input::-moz-placeholder {
+    font-size: 15px;
+  }
+  .feedback__form-input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .feedback__form-input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .feedback__form-input::placeholder, .feedback__form-btn {
+    font-size: 15px;
+  }
 }
 @media (max-width: 550px) {
   .header__logo-img {
@@ -1449,6 +1513,23 @@ button {
   }
   .work__list {
     grid-template: repeat(3, 1fr)/49.3vw;
+  }
+}
+@media (max-width: 520px) {
+  .feedback__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+  .feedback__form-input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .feedback__form-input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .feedback__form-input::-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .feedback__form-input::placeholder, .feedback__form-btn {
+    font-size: 12px;
   }
 }
 @media (max-width: 440px) {
@@ -1488,6 +1569,9 @@ button {
   }
   .international__item {
     width: 213px;
+  }
+  .feedback__photo {
+    padding: 5.797vw 0 0 7.488vw;
   }
 }
 @media (max-width: 380px) {
