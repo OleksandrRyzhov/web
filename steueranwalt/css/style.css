@@ -596,19 +596,28 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .criminal__content-box {
-  position: relative;
-  padding: 0 0 60px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .criminal__content-text {
   max-width: 424px;
   margin-bottom: 21px;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 1.222em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 .criminal__list {
   display: grid;
@@ -636,7 +645,7 @@ button {
 }
 .criminal__item-title {
   font-size: 17px;
-  line-height: 21px;
+  line-height: 1.2353em;
   font-weight: 700;
   position: relative;
   display: -webkit-inline-box;
@@ -655,13 +664,13 @@ button {
 .criminal__item-btn {
   position: absolute;
   bottom: -1px;
+  min-height: 30px;
   height: 40px;
-  width: 100%;
+  min-width: 299px;
 }
 .criminal__btn-more {
-  position: absolute;
-  bottom: 0;
-  left: 50px;
+  margin-top: 35px;
+  min-height: 30px;
 }
 
 /* </CRIMINAL> ========== */
@@ -1035,6 +1044,19 @@ button {
     padding-bottom: calc(15.859px + 15.141 * (100vw / 1130));
     padding-left: calc(14.035px + 20.965 * (100vw / 1130));
   }
+  .criminal__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .criminal__content-text {
+    text-align: center;
+  }
   .footer__inner {
     display: none;
   }
@@ -1271,6 +1293,30 @@ button {
       14.035px + 35.6405 * ((100vw - 320px) / 1130)
     );
   }
+  .criminal__content {
+    gap: calc(
+      24.1765px + 9.89995 * ((100vw - 320px) / 1130)
+    );
+  }
+  .criminal__content-text {
+    font-size: calc(
+      11.0117px + 11.88011 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      14.012px + 11.8796 * ((100vw - 320px) / 1130)
+    );
+  }
+  .criminal__list {
+    grid-template: 1fr/299px;
+    gap: calc(
+      24.1765px + 9.89995 * ((100vw - 320px) / 1130)
+    );
+  }
+  .criminal__btn-more {
+    margin-top: calc(
+      13.744px + 36.1352 * ((100vw - 320px) / 1130)
+    );
+  }
 }
 @media (max-width: 660px) {
   .btn-more {
@@ -1284,6 +1330,12 @@ button {
   }
   .support__item-btn {
     width: 100%;
+  }
+  .criminal__item-btn {
+    height: 40px;
+  }
+  .criminal__btn-more {
+    height: 40px;
   }
 }
 @media (max-width: 550px) {
@@ -1320,6 +1372,10 @@ button {
   }
 }
 @media (max-width: 414px) {
+  .btn-more {
+    width: 143px;
+    height: 26px;
+  }
   .header__content-box {
     margin-top: 4.433%;
     width: 200px;
@@ -1335,15 +1391,14 @@ button {
   .about__content {
     grid-template: 0.4fr 1fr/285px;
   }
+  .support__item-btn {
+    width: 100%;
+  }
   .international__item {
     width: 213px;
   }
 }
 @media (max-width: 380px) {
-  .btn-more {
-    width: 131.25px;
-    height: 23.81px;
-  }
   .about__content-box {
     padding: 0 10px;
   }
@@ -1354,6 +1409,14 @@ button {
 @media (max-width: 379px) {
   .header__text {
     margin-bottom: 25px;
+  }
+}
+@media (max-width: 330px) {
+  .criminal__list {
+    grid-template: 1fr/289px;
+  }
+  .criminal__item-btn {
+    min-width: 289px;
   }
 }
 /* </MEDIA> ================================================== */

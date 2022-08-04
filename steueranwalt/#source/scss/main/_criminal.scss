@@ -7,16 +7,18 @@
   }
   &__content {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: center;
     &-box {
-      position: relative;
-      padding: 0 0 60px 15px;
+      display: flex;
+      flex-direction: column;
     }
     &-text {
       max-width: 424px;
       margin-bottom: 21px;
-      font-size: 17px;
-      line-height: 21px;
+      font-size: 18px;
+      line-height: 1.222em;
+      flex: 1 1 auto;
     }
   }
   &__list {
@@ -44,7 +46,7 @@
     }
     &-title {
       font-size: 17px;
-      line-height: 21px;
+      line-height: 1.2353em;
       font-weight: 700;
       position: relative;
       display: inline-flex;
@@ -57,13 +59,13 @@
     &-btn {
       position: absolute;
       bottom: -1px;
+      min-height: 30px;
       height: 40px;
-      width: 100%;
+      min-width: 299px;
     }
   }
   &__btn-more {
-    position: absolute;
-    bottom: 0;
-    left: 50px;
+    margin-top: 35px;
+    min-height: 30px;
   }
 }
