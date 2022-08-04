@@ -10,7 +10,7 @@
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 230px);
+    grid-template: 1fr / repeat(3, 230px);
     gap: 50px;
     justify-content: center;
   }
@@ -24,10 +24,13 @@
       align-items: center;
       height: 92px;
     }
-    // &-img {
-    // }
+    &-img {
+      height: 51px;
+      width: 51px;
+    }
     &-text {
-      padding: 0 5px 21px;
+      padding: 0 15px 21px;
+      line-height: 1.2em;
       text-align: center;
     }
   }

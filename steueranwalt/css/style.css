@@ -688,7 +688,7 @@ button {
 }
 .work__list {
   display: grid;
-  grid-template-columns: repeat(3, 230px);
+  grid-template: 1fr/repeat(3, 230px);
   gap: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -711,12 +711,15 @@ button {
           align-items: center;
   height: 92px;
 }
-.work__item-text {
-  padding: 0 5px 21px;
-  text-align: center;
+.work__item-img {
+  height: 51px;
+  width: 51px;
 }
-
-/* </WORK> ========== */
+.work__item-text {
+  padding: 0 15px 21px;
+  line-height: 1.2em;
+  text-align: center;
+} /* </WORK> ========== */
 /* <TOPICS> ========== */
 .topics__inner {
   padding: 120px 0;
@@ -1061,11 +1064,23 @@ button {
     text-align: center;
   }
   .criminal__list {
-    grid-template: 1fr/299px;
     gap: calc(24.1765px + 5.8235 * (100vw / 1130));
   }
   .criminal__btn-more {
     margin-top: calc(13.744px + 21.256 * (100vw / 1130));
+  }
+  .work__list {
+    gap: calc(20.8823px + 29.1177 * (100vw / 1130));
+  }
+  .work__item-link {
+    height: calc(72.2px + 19.8 * (100vw / 1130));
+  }
+  .work__item-img {
+    width: calc(38.2px + 12.8 * (100vw / 1130));
+    height: calc(38.2px + 12.8 * (100vw / 1130));
+  }
+  .work__item-text {
+    font-size: calc(11.5059px + 3.4941 * (100vw / 1130));
   }
   .footer__inner {
     display: none;
@@ -1093,6 +1108,9 @@ button {
   .btn-more::after {
     width: 22px;
     height: 22px;
+  }
+  .work__list {
+    grid-template: repeat(3, 1fr)/33vw;
   }
 }
 @media (max-width: 767px) {
@@ -1327,6 +1345,29 @@ button {
       13.744px + 36.1352 * ((100vw - 320px) / 1130)
     );
   }
+  .work__list {
+    gap: calc(
+      20.8823px + 49.50009 * ((100vw - 320px) / 1130)
+    );
+  }
+  .work__item-link {
+    height: calc(
+      72.2px + 33.66 * ((100vw - 320px) / 1130)
+    );
+  }
+  .work__item-img {
+    width: calc(
+      38.2px + 21.76 * ((100vw - 320px) / 1130)
+    );
+    height: calc(
+      38.2px + 21.76 * ((100vw - 320px) / 1130)
+    );
+  }
+  .work__item-text {
+    font-size: calc(
+      11.5059px + 5.93997 * ((100vw - 320px) / 1130)
+    );
+  }
 }
 @media (max-width: 660px) {
   .btn-more {
@@ -1346,6 +1387,9 @@ button {
   }
   .criminal__btn-more {
     height: 40px;
+  }
+  .work__list {
+    grid-template: repeat(3, 1fr)/40vw;
   }
 }
 @media (max-width: 550px) {
@@ -1367,6 +1411,9 @@ button {
   }
   .header__text {
     max-width: 200px;
+  }
+  .work__list {
+    grid-template: repeat(3, 1fr)/49.3vw;
   }
 }
 @media (max-width: 440px) {

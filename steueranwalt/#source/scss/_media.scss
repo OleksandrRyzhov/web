@@ -166,8 +166,6 @@
       align-items: center;
       gap: 30px;
       @include adaptive-value(gap, 30, 24.1765, 1);
-      &-box {
-      }
       &-text {
         @include adaptive-value(font-size, 18, 11.0117, 1);
         @include adaptive-value(margin-bottom, 21, 14.012, 1);
@@ -175,7 +173,6 @@
       }
     }
     &__list {
-      grid-template: 1fr / 299px;
       @include adaptive-value(gap, 30, 24.1765, 1);
     }
     &__btn-more {
@@ -183,7 +180,22 @@
     }
   }
   // =====WORK=====
-
+  .work {
+    &__list {
+      @include adaptive-value(gap, 50, 20.8823, 1);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(height, 92, 72.2, 1);
+      }
+      &-img {
+        @include adaptive-icon(51, 38.2, 1);
+      }
+      &-text {
+        @include adaptive-value(font-size, 15, 11.5059, 1);
+      }
+    }
+  }
   // =====TOPICS=====
 
   // =====FEEDBACK=====
@@ -222,6 +234,11 @@
     &::after {
       width: 22px;
       height: 22px;
+    }
+  }
+  .work {
+    &__list {
+      grid-template: repeat(3, 1fr) / 33vw;
     }
   }
 }
@@ -366,8 +383,6 @@
   .criminal {
     &__content {
       @include adaptive-value(gap, 30, 24.1765, 2);
-      &-box {
-      }
       &-text {
         @include adaptive-value(font-size, 18, 11.0117, 2);
         @include adaptive-value(margin-bottom, 21, 14.012, 2);
@@ -382,7 +397,22 @@
     }
   }
   // =====WORK=====
-
+  .work {
+    &__list {
+      @include adaptive-value(gap, 50, 20.8823, 2);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(height, 92, 72.2, 2);
+      }
+      &-img {
+        @include adaptive-icon(51, 38.2, 2);
+      }
+      &-text {
+        @include adaptive-value(font-size, 15, 11.5059, 2);
+      }
+    }
+  }
   // =====TOPICS=====
 
   // =====FEEDBACK=====
@@ -410,6 +440,11 @@
       height: 40px;
     }
   }
+  .work {
+    &__list {
+      grid-template: repeat(3, 1fr) / 40vw;
+    }
+  }
 }
 @media (max-width: 550px) {
   .header {
@@ -433,6 +468,11 @@
     }
     &__text {
       max-width: 200px;
+    }
+  }
+  .work {
+    &__list {
+      grid-template: repeat(3, 1fr) / 49.3vw;
     }
   }
 }
