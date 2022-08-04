@@ -197,7 +197,23 @@
     }
   }
   // =====TOPICS=====
-
+  .topics {
+    &__content {
+      flex-wrap: wrap-reverse;
+      gap: 60px;
+      @include adaptive-value(gap, 60, 23, 1);
+      justify-content: center;
+      &-box {
+      }
+    }
+    &__text {
+      @include adaptive-value(font-size, 18, 11.0117, 1);
+    }
+    &__photo {
+      &-img {
+      }
+    }
+  }
   // =====FEEDBACK=====
 
   // ==========FOOTER==========
@@ -241,7 +257,22 @@
       grid-template: repeat(3, 1fr) / 33vw;
     }
   }
+  .topics {
+    &__photo {
+      padding-top: 4.3182vw;
+      padding-left: 3.6364vw;
+    }
+  }
 }
+@media (max-width: 820px) {
+  .topics {
+    &__photo {
+      padding-top: 35.4px;
+      padding-left: 29.8px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   // ==========GLOBAL==========
   .contact-btn {
@@ -282,7 +313,8 @@
   .tax,
   .international,
   .criminal,
-  .work {
+  .work,
+  .topics {
     &__inner {
       @include adaptive-value(padding-top, 120, 61.8, 2);
       @include adaptive-value(padding-bottom, 120, 61.8, 2);
@@ -414,6 +446,20 @@
     }
   }
   // =====TOPICS=====
+  .topics {
+    &__content {
+      @include adaptive-value(gap, 60, 18, 2);
+      &-box {
+      }
+    }
+    &__text {
+      @include adaptive-value(font-size, 18, 11.0117, 2);
+    }
+    &__photo {
+      &-img {
+      }
+    }
+  }
 
   // =====FEEDBACK=====
 }
@@ -443,6 +489,12 @@
   .work {
     &__list {
       grid-template: repeat(3, 1fr) / 40vw;
+    }
+  }
+  .topics {
+    &__photo {
+      padding-top: 5.363vw;
+      padding-left: 4.5145vw;
     }
   }
 }
