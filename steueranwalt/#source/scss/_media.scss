@@ -36,7 +36,10 @@
   .advantage,
   .about,
   .support,
-  .tax {
+  .tax,
+  .international,
+  .criminal,
+  .work {
     &__inner {
       @include adaptive-value(padding-top, 120, 61.8, 1);
       @include adaptive-value(padding-bottom, 120, 61.8, 1);
@@ -131,7 +134,31 @@
     }
   }
   // =====INTERNATIONAL=====
-
+  .international {
+    &__list {
+      @include adaptive-value(gap, 31, 24.05, 1);
+      @include adaptive-value(margin-bottom, 35, 29.2, 1);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(height, 109, 70.57, 1);
+      }
+      &-img {
+        @include adaptive-icon(69, 37.57, 1);
+      }
+      &-title {
+        @include adaptive-value(margin-bottom, 20, 8.5, 1);
+        @include adaptive-value(font-size, 20, 14.3, 1);
+      }
+      &-text {
+        @include adaptive-value(font-size, 15, 11.55, 1);
+        line-height: 1.25em;
+        @include adaptive-value(padding-right, 35, 14.035, 1);
+        @include adaptive-value(padding-bottom, 31, 15.859, 1);
+        @include adaptive-value(padding-left, 35, 14.035, 1);
+      }
+    }
+  }
   // =====CRIMINAL=====
 
   // =====WORK=====
@@ -149,12 +176,22 @@
 }
 @media (max-width: 992px) {
   .advantage,
-  .tax {
+  .tax,
+  .international {
     &__list {
       grid-template: repeat(3, 1fr) / 1fr;
     }
+  }
+  .advantage,
+  .tax {
     &__item-text {
       @include adaptive-value(width, 450, 176, 1);
+    }
+  }
+  .international {
+    &__item {
+      width: 51.45vw;
+      height: 100%;
     }
   }
 }
@@ -204,7 +241,10 @@
   .advantage,
   .about,
   .support,
-  .tax {
+  .tax,
+  .international,
+  .criminal,
+  .work {
     &__inner {
       @include adaptive-value(padding-top, 120, 61.8, 2);
       @include adaptive-value(padding-bottom, 120, 61.8, 2);
@@ -276,7 +316,31 @@
     }
   }
   // =====INTERNATIONAL=====
-
+  .international {
+    &__list {
+      @include adaptive-value(gap, 31, 24.05, 2);
+      @include adaptive-value(margin-bottom, 35, 29.2, 2);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(height, 109, 70.57, 2);
+      }
+      &-img {
+        @include adaptive-icon(69, 37.57, 2);
+      }
+      &-title {
+        @include adaptive-value(margin-bottom, 20, 8.5, 2);
+        @include adaptive-value(font-size, 20, 14.3, 2);
+      }
+      &-text {
+        @include adaptive-value(font-size, 15, 11.55, 2);
+        line-height: 1.25em;
+        @include adaptive-value(padding-right, 35, 14.035, 2);
+        @include adaptive-value(padding-bottom, 31, 15.859, 2);
+        @include adaptive-value(padding-left, 35, 14.035, 2);
+      }
+    }
+  }
   // =====CRIMINAL=====
 
   // =====WORK=====
@@ -360,6 +424,11 @@
   .about {
     &__content {
       grid-template: 0.4fr 1fr / 285px;
+    }
+  }
+  .international {
+    &__item {
+      width: 213px;
     }
   }
 }
