@@ -1053,9 +1053,19 @@ button {
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
+    gap: calc(24.1765px + 5.8235 * (100vw / 1130));
   }
   .criminal__content-text {
+    font-size: calc(11.0117px + 6.9883 * (100vw / 1130));
+    margin-bottom: calc(14.012px + 6.988 * (100vw / 1130));
     text-align: center;
+  }
+  .criminal__list {
+    grid-template: 1fr/299px;
+    gap: calc(24.1765px + 5.8235 * (100vw / 1130));
+  }
+  .criminal__btn-more {
+    margin-top: calc(13.744px + 21.256 * (100vw / 1130));
   }
   .footer__inner {
     display: none;
