@@ -1097,8 +1097,16 @@ button {
     margin-bottom: calc(30px + 5 * (100vw / 1130));
   }
   .feedback__content {
-    grid-template: 0.4fr 1fr/1fr;
-    justify-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 50px;
     gap: calc(30px + 30 * (100vw / 1130));
   }
@@ -1107,6 +1115,10 @@ button {
   }
   .feedback__photo {
     padding: 24px 0 0 31px;
+  }
+  .feedback__photo::before {
+    width: 93.31%;
+    max-height: 94.2%;
   }
   .feedback__form {
     width: 42.88vw;

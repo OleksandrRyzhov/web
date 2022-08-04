@@ -211,8 +211,9 @@
       @include adaptive-value(margin-bottom, 35, 30, 1);
     }
     &__content {
-      grid-template: 0.4fr 1fr / 1fr;
-      justify-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 0 50px;
       @include adaptive-value(gap, 60, 30, 1);
       &-box {
@@ -221,6 +222,10 @@
     }
     &__photo {
       padding: 24px 0 0 31px;
+      &::before {
+        width: 93.31%;
+        max-height: 94.2%;
+      }
     }
     &__form {
       width: 42.88vw;
