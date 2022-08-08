@@ -28,6 +28,12 @@ button {
   margin: 0 auto;
 }
 
+.img {
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
 .contact-btn {
   padding: 10px;
   width: 200px;
