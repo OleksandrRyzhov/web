@@ -29,6 +29,7 @@ button {
 }
 
 .img {
+  transition: all 0.5s ease 0s;
   &:hover {
     transform: scale(1.2);
   }
@@ -44,6 +45,10 @@ button {
   font-size: 20px;
   line-height: 1.2em;
   text-align: center;
+  transition: all 0.5s ease 0s;
+  &:hover {
+    box-shadow: 0 0 15px $colorAqua;
+  }
 }
 
 .title {
@@ -69,6 +74,7 @@ button {
   position: relative;
   z-index: 1;
   color: #fff;
+  transition: all 0.5s ease 0s;
   &::after {
     content: "";
     position: absolute;
@@ -77,5 +83,8 @@ button {
     width: 25px;
     height: 25px;
     right: 12px;
+  }
+  &:hover {
+    background-color: $colorBlue;
   }
 }

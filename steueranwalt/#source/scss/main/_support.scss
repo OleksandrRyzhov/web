@@ -21,6 +21,7 @@
   }
   &__item {
     position: relative;
+    transition: all 0.3s ease 0s;
     &::before {
       content: "";
       background: url("../img/support-img.jpg") no-repeat;
@@ -32,6 +33,9 @@
       right: 0;
       bottom: 0;
       left: 0;
+    }
+    &:hover {
+      transform: scale(1.1);
     }
     &-title {
       position: relative;
@@ -50,6 +54,46 @@
       position: absolute;
       bottom: 0;
       width: 100%;
+      transition: all 0.5s ease 0s;
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("../img/arrow-down.png") 0 0 no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        right: 12px;
+        border-radius: 50%;
+      }
+      &:hover {
+        background-color: $colorSky;
+        color: $colorBlue;
+        &::after {
+          background-color: $colorBlue;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  &__btn {
+    &::after {
+      content: "";
+      position: absolute;
+      background: url("../img/arrow-down.png") 0 0 no-repeat;
+      background-size: cover;
+      width: 25px;
+      height: 25px;
+      right: 12px;
+      border-radius: 50%;
+      transition: all 0.5s ease 0s;
+    }
+    &:hover {
+      background-color: $colorSky;
+      color: $colorBlue;
+      &::after {
+        background-color: $colorBlue;
+        background-size: cover;
+      }
     }
   }
 }

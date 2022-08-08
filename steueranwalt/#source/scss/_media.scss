@@ -522,6 +522,7 @@
   }
   .criminal {
     &__item-btn {
+      width: calc(100% + 2px);
       height: 40px;
     }
     &__btn-more {
@@ -642,6 +643,11 @@
   .international {
     &__item {
       width: 213px;
+    }
+  }
+  .criminal {
+    &__item-btn {
+      width: calc(100% + 2px);
     }
   }
   .feedback {

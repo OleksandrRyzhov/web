@@ -48,13 +48,22 @@
       line-height: 1.2em;
       font-weight: 500;
       border-radius: 50px;
+      transition: all 0.5s ease 0s;
       &--1 {
         background-color: $colorPink;
         box-shadow: 0px 4px 40px rgba(75, 40, 42, 0.45);
+        &:hover {
+          // background-color: #854549;
+          background-color: rgb(163, 79, 82);
+        }
       }
       &--2 {
         background-color: $colorAqua;
         box-shadow: 0px 4px 40px rgba(97, 80, 81, 0.45);
+        &:hover {
+          // background-color: #145786;
+          background-color: rgb(12, 105, 172);
+        }
       }
     }
   }
