@@ -832,10 +832,16 @@ button {
   height: 60px;
   min-width: 175px;
   width: 301px;
-  width: 100%;
   border-radius: 50px;
   border: 1px solid #002d62;
   padding: 0 20px;
+}
+.feedback__form-input:focus {
+  -webkit-box-shadow: 0 0 15px #1991e8;
+          box-shadow: 0 0 15px #1991e8;
+}
+.feedback__form-input._error {
+  border: 1px solid red;
 }
 .feedback__form-input::-webkit-input-placeholder {
   font-size: 18px;
