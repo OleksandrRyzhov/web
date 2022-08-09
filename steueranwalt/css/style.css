@@ -194,7 +194,7 @@ button {
 .btn-more::after {
   content: "";
   position: absolute;
-  background: url("../img/arrow-down.png") 0 0 no-repeat;
+  background: url("../img/arrow-bottom.png") 0 0 no-repeat;
   background-size: cover;
   width: 25px;
   height: 25px;
@@ -272,20 +272,20 @@ button {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
-.header__choice-btn--1 {
+.header__choice-btn--pink {
   background-color: #c9666b;
   -webkit-box-shadow: 0px 4px 40px rgba(75, 40, 42, 0.45);
           box-shadow: 0px 4px 40px rgba(75, 40, 42, 0.45);
 }
-.header__choice-btn--1:hover {
+.header__choice-btn--pink:hover {
   background-color: rgb(163, 79, 82);
 }
-.header__choice-btn--2 {
+.header__choice-btn--aqua {
   background-color: #1991e8;
   -webkit-box-shadow: 0px 4px 40px rgba(97, 80, 81, 0.45);
           box-shadow: 0px 4px 40px rgba(97, 80, 81, 0.45);
 }
-.header__choice-btn--2:hover {
+.header__choice-btn--aqua:hover {
   background-color: rgb(12, 105, 172);
 }
 .header__photo {
@@ -326,6 +326,114 @@ button {
   margin-bottom: 30px;
   max-width: 540px;
   font-family: "Roboto", sans-serif;
+}
+
+/* ========== HAMBURG PAGE HEADER ========== */
+.header__fixed {
+  color: #002d62;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #002d62;
+  z-index: 50;
+}
+.header__body {
+  background-color: #fff;
+  margin-top: 89px;
+  padding: 146px 0;
+  overflow: hidden;
+}
+
+.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5px;
+}
+.top-header__logo {
+  padding: 13px 0;
+}
+.top-header__contact {
+  color: #fff;
+  background-color: #002d62;
+  border: none;
+  width: 200px;
+}
+
+.menu__icon {
+  display: none;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.menu__item {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.body-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.body-header__content {
+  min-width: 560px;
+  position: relative;
+  padding-right: 20px;
+}
+.body-header__content::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50vw;
+  bottom: -50vw;
+  left: -50vw;
+  background-color: #002d62;
+  z-index: 0;
+}
+.body-header__title {
+  font-size: 39px;
+  line-height: 48px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 37px;
+}
+.body-header__text {
+  font-family: "Montserrat", sans-serif;
+  max-width: 353px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 42px;
+}
+.body-header__choice {
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+.body-header__btn {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 21px 0;
+}
+.body-header__photo {
+  max-width: 547px;
+  padding-left: 35px;
+}
+.body-header__photo-img {
+  width: 512px;
+  border-radius: 30px;
 }
 
 /* </HEADER> ================================================== */
@@ -443,7 +551,7 @@ button {
 /* </ABOUT> ========== */
 /* <SUPPORT> ========== */
 .support {
-  background: url("../img/support-bg.png") 0 0 no-repeat scroll;
+  background: url("../img/landing/support-bg.png") 0 0 no-repeat scroll;
   background-size: cover;
 }
 .support__inner {
@@ -472,7 +580,7 @@ button {
 }
 .support__item::before {
   content: "";
-  background: url("../img/support-img.jpg") no-repeat;
+  background: url("../img/landing/support-img.jpg") no-repeat;
   background-size: cover;
   opacity: 0.7;
   border-radius: 20px;
@@ -517,7 +625,7 @@ button {
 .support__item-btn::after {
   content: "";
   position: absolute;
-  background: url("../img/arrow-down.png") 0 0 no-repeat;
+  background: url("../img/arrow-bottom.png") 0 0 no-repeat;
   background-size: cover;
   width: 25px;
   height: 25px;
@@ -535,7 +643,7 @@ button {
 .support__btn::after {
   content: "";
   position: absolute;
-  background: url("../img/arrow-down.png") 0 0 no-repeat;
+  background: url("../img/arrow-bottom.png") 0 0 no-repeat;
   background-size: cover;
   width: 25px;
   height: 25px;
@@ -718,7 +826,7 @@ button {
 }
 .criminal__item::before {
   content: "";
-  background: url("../img/criminal.jpg") no-repeat;
+  background: url("../img/landing/criminal.jpg") no-repeat;
   background-size: cover;
   opacity: 0.6;
   border-radius: 20px;
@@ -1014,6 +1122,8 @@ button {
 }
 
 /* </FOOTER> ================================================== */
+/* ==================== HAMBURG PAGE ==================== */
+/* ==================== ZURICH PAGE ==================== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1200px) {
   .footer__inner {

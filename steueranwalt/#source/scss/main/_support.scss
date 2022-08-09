@@ -1,5 +1,5 @@
 .support {
-  background: url("../img/support-bg.png") 0 0 no-repeat scroll;
+  background: url("../img/landing/support-bg.png") 0 0 no-repeat scroll;
   background-size: cover;
   &__inner {
     padding: 120px 0;
@@ -24,7 +24,7 @@
     transition: all 0.3s ease 0s;
     &::before {
       content: "";
-      background: url("../img/support-img.jpg") no-repeat;
+      background: url("../img/landing/support-img.jpg") no-repeat;
       background-size: cover;
       opacity: 0.7;
       border-radius: 20px;
@@ -58,7 +58,7 @@
       &::after {
         content: "";
         position: absolute;
-        background: url("../img/arrow-down.png") 0 0 no-repeat;
+        background: url("../img/arrow-bottom.png") 0 0 no-repeat;
         background-size: cover;
         width: 25px;
         height: 25px;
@@ -79,7 +79,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../img/arrow-down.png") 0 0 no-repeat;
+      background: url("../img/arrow-bottom.png") 0 0 no-repeat;
       background-size: cover;
       width: 25px;
       height: 25px;
