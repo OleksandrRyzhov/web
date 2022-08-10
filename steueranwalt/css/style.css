@@ -128,6 +128,10 @@ button {
   margin: 0 auto;
 }
 
+.inner {
+  padding: 120px 0;
+}
+
 .img {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -164,6 +168,7 @@ button {
   font-weight: 700;
   color: #002d62;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .btn-more {
@@ -442,12 +447,6 @@ button {
 .advantage {
   background-color: #c8dcf0;
 }
-.advantage__inner {
-  padding: 120px 0;
-}
-.advantage__title {
-  margin-bottom: 60px;
-}
 .advantage__list {
   display: grid;
   grid-template-columns: repeat(3, 271px);
@@ -495,12 +494,6 @@ button {
 
 /* </ADVANTAGE> ========== */
 /* <ABOUT> ========== */
-.about__inner {
-  padding: 120px 0;
-}
-.about__title {
-  margin-bottom: 60px;
-}
 .about__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,12 +548,10 @@ button {
   background-size: cover;
 }
 .support__inner {
-  padding: 120px 0;
   color: #fff;
 }
 .support__title {
   color: inherit;
-  margin-bottom: 60px;
 }
 .support__list {
   display: grid;
@@ -664,12 +655,6 @@ button {
 
 /* </SUPPORT> ========== */
 /* <TAX> ========== */
-.tax__inner {
-  padding: 120px 0;
-}
-.tax__title {
-  margin-bottom: 60px;
-}
 .tax__list {
   display: grid;
   grid-template-columns: repeat(3, 270px);
@@ -722,12 +707,6 @@ button {
 .international {
   background-color: #c8dcf0;
 }
-.international__inner {
-  padding: 120px 0;
-}
-.international__title {
-  margin-bottom: 60px;
-}
 .international__list {
   display: grid;
   grid-template: 1fr/repeat(3, 297px);
@@ -777,12 +756,6 @@ button {
 
 /* </INTERNATIONAL> ========== */
 /* <CRIMINAL> ========== */
-.criminal__inner {
-  padding: 120px 0;
-}
-.criminal__title {
-  margin-bottom: 60px;
-}
 .criminal__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -879,12 +852,8 @@ button {
   background-color: #002d62;
   color: #fff;
 }
-.work__inner {
-  padding: 120px 0;
-}
 .work__title {
   color: inherit;
-  margin-bottom: 60px;
 }
 .work__list {
   display: grid;
@@ -919,14 +888,10 @@ button {
   padding: 0 15px 21px;
   line-height: 1.2em;
   text-align: center;
-} /* </WORK> ========== */
+}
+
+/* </WORK> ========== */
 /* <TOPICS> ========== */
-.topics__inner {
-  padding: 120px 0;
-}
-.topics__title {
-  margin-bottom: 60px;
-}
 .topics__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -976,12 +941,6 @@ button {
 /* <FEEDBACK> ========== */
 .feedback {
   background-color: #c8dcf0;
-}
-.feedback__inner {
-  padding: 120px 0;
-}
-.feedback__title {
-  margin-bottom: 60px;
 }
 .feedback__subtitle {
   font-size: 22px;
@@ -1123,9 +1082,6 @@ button {
 
 /* </FOOTER> ================================================== */
 /* ==================== HAMBURG PAGE ==================== */
-.services__inner {
-  padding: 120px 0;
-}
 .services__title {
   margin-bottom: 90px;
 }

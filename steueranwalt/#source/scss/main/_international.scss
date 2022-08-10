@@ -1,11 +1,5 @@
 .international {
   background-color: $colorSky;
-  &__inner {
-    padding: 120px 0;
-  }
-  &__title {
-    margin-bottom: 60px;
-  }
   &__list {
     display: grid;
     grid-template: 1fr / repeat(3, 297px);

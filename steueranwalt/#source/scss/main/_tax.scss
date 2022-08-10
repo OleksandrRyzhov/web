@@ -1,10 +1,4 @@
 .tax {
-  &__inner {
-    padding: 120px 0;
-  }
-  &__title {
-    margin-bottom: 60px;
-  }
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 270px);
