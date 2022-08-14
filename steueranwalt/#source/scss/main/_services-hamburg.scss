@@ -1,0 +1,67 @@
+.services-hamburg {
+  // background-color: $colorSky;
+  &__inner {
+    background-color: $colorSky;
+  }
+  &__title {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__list {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 421px);
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 358px;
+    border-radius: 30px;
+    border: 1px solid $colorBlue;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    &-link {
+      margin-bottom: 10px;
+    }
+    &-img {
+      height: 51px;
+      width: 51px;
+    }
+    &-title {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &-text {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      line-height: 19px;
+      width: 378px;
+      margin-bottom: 20px;
+      flex: 1 1 auto;
+    }
+    &-btn {
+      height: 40px;
+    }
+  }
+  &__btn {
+    height: 60px;
+    margin: 0 auto;
+    &-style {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 262px;
+      background-color: $colorBlue;
+      color: #fff;
+      border-radius: 50px;
+      padding: 0 30px;
+    }
+  }
+}
