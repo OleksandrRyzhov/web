@@ -1,6 +1,4 @@
 .bafa {
-  &__inner {
-  }
   &__title {
     max-width: 900px;
     margin-left: auto;
@@ -9,8 +7,6 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    &-box {
-    }
   }
   &__photo {
     padding-left: 65px;
