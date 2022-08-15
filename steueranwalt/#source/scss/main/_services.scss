@@ -37,14 +37,21 @@
     height: 90px;
     margin-bottom: 25px;
     border-radius: 30px;
+    transition: all 0.5s ease 0s;
     &:last-child {
       margin-bottom: 0;
     }
     &--aqua {
       background-color: $colorAqua;
+      &:hover {
+        box-shadow: 0 0 15px $colorBlue;
+      }
     }
     &--blue {
       background-color: $colorBlue;
+      &:hover {
+        box-shadow: 0 0 15px $colorAqua;
+      }
     }
     &-title {
       display: flex;
