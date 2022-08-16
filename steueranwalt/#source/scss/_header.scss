@@ -151,6 +151,30 @@
     font-weight: 600;
   }
   &__link {
+    transition: all 0.5s ease 0s;
+    &:hover {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        width: calc(100% - 10px);
+        height: 2px;
+        background-color: $colorBlue;
+        animation: line 1s;
+      }
+      @keyframes line {
+        0% {
+          width: 0;
+        }
+        50% {
+          width: 105%;
+        }
+        100% {
+          width: calc(100% - 10px);
+        }
+      }
+    }
   }
 }
 .icon-menu {
@@ -206,5 +230,16 @@
       width: 512px;
       border-radius: 30px;
     }
+  }
+}
+._active {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: calc(100% - 10px);
+    height: 2px;
+    background-color: $colorBlue;
   }
 }
