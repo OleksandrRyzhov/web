@@ -1418,6 +1418,33 @@ button {
 }
 
 /* </BLOG> ========== */
+/* <COMMENT> ========== */
+.comment__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+.comment__photo-img {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 30px;
+}
+.comment__text {
+  font-family: "Roboto", sans-serif;
+  max-width: 970px;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 auto 26px;
+}
+.comment__text:last-child {
+  margin-bottom: 0;
+}
+
+/* </COMMENT> ========== */
 /* ==================== ZURICH PAGE ==================== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1200px) {
