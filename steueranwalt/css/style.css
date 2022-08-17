@@ -98,6 +98,9 @@ body {
   color: #002d62;
   line-height: 1.2em;
 }
+body._lock {
+  overflow: hidden;
+}
 
 a,
 button {
@@ -341,6 +344,7 @@ button {
   width: 100%;
   border-bottom: 1px solid #002d62;
   z-index: 50;
+  height: 89px;
 }
 .header__body {
   background-color: #fff;
@@ -362,13 +366,17 @@ button {
   padding-right: 5px;
 }
 .top-header__logo {
+  position: relative;
   padding: 13px 0;
+  z-index: 50;
 }
 .top-header__contact {
+  position: relative;
   color: #fff;
   background-color: #002d62;
   border: none;
   width: 200px;
+  z-index: 50;
 }
 
 .menu__icon {
@@ -382,7 +390,7 @@ button {
 }
 .menu__item {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.222em;
   font-weight: 600;
 }
 .menu__link {
@@ -482,16 +490,18 @@ button {
   border-radius: 30px;
 }
 
-._active {
+._open {
   position: relative;
 }
-._active::before {
+._open::before {
   content: "";
   position: absolute;
   bottom: -5px;
   width: calc(100% - 10px);
   height: 2px;
   background-color: #002d62;
+  -webkit-animation: line 1s;
+          animation: line 1s;
 }
 
 /* </HEADER> ================================================== */
@@ -1527,6 +1537,10 @@ button {
   .header__text {
     font-size: calc(12.5px + 11.5 * (100vw / 1130));
   }
+  .menu__list {
+    gap: calc(-60px + 90 * (100vw / 1130));
+    font-size: calc(12px + 6 * (100vw / 1130));
+  }
   .advantage__inner,
 .about__inner,
 .support__inner,
@@ -1724,6 +1738,124 @@ button {
   }
 }
 @media (max-width: 992px) {
+  .top-header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    gap: 50px;
+  }
+  .top-header__logo {
+    -webkit-box-flex: 1px;
+        -ms-flex: 1px 1px auto;
+            flex: 1px 1px auto;
+    width: 100%;
+  }
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    background-color: inherit;
+  }
+  .menu__icon span, .menu__icon::before, .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background-color: #002d62;
+  }
+  .menu__icon::before, .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    -webkit-transform: scale(1) translate(0px, -50%);
+        -ms-transform: scale(1) translate(0px, -50%);
+            transform: scale(1) translate(0px, -50%);
+  }
+  .menu__icon._active span {
+    -webkit-transform: scale(0) translate(0px, -50%);
+        -ms-transform: scale(0) translate(0px, -50%);
+            transform: scale(0) translate(0px, -50%);
+  }
+  .menu__icon._active::before {
+    top: 50%;
+    -webkit-transform: rotate(45deg) translate(0px, -50%);
+        -ms-transform: rotate(45deg) translate(0px, -50%);
+            transform: rotate(45deg) translate(0px, -50%);
+  }
+  .menu__icon._active::after {
+    bottom: 50%;
+    -webkit-transform: rotate(-45deg) translate(0px, 50%);
+        -ms-transform: rotate(-45deg) translate(0px, 50%);
+            transform: rotate(-45deg) translate(0px, 50%);
+  }
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 45, 98, 0.95);
+    padding: 110px 30px 30px 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #c8dcf0;
+    overflow: auto;
+  }
+  .menu__body._active {
+    left: 0;
+  }
+  .menu__body._active::before {
+    background-color: #fff;
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 89px;
+    background-color: #fff;
+    z-index: 51;
+  }
+  .menu__item {
+    margin: 0px 0px 30px 0px;
+    font-size: 24px;
+  }
+  .menu__item:last-child {
+    margin-bottom: 0;
+  }
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__link:hover::before {
+    background-color: #c8dcf0;
+  }
+  ._open::before {
+    background-color: #c8dcf0;
+  }
   .advantage__list,
 .tax__list,
 .international__list {

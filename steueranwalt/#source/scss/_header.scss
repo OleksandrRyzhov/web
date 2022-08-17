@@ -108,6 +108,7 @@
     width: 100%;
     border-bottom: 1px solid $colorBlue;
     z-index: 50;
+    height: 89px;
   }
   &__body {
     background-color: #fff;
@@ -122,17 +123,21 @@
   align-items: center;
   padding-right: 5px;
   &__logo {
+    position: relative;
     padding: 13px 0;
+    z-index: 50;
     &-img {
     }
   }
   &__menu {
   }
   &__contact {
+    position: relative;
     color: #fff;
     background-color: $colorBlue;
     border: none;
     width: 200px;
+    z-index: 50;
   }
 }
 .menu {
@@ -147,7 +152,7 @@
   }
   &__item {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.222em;
     font-weight: 600;
   }
   &__link {
@@ -232,7 +237,7 @@
     }
   }
 }
-._active {
+._open {
   position: relative;
   &::before {
     content: "";
@@ -241,5 +246,6 @@
     width: calc(100% - 10px);
     height: 2px;
     background-color: $colorBlue;
+    animation: line 1s;
   }
 }

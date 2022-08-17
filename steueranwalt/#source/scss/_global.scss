@@ -5,6 +5,9 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #002d62;
   line-height: 1.2em;
+  &._lock {
+    overflow: hidden;
+  }
 }
 a,
 button {
