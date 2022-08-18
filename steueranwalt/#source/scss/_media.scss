@@ -32,11 +32,30 @@
     &__text {
       @include adaptive-value(font-size, 24, 12.5, 1);
     }
+    &__body {
+      @include adaptive-value(padding-top, 146, 70, 1);
+      @include adaptive-value(padding-bottom, 146, 70, 1);
+    }
   }
   .menu {
     &__list {
       @include adaptive-value(gap, 30, -60, 1);
       @include adaptive-value(font-size, 18, 12, 1);
+    }
+  }
+  .body-header {
+    &__content {
+      min-width: 45vw;
+    }
+    &__title {
+      @include adaptive-value(font-size, 39, 16, 1);
+      @include adaptive-value(margin-bottom, 37, 17, 1);
+    }
+    &__text {
+      @include adaptive-value(margin-bottom, 42, 25, 1);
+    }
+    &__btn {
+      @include adaptive-value(font-size, 15, 10, 1);
     }
   }
   // ==========MAIN==========
@@ -441,6 +460,44 @@
     &__text {
       @include adaptive-value(font-size, 24, 12.5, 2);
     }
+    &__body {
+      @include adaptive-value(padding-top, 146, 70, 2);
+      @include adaptive-value(padding-bottom, 146, 70, 2);
+    }
+  }
+  .top-header {
+    &__contact {
+      min-width: 140px;
+    }
+  }
+  .menu {
+    &__list {
+      @include adaptive-value(gap, 30, -60, 2);
+      @include adaptive-value(font-size, 18, 12, 2);
+    }
+  }
+  .body-header {
+    &__title {
+      @include adaptive-value(font-size, 39, 16, 2);
+      @include adaptive-value(margin-bottom, 37, 17, 2);
+    }
+    &__text {
+      @include adaptive-value(margin-bottom, 42, 25, 2);
+    }
+    &__choice {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__btn {
+      max-width: 100%;
+      @include adaptive-value(font-size, 15, 10, 2);
+    }
+    &__photo {
+      @include adaptive-value(margin-left, 30, 15, 2);
+      &-img {
+        min-height: 250px;
+      }
+    }
   }
   // ==========MAIN==========
   .advantage,
@@ -688,6 +745,11 @@
       max-width: 200px;
     }
   }
+  .top-header {
+    &__contact {
+      min-width: 120px;
+    }
+  }
   .work {
     &__list {
       grid-template: repeat(3, 1fr) / 49.3vw;
@@ -719,6 +781,9 @@
       max-width: 180px;
     }
   }
+  .top-header {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -740,6 +805,11 @@
     &__text {
       margin-bottom: 45px;
       min-width: 155px;
+    }
+  }
+  .body-header {
+    &__text {
+      @include adaptive-value(margin-bottom, 42, 25, 2);
     }
   }
   .about {
@@ -788,6 +858,11 @@
   .header {
     &__text {
       margin-bottom: 25px;
+    }
+  }
+  .body-header {
+    &__text {
+      @include adaptive-value(margin-bottom, 42, 25, 2);
     }
   }
 }

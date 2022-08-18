@@ -371,11 +371,10 @@ button {
   z-index: 50;
 }
 .top-header__contact {
-  position: relative;
+  min-width: 200px;
   color: #fff;
   background-color: #002d62;
   border: none;
-  width: 200px;
   z-index: 50;
 }
 
@@ -441,9 +440,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .body-header__content {
-  min-width: 560px;
+  max-width: 565px;
   position: relative;
   padding-right: 20px;
 }
@@ -459,10 +461,11 @@ button {
 }
 .body-header__title {
   font-size: 39px;
-  line-height: 48px;
+  line-height: 1.23em;
   position: relative;
   z-index: 1;
   margin-bottom: 37px;
+  max-width: 100%;
 }
 .body-header__text {
   font-family: "Montserrat", sans-serif;
@@ -477,16 +480,27 @@ button {
   z-index: 1;
 }
 .body-header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 15px;
-  line-height: 18px;
-  padding: 21px 0;
+  line-height: 1.2em;
+  padding: 0 20px;
+  max-width: 250px;
+  width: 100%;
 }
 .body-header__photo {
-  max-width: 547px;
-  padding-left: 35px;
+  max-width: 512px;
+  margin-left: 30px;
 }
 .body-header__photo-img {
-  width: 512px;
+  width: 100%;
   border-radius: 30px;
 }
 
@@ -1537,9 +1551,26 @@ button {
   .header__text {
     font-size: calc(12.5px + 11.5 * (100vw / 1130));
   }
+  .header__body {
+    padding-top: calc(70px + 76 * (100vw / 1130));
+    padding-bottom: calc(70px + 76 * (100vw / 1130));
+  }
   .menu__list {
     gap: calc(-60px + 90 * (100vw / 1130));
     font-size: calc(12px + 6 * (100vw / 1130));
+  }
+  .body-header__content {
+    min-width: 45vw;
+  }
+  .body-header__title {
+    font-size: calc(16px + 23 * (100vw / 1130));
+    margin-bottom: calc(17px + 20 * (100vw / 1130));
+  }
+  .body-header__text {
+    margin-bottom: calc(25px + 17 * (100vw / 1130));
+  }
+  .body-header__btn {
+    font-size: calc(10px + 5 * (100vw / 1130));
   }
   .advantage__inner,
 .about__inner,
@@ -1935,6 +1966,59 @@ button {
       12.5px + 19.55 * ((100vw - 320px) / 1130)
     );
   }
+  .header__body {
+    padding-top: calc(
+      70px + 129.2 * ((100vw - 320px) / 1130)
+    );
+    padding-bottom: calc(
+      70px + 129.2 * ((100vw - 320px) / 1130)
+    );
+  }
+  .top-header__contact {
+    min-width: 140px;
+  }
+  .menu__list {
+    gap: calc(
+      -60px + 153 * ((100vw - 320px) / 1130)
+    );
+    font-size: calc(
+      12px + 10.2 * ((100vw - 320px) / 1130)
+    );
+  }
+  .body-header__title {
+    font-size: calc(
+      16px + 39.1 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      17px + 34 * ((100vw - 320px) / 1130)
+    );
+  }
+  .body-header__text {
+    margin-bottom: calc(
+      25px + 28.9 * ((100vw - 320px) / 1130)
+    );
+  }
+  .body-header__choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .body-header__btn {
+    max-width: 100%;
+    font-size: calc(
+      10px + 8.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .body-header__photo {
+    margin-left: calc(
+      15px + 25.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .body-header__photo-img {
+    min-height: 250px;
+  }
   .advantage__inner,
 .about__inner,
 .support__inner,
@@ -2248,6 +2332,9 @@ button {
   .header__text {
     max-width: 200px;
   }
+  .top-header__contact {
+    min-width: 120px;
+  }
   .work__list {
     grid-template: repeat(3, 1fr)/49.3vw;
   }
@@ -2280,6 +2367,9 @@ button {
   .header__text {
     max-width: 180px;
   }
+  .top-header {
+    gap: 30px;
+  }
 }
 @media (max-width: 414px) {
   .btn-more {
@@ -2297,6 +2387,11 @@ button {
   .header__text {
     margin-bottom: 45px;
     min-width: 155px;
+  }
+  .body-header__text {
+    margin-bottom: calc(
+      25px + 28.9 * ((100vw - 320px) / 1130)
+    );
   }
   .about__content {
     grid-template: 0.4fr 1fr/285px;
@@ -2325,6 +2420,11 @@ button {
 @media (max-width: 379px) {
   .header__text {
     margin-bottom: 25px;
+  }
+  .body-header__text {
+    margin-bottom: calc(
+      25px + 28.9 * ((100vw - 320px) / 1130)
+    );
   }
 }
 @media (max-width: 330px) {

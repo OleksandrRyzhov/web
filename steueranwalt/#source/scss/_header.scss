@@ -132,11 +132,10 @@
   &__menu {
   }
   &__contact {
-    position: relative;
+    min-width: 200px;
     color: #fff;
     background-color: $colorBlue;
     border: none;
-    width: 200px;
     z-index: 50;
   }
 }
@@ -189,8 +188,9 @@
 .body-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   &__content {
-    min-width: 560px;
+    max-width: 565px;
     position: relative;
     padding-right: 20px;
     &::after {
@@ -206,10 +206,11 @@
   }
   &__title {
     font-size: 39px;
-    line-height: 48px;
+    line-height: 1.23em;
     position: relative;
     z-index: 1;
     margin-bottom: 37px;
+    max-width: 100%;
   }
   &__text {
     font-family: "Montserrat", sans-serif;
@@ -224,15 +225,20 @@
     z-index: 1;
   }
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 15px;
-    line-height: 18px;
-    padding: 21px 0;
+    line-height: 1.2em;
+    padding: 0 20px;
+    max-width: 250px;
+    width: 100%;
   }
   &__photo {
-    max-width: 547px;
-    padding-left: 35px;
+    max-width: 512px;
+    margin-left: 30px;
     &-img {
-      width: 512px;
+      width: 100%;
       border-radius: 30px;
     }
   }
