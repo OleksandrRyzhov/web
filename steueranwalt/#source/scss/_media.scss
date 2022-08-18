@@ -253,6 +253,34 @@
       }
     }
   }
+  // =====SERVICES-HAMBURG=====
+  .services-hamburg {
+    &__title {
+      width: 90%;
+    }
+    &__list {
+      @include adaptive-value(gap, 50, 20, 1);
+      @include adaptive-value(margin-bottom, 60, 25, 1);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(margin-bottom, 10, 7, 1);
+      }
+      &-img {
+        @include adaptive-icon(51, 25, 1);
+      }
+      &-title {
+        @include adaptive-value(font-size, 20, 12, 1);
+        @include adaptive-value(margin-bottom, 20, 13, 1);
+      }
+      &-text {
+        max-width: 378px;
+        width: 100%;
+        @include adaptive-value(font-size, 16, 11, 1);
+        @include adaptive-value(margin-bottom, 20, 13, 1);
+      }
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -403,7 +431,8 @@
   }
   .advantage,
   .tax,
-  .international {
+  .international,
+  .blog {
     &__list {
       grid-template: repeat(3, 1fr) / 1fr;
     }
@@ -418,6 +447,12 @@
     &__item {
       width: 51.45vw;
       height: 100%;
+    }
+  }
+  .services-hamburg {
+    &__list {
+      grid-template: repeat(6, 1fr) / 1fr;
+      place-items: center;
     }
   }
 }
@@ -700,6 +735,35 @@
       }
     }
   }
+  // =====SERVICES-HAMBURG=====
+  .services-hamburg {
+    &__list {
+      @include adaptive-value(gap, 50, 20, 2);
+      @include adaptive-value(margin-bottom, 60, 25, 2);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(margin-bottom, 10, 7, 2);
+      }
+      &-img {
+        @include adaptive-icon(51, 25, 2);
+      }
+      &-title {
+        @include adaptive-value(font-size, 20, 12, 2);
+        @include adaptive-value(margin-bottom, 20, 13, 2);
+      }
+      &-text {
+        @include adaptive-value(font-size, 16, 11, 2);
+        @include adaptive-value(margin-bottom, 20, 13, 2);
+      }
+      &-btn {
+        @include adaptive-value(height, 40, 30, 2);
+      }
+    }
+    &__btn {
+      @include adaptive-value(height, 69, 35, 2);
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -805,6 +869,17 @@
   .work {
     &__list {
       grid-template: repeat(3, 1fr) / 49.3vw;
+    }
+  }
+  .services-hamburg {
+    &__list {
+      grid-template: repeat(6, 1fr) / 70vw;
+    }
+    &__btn {
+      &-style {
+        width: 55vw;
+        font-size: 11px;
+      }
     }
   }
 }

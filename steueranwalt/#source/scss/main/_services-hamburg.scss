@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 358px;
+    max-height: 358px;
     border-radius: 30px;
     border: 1px solid $colorBlue;
     background-color: #fff;
@@ -33,14 +33,14 @@
     }
     &-title {
       font-size: 20px;
-      line-height: 24px;
+      line-height: 1.2em;
       font-weight: 700;
       margin-bottom: 20px;
     }
     &-text {
       font-family: "Roboto", sans-serif;
       font-size: 16px;
-      line-height: 19px;
+      line-height: 1.1875em;
       width: 378px;
       margin-bottom: 20px;
       flex: 1 1 auto;
