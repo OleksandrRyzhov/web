@@ -159,8 +159,9 @@
       }
     }
   }
-  // =====INTERNATIONAL=====
-  .international {
+  // =====INTERNATIONAL, BLOG=====
+  .international,
+  .blog {
     &__list {
       @include adaptive-value(gap, 31, 24.05, 1);
       @include adaptive-value(margin-bottom, 35, 29.2, 1);
@@ -479,7 +480,8 @@
       @include adaptive-value(width, 450, 176, 1);
     }
   }
-  .international {
+  .international,
+  .blog {
     &__item {
       width: 51.45vw;
       height: 100%;
@@ -667,8 +669,9 @@
       }
     }
   }
-  // =====INTERNATIONAL=====
-  .international {
+  // =====INTERNATIONAL, BLOG=====
+  .international,
+  .blog {
     &__list {
       @include adaptive-value(gap, 31, 24.05, 2);
       @include adaptive-value(margin-bottom, 35, 29.2, 2);
@@ -1025,7 +1028,8 @@
       }
     }
   }
-  .international {
+  .international,
+  .blog {
     &__item {
       width: 213px;
     }

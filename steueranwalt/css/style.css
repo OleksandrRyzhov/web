@@ -1437,7 +1437,7 @@ button {
 }
 .blog__title {
   color: #fff;
-  max-width: 960px;
+  max-width: 860px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1672,22 +1672,27 @@ button {
     font-size: calc(11.3px + 5.7 * (100vw / 1130));
     margin-bottom: calc(12px + 9 * (100vw / 1130));
   }
-  .international__list {
+  .international__list,
+.blog__list {
     gap: calc(24.05px + 6.95 * (100vw / 1130));
     margin-bottom: calc(29.2px + 5.8 * (100vw / 1130));
   }
-  .international__item-link {
+  .international__item-link,
+.blog__item-link {
     height: calc(70.57px + 38.43 * (100vw / 1130));
   }
-  .international__item-img {
+  .international__item-img,
+.blog__item-img {
     width: calc(37.57px + 31.43 * (100vw / 1130));
     height: calc(37.57px + 31.43 * (100vw / 1130));
   }
-  .international__item-title {
+  .international__item-title,
+.blog__item-title {
     margin-bottom: calc(8.5px + 11.5 * (100vw / 1130));
     font-size: calc(14.3px + 5.7 * (100vw / 1130));
   }
-  .international__item-text {
+  .international__item-text,
+.blog__item-text {
     font-size: calc(11.55px + 3.45 * (100vw / 1130));
     line-height: 1.25em;
     padding-right: calc(14.035px + 20.965 * (100vw / 1130));
@@ -1980,7 +1985,8 @@ button {
 .tax__item-text {
     width: calc(176px + 274 * (100vw / 1130));
   }
-  .international__item {
+  .international__item,
+.blog__item {
     width: 51.45vw;
     height: 100%;
   }
@@ -2216,7 +2222,8 @@ button {
       12px + 15.3 * ((100vw - 320px) / 1130)
     );
   }
-  .international__list {
+  .international__list,
+.blog__list {
     gap: calc(
       24.05px + 11.815 * ((100vw - 320px) / 1130)
     );
@@ -2224,12 +2231,14 @@ button {
       29.2px + 9.86 * ((100vw - 320px) / 1130)
     );
   }
-  .international__item-link {
+  .international__item-link,
+.blog__item-link {
     height: calc(
       70.57px + 65.331 * ((100vw - 320px) / 1130)
     );
   }
-  .international__item-img {
+  .international__item-img,
+.blog__item-img {
     width: calc(
       37.57px + 53.431 * ((100vw - 320px) / 1130)
     );
@@ -2237,7 +2246,8 @@ button {
       37.57px + 53.431 * ((100vw - 320px) / 1130)
     );
   }
-  .international__item-title {
+  .international__item-title,
+.blog__item-title {
     margin-bottom: calc(
       8.5px + 19.55 * ((100vw - 320px) / 1130)
     );
@@ -2245,7 +2255,8 @@ button {
       14.3px + 9.69 * ((100vw - 320px) / 1130)
     );
   }
-  .international__item-text {
+  .international__item-text,
+.blog__item-text {
     font-size: calc(
       11.55px + 5.865 * ((100vw - 320px) / 1130)
     );
@@ -2618,7 +2629,8 @@ button {
   .support__item-btn {
     width: 100%;
   }
-  .international__item {
+  .international__item,
+.blog__item {
     width: 213px;
   }
   .criminal__item-btn {
