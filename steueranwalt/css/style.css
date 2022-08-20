@@ -1531,7 +1531,7 @@ button {
   font-family: "Roboto", sans-serif;
   max-width: 970px;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 1.182em;
   margin: 0 auto 26px;
 }
 .comment__text:last-child {
@@ -1799,6 +1799,22 @@ button {
   .bafa__btn {
     font-size: calc(11.5px + 3.5 * (100vw / 1130));
     width: 56.928%;
+  }
+  .comment__title {
+    width: 90.1vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .comment__photo {
+    margin-bottom: calc(30.9px + 29.1 * (100vw / 1130));
+  }
+  .comment__photo-img {
+    width: 66.874vw;
+  }
+  .comment__text {
+    width: 85.918vw;
+    font-size: calc(11.5px + 10.5 * (100vw / 1130));
+    margin-bottom: calc(12px + 14 * (100vw / 1130));
   }
   .feedback__subtitle {
     font-size: calc(13.847px + 8.153 * (100vw / 1130));
@@ -2461,6 +2477,19 @@ button {
       11.5px + 5.95 * ((100vw - 320px) / 1130)
     );
     height: 50px;
+  }
+  .comment__photo {
+    margin-bottom: calc(
+      30.9px + 49.47 * ((100vw - 320px) / 1130)
+    );
+  }
+  .comment__text {
+    font-size: calc(
+      11.5px + 17.85 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      12px + 23.8 * ((100vw - 320px) / 1130)
+    );
   }
   .feedback__subtitle {
     font-size: calc(

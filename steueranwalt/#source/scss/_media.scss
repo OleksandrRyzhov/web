@@ -296,6 +296,25 @@
       width: 56.928%;
     }
   }
+  // =====COMMENT=====
+  .comment {
+    &__title {
+      width: 90.1vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__photo {
+      @include adaptive-value(margin-bottom, 60, 30.9, 1);
+      &-img {
+        width: 66.874vw;
+      }
+    }
+    &__text {
+      width: 85.918vw;
+      @include adaptive-value(font-size, 22, 11.5, 1);
+      @include adaptive-value(margin-bottom, 26, 12, 1);
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -829,6 +848,16 @@
     &__btn {
       @include adaptive-value(font-size, 15, 11.5, 2);
       height: 50px;
+    }
+  }
+  // =====COMMENT=====
+  .comment {
+    &__photo {
+      @include adaptive-value(margin-bottom, 60, 30.9, 2);
+    }
+    &__text {
+      @include adaptive-value(font-size, 22, 11.5, 2);
+      @include adaptive-value(margin-bottom, 26, 12, 2);
     }
   }
   // =====FEEDBACK=====
