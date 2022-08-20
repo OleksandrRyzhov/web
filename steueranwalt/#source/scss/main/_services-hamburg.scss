@@ -24,6 +24,10 @@
     background-color: #fff;
     text-align: center;
     padding: 20px;
+    transition: all 0.5s ease 0s;
+    &:hover {
+      transform: scale(1.05);
+    }
     &-link {
       margin-bottom: 10px;
     }
