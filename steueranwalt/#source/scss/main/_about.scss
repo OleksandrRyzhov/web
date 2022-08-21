@@ -1,4 +1,17 @@
 .about {
+  &__inner {
+    &--zurich {
+      background-color: $colorBlue;
+    }
+  }
+  &__title {
+    &--zurich {
+      color: #fff;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   &__content {
     display: flex;
     justify-content: space-between;
@@ -23,6 +36,20 @@
       max-height: 94.86%;
       width: 93.582%;
     }
+    &--zurich {
+      &::before {
+        content: "";
+        position: absolute;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        max-height: 94.86%;
+        width: 93.582%;
+      }
+    }
     &-img {
       position: relative;
       border-radius: 30px;
@@ -38,6 +65,9 @@
     padding-bottom: 1.1875em;
     &:last-child {
       padding-bottom: 0;
+    }
+    &--zurich {
+      color: #fff;
     }
   }
 }

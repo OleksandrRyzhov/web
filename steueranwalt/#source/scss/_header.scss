@@ -99,7 +99,7 @@
   }
 }
 
-/* ========== HAMBURG PAGE HEADER ========== */
+/* ========== HAMBURG AND ZURICH PAGE HEADER ========== */
 .header {
   &__fixed {
     color: $colorBlue;
@@ -115,6 +115,12 @@
     margin-top: 89px;
     padding: 146px 0;
     overflow: hidden;
+  }
+  &-zurich {
+    background-color: $colorSky;
+    &__body {
+      background-color: $colorBlue;
+    }
   }
 }
 .top-header {
@@ -201,6 +207,19 @@
       background-color: $colorBlue;
       z-index: 0;
     }
+    &--zurich {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -50vw;
+        bottom: -50vw;
+        left: -50vw;
+        background-color: #fff;
+        z-index: 0;
+      }
+    }
   }
   &__title {
     font-size: 39px;
@@ -209,6 +228,9 @@
     z-index: 1;
     margin-bottom: 37px;
     max-width: 100%;
+    &--zurich {
+      color: $colorBlue;
+    }
   }
   &__text {
     font-family: "Montserrat", sans-serif;
@@ -216,6 +238,9 @@
     position: relative;
     z-index: 1;
     margin-bottom: 42px;
+    &--zurich {
+      color: $colorBlue;
+    }
   }
   &__choice {
     gap: 20px;
@@ -238,6 +263,8 @@
     &-img {
       width: 100%;
       border-radius: 30px;
+      max-height: 307px;
+      height: 100%;
     }
   }
 }

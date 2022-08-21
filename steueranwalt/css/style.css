@@ -345,7 +345,7 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
-/* ========== HAMBURG PAGE HEADER ========== */
+/* ========== HAMBURG AND ZURICH PAGE HEADER ========== */
 .header__fixed {
   color: #002d62;
   background-color: #fff;
@@ -360,6 +360,12 @@ button {
   margin-top: 89px;
   padding: 146px 0;
   overflow: hidden;
+}
+.header-zurich {
+  background-color: #c8dcf0;
+}
+.header-zurich__body {
+  background-color: #002d62;
 }
 
 .top-header {
@@ -468,6 +474,19 @@ button {
   background-color: #002d62;
   z-index: 0;
 }
+.body-header__content--zurich {
+  position: relative;
+}
+.body-header__content--zurich::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50vw;
+  bottom: -50vw;
+  left: -50vw;
+  background-color: #fff;
+  z-index: 0;
+}
 .body-header__title {
   font-size: 39px;
   line-height: 1.23em;
@@ -476,12 +495,18 @@ button {
   margin-bottom: 37px;
   max-width: 100%;
 }
+.body-header__title--zurich {
+  color: #002d62;
+}
 .body-header__text {
   font-family: "Montserrat", sans-serif;
   max-width: 353px;
   position: relative;
   z-index: 1;
   margin-bottom: 42px;
+}
+.body-header__text--zurich {
+  color: #002d62;
 }
 .body-header__choice {
   gap: 20px;
@@ -511,6 +536,8 @@ button {
 .body-header__photo-img {
   width: 100%;
   border-radius: 30px;
+  max-height: 307px;
+  height: 100%;
 }
 
 ._open {
@@ -587,6 +614,15 @@ button {
 
 /* </ADVANTAGE> ========== */
 /* <ABOUT> ========== */
+.about__inner--zurich {
+  background-color: #002d62;
+}
+.about__title--zurich {
+  color: #fff;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .about__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,6 +652,18 @@ button {
   max-height: 94.86%;
   width: 93.582%;
 }
+.about__photo--zurich::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  max-height: 94.86%;
+  width: 93.582%;
+}
 .about__photo-img {
   position: relative;
   border-radius: 30px;
@@ -632,6 +680,9 @@ button {
 }
 .about__text:last-child {
   padding-bottom: 0;
+}
+.about__text--zurich {
+  color: #fff;
 }
 
 /* </ABOUT> ========== */
@@ -2010,6 +2061,22 @@ button {
     left: 0;
     height: 89px;
     background-color: #fff;
+    z-index: 51;
+  }
+  .menu__body--zurich._active {
+    left: 0;
+  }
+  .menu__body--zurich._active::before {
+    background-color: #c8dcf0;
+  }
+  .menu__body--zurich::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 89px;
+    background-color: #c8dcf0;
     z-index: 51;
   }
   .menu__item {
