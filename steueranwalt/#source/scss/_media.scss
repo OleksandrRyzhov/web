@@ -377,6 +377,19 @@
 }
 
 @media (max-width: 992px) {
+  .header {
+    &__fixed {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background-color: $colorBlue;
+        z-index: 51;
+      }
+    }
+  }
   .top-header {
     justify-content: end;
     gap: 50px;
