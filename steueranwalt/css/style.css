@@ -2241,6 +2241,7 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
   .body-header__btn {
     max-width: 100%;
@@ -2694,6 +2695,9 @@ button {
   }
   .top-header__contact {
     min-width: 120px;
+  }
+  .body-header__choice {
+    gap: 25px;
   }
   .work__list {
     grid-template: repeat(3, 1fr)/49.3vw;

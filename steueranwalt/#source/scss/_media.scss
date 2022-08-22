@@ -644,6 +644,7 @@
     &__choice {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
     }
     &__btn {
       max-width: 100%;
@@ -991,6 +992,11 @@
   .top-header {
     &__contact {
       min-width: 120px;
+    }
+  }
+  .body-header {
+    &__choice {
+      gap: 25px;
     }
   }
   .work {
