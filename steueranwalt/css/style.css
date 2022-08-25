@@ -221,6 +221,31 @@ button {
   background-color: #002d62;
 }
 
+.btn-learn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 226px;
+  background-color: #1991e8;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.btn-learn:hover {
+  background-color: #002d62;
+}
+
 /* </GLOBAL> ================================================== */
 /* <HEADER> ==================================================*/
 .header {
@@ -683,6 +708,13 @@ button {
 }
 .about__text--zurich {
   color: #fff;
+}
+.about__btn-more--zurich {
+  margin: 20px 0px 0px 0px;
+}
+.about__btn-more--zurich:hover {
+  background-color: #c8dcf0;
+  color: #002d62;
 }
 
 /* </ABOUT> ========== */
@@ -1628,6 +1660,69 @@ button {
 }
 
 /* </COMMENT> ========== */
+/* <TAX-ZURICH> ========== */
+.tax-zurich__list {
+  display: grid;
+  grid-template: 1fr/repeat(3, 312px);
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+.tax-zurich__item {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 30px;
+  border: 1px solid #002d62;
+  max-width: 312px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.tax-zurich__item:hover {
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07);
+}
+.tax-zurich__item-link {
+  height: 109px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tax-zurich__item-img {
+  height: 69px;
+  width: 69px;
+}
+.tax-zurich__item-title {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.tax-zurich__item-text {
+  padding: 0 31px 25px;
+}
+.tax-zurich__item-btn {
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.tax-zurich__btn-learn {
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* </TAX-ZURICH> ========== */
 /* ==================== ZURICH PAGE ==================== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1250px) {
@@ -1714,11 +1809,16 @@ button {
     font-size: calc(11.5px + 4.5 * (100vw / 1130));
   }
   .about__content {
-    display: grid;
-    grid-template-rows: 0.4fr 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 35px;
     padding: 0 49px;
   }
@@ -1729,10 +1829,13 @@ button {
   }
   .about__photo {
     margin: 0 auto;
-    padding: 3.16% 0 0 5.89%;
+    padding: 1.5% 0 0 3.097%;
   }
   .about__text {
     font-size: calc(11.5px + 4.5 * (100vw / 1130));
+  }
+  .about__btn-more--zurich {
+    margin: 20px auto 0;
   }
   .support__list {
     margin-bottom: calc(32.55px + 17.45 * (100vw / 1130));
@@ -1784,9 +1887,9 @@ button {
 .blog__item-text {
     font-size: calc(11.55px + 3.45 * (100vw / 1130));
     line-height: 1.25em;
-    padding-right: calc(14.035px + 20.965 * (100vw / 1130));
-    padding-bottom: calc(15.859px + 15.141 * (100vw / 1130));
-    padding-left: calc(14.035px + 20.965 * (100vw / 1130));
+    padding-right: calc(14.035px + 16.965 * (100vw / 1130));
+    padding-bottom: calc(15.859px + 19.141 * (100vw / 1130));
+    padding-left: calc(14.035px + 16.965 * (100vw / 1130));
   }
   .criminal__content {
     -webkit-box-orient: vertical;
@@ -1905,6 +2008,28 @@ button {
     font-size: calc(11.5px + 10.5 * (100vw / 1130));
     margin-bottom: calc(12px + 14 * (100vw / 1130));
   }
+  .tax-zurich__list {
+    gap: calc(24.05px + 25.95 * (100vw / 1130));
+    margin-bottom: calc(29.2px + 30.8 * (100vw / 1130));
+  }
+  .tax-zurich__item-link {
+    height: calc(70.57px + 38.43 * (100vw / 1130));
+  }
+  .tax-zurich__item-img {
+    width: calc(37.57px + 31.43 * (100vw / 1130));
+    height: calc(37.57px + 31.43 * (100vw / 1130));
+  }
+  .tax-zurich__item-title {
+    margin-bottom: calc(8.5px + 11.5 * (100vw / 1130));
+    font-size: calc(14.3px + 5.7 * (100vw / 1130));
+  }
+  .tax-zurich__item-text {
+    font-size: calc(11.55px + 3.45 * (100vw / 1130));
+    line-height: 1.25em;
+    padding-right: calc(15.859px + 15.141 * (100vw / 1130));
+    padding-bottom: calc(14.035px + 10.965 * (100vw / 1130));
+    padding-left: calc(15.859px + 15.141 * (100vw / 1130));
+  }
   .feedback__subtitle {
     font-size: calc(13.847px + 8.153 * (100vw / 1130));
     margin-bottom: calc(30px + 5 * (100vw / 1130));
@@ -1947,6 +2072,17 @@ button {
 @media (max-width: 1089px) {
   .bafa__text br {
     display: none;
+  }
+  .tax-zurich__list {
+    grid-template: repeat(3, 1fr)/1fr;
+  }
+  .tax-zurich__item {
+    width: 51.45vw;
+    height: 100%;
+  }
+  .tax-zurich__item-btn {
+    width: 75%;
+    font-size: calc(11px + 4 * (100vw / 1130));
   }
 }
 @media (max-width: 1044px) {
@@ -2606,6 +2742,55 @@ button {
       12px + 23.8 * ((100vw - 320px) / 1130)
     );
   }
+  .tax-zurich__list {
+    gap: calc(
+      24.05px + 44.115 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      29.2px + 52.36 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax-zurich__item-link {
+    height: calc(
+      70.57px + 65.331 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax-zurich__item-img {
+    width: calc(
+      37.57px + 53.431 * ((100vw - 320px) / 1130)
+    );
+    height: calc(
+      37.57px + 53.431 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax-zurich__item-title {
+    margin-bottom: calc(
+      8.5px + 19.55 * ((100vw - 320px) / 1130)
+    );
+    font-size: calc(
+      14.3px + 9.69 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax-zurich__item-text {
+    font-size: calc(
+      11.55px + 5.865 * ((100vw - 320px) / 1130)
+    );
+    line-height: 1.25em;
+    padding-right: calc(
+      15.859px + 25.7397 * ((100vw - 320px) / 1130)
+    );
+    padding-bottom: calc(
+      14.035px + 18.6405 * ((100vw - 320px) / 1130)
+    );
+    padding-left: calc(
+      15.859px + 25.7397 * ((100vw - 320px) / 1130)
+    );
+  }
+  .tax-zurich__item-btn {
+    font-size: calc(
+      11px + 6.8 * ((100vw - 320px) / 1130)
+    );
+  }
   .feedback__subtitle {
     font-size: calc(
       13.847px + 13.8601 * ((100vw - 320px) / 1130)
@@ -2712,6 +2897,9 @@ button {
   .bafa__btn {
     height: 40px;
   }
+  .tax-zurich__item {
+    width: 65vw;
+  }
 }
 @media (max-width: 520px) {
   .feedback__form-input::-webkit-input-placeholder {
@@ -2746,6 +2934,9 @@ button {
   }
   .bafa__btn {
     height: 35px;
+  }
+  .tax-zurich__btn-learn {
+    width: 50vw;
   }
 }
 @media (max-width: 414px) {

@@ -70,4 +70,11 @@
       color: #fff;
     }
   }
+  &__btn-more--zurich {
+    margin: 20px 0px 0px 0px;
+    &:hover {
+      background-color: $colorSky;
+      color: $colorBlue;
+    }
+  }
 }

@@ -1,0 +1,48 @@
+.tax-zurich {
+  &__list {
+    display: grid;
+    grid-template: 1fr / repeat(3, 312px);
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  &__item {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid $colorBlue;
+    max-width: 312px;
+    transition: all 0.5s ease 0s;
+    &:hover {
+      transform: scale(1.07);
+    }
+    &-link {
+      height: 109px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-img {
+      height: 69px;
+      width: 69px;
+    }
+    &-title {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 1.2em;
+      font-weight: 700;
+    }
+    &-text {
+      padding: 0 31px 25px;
+    }
+    &-btn {
+      box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+      margin-bottom: 20px;
+    }
+  }
+  &__btn-learn {
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  }
+}

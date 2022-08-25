@@ -105,9 +105,11 @@
   // =====ABOUT=====
   .about {
     &__content {
-      display: grid;
-      grid-template-rows: 0.4fr 1fr;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      // grid-template-rows: 363px 1fr;
+      // justify-content: center;
+      align-items: center;
       gap: 35px;
       padding: 0 49px;
       &-box {
@@ -118,10 +120,13 @@
     }
     &__photo {
       margin: 0 auto;
-      padding: 3.16% 0 0 5.89%;
+      padding: 1.5% 0 0 3.097%;
     }
     &__text {
       @include adaptive-value(font-size, 16, 11.5, 1);
+    }
+    &__btn-more--zurich {
+      margin: 20px auto 0;
     }
   }
   // =====SUPPORT=====
@@ -180,9 +185,9 @@
       &-text {
         @include adaptive-value(font-size, 15, 11.55, 1);
         line-height: 1.25em;
-        @include adaptive-value(padding-right, 35, 14.035, 1);
-        @include adaptive-value(padding-bottom, 31, 15.859, 1);
-        @include adaptive-value(padding-left, 35, 14.035, 1);
+        @include adaptive-value(padding-right, 31, 14.035, 1);
+        @include adaptive-value(padding-bottom, 35, 15.859, 1);
+        @include adaptive-value(padding-left, 31, 14.035, 1);
       }
     }
   }
@@ -315,6 +320,32 @@
       @include adaptive-value(margin-bottom, 26, 12, 1);
     }
   }
+  // =====TAX-ZURICH=====
+  .tax-zurich {
+    &__list {
+      @include adaptive-value(gap, 50, 24.05, 1);
+      @include adaptive-value(margin-bottom, 60, 29.2, 1);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(height, 109, 70.57, 1);
+      }
+      &-img {
+        @include adaptive-icon(69, 37.57, 1);
+      }
+      &-title {
+        @include adaptive-value(margin-bottom, 20, 8.5, 1);
+        @include adaptive-value(font-size, 20, 14.3, 1);
+      }
+      &-text {
+        @include adaptive-value(font-size, 15, 11.55, 1);
+        line-height: 1.25em;
+        @include adaptive-value(padding-right, 31, 15.859, 1);
+        @include adaptive-value(padding-bottom, 25, 14.035, 1);
+        @include adaptive-value(padding-left, 31, 15.859, 1);
+      }
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -358,6 +389,19 @@
     &__text {
       br {
         display: none;
+      }
+    }
+  }
+  .tax-zurich {
+    &__list {
+      grid-template: repeat(3, 1fr) / 1fr;
+    }
+    &__item {
+      width: 51.45vw;
+      height: 100%;
+      &-btn {
+        width: 75%;
+        @include adaptive-value(font-size, 15, 11, 1);
       }
     }
   }
@@ -892,6 +936,35 @@
       @include adaptive-value(margin-bottom, 26, 12, 2);
     }
   }
+  // =====TAX-ZURICH=====
+  .tax-zurich {
+    &__list {
+      @include adaptive-value(gap, 50, 24.05, 2);
+      @include adaptive-value(margin-bottom, 60, 29.2, 2);
+    }
+    &__item {
+      &-link {
+        @include adaptive-value(height, 109, 70.57, 2);
+      }
+      &-img {
+        @include adaptive-icon(69, 37.57, 2);
+      }
+      &-title {
+        @include adaptive-value(margin-bottom, 20, 8.5, 2);
+        @include adaptive-value(font-size, 20, 14.3, 2);
+      }
+      &-text {
+        @include adaptive-value(font-size, 15, 11.55, 2);
+        line-height: 1.25em;
+        @include adaptive-value(padding-right, 31, 15.859, 2);
+        @include adaptive-value(padding-bottom, 25, 14.035, 2);
+        @include adaptive-value(padding-left, 31, 15.859, 2);
+      }
+      &-btn {
+        @include adaptive-value(font-size, 15, 11, 2);
+      }
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -1020,6 +1093,11 @@
       height: 40px;
     }
   }
+  .tax-zurich {
+    &__item {
+      width: 65vw;
+    }
+  }
 }
 
 @media (max-width: 520px) {
@@ -1052,6 +1130,11 @@
   .bafa {
     &__btn {
       height: 35px;
+    }
+  }
+  .tax-zurich {
+    &__btn-learn {
+      width: 50vw;
     }
   }
 }
