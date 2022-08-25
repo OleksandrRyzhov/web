@@ -1776,6 +1776,8 @@ button {
 }
 .problems__btn-learn {
   margin: 10px 0px 0px 0px;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* </PROBLEMS> ========== */
@@ -1868,6 +1870,40 @@ button {
 }
 
 /* </CRIMINAL-ZURICH> ========== */
+/* <ZOLL> ========== */
+.zoll__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.zoll__content-box {
+  max-width: 460px;
+}
+.zoll__photo {
+  padding-right: 20px;
+}
+.zoll__photo-img {
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  max-width: 560px;
+}
+.zoll__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.1875em;
+  margin-bottom: 20px;
+}
+.zoll__btn-learn {
+  margin: 30px 0px 0px 0px;
+  -webkit-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* </ZOLL> ========== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1250px) {
   .services__content {
@@ -2199,6 +2235,13 @@ button {
     height: calc(20px + 20 * (100vw / 1130));
     right: calc(25px + 25 * (100vw / 1130));
   }
+  .zoll__text {
+    font-size: calc(11.55px + 4.45 * (100vw / 1130));
+    margin-bottom: calc(13px + 7 * (100vw / 1130));
+  }
+  .zoll__btn-learn {
+    margin-top: calc(20px + 10 * (100vw / 1130));
+  }
   .feedback__subtitle {
     font-size: calc(13.847px + 8.153 * (100vw / 1130));
     margin-bottom: calc(30px + 5 * (100vw / 1130));
@@ -2258,6 +2301,29 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .zoll__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: calc(20px + 10 * (100vw / 1130));
+  }
+  .zoll__content-box {
+    max-width: 60vw;
+  }
+  .zoll__photo {
+    padding: 0;
+  }
+  .zoll__btn-learn {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (max-width: 1065px) {
   .problems__content {
@@ -2290,6 +2356,9 @@ button {
     margin-top: calc(13px + 7 * (100vw / 1130));
     padding-right: 20px;
     max-width: 547px;
+  }
+  .zoll__photo-img {
+    width: 55vw;
   }
 }
 @media (max-width: 992px) {
@@ -3044,6 +3113,22 @@ button {
       25px + 42.5 * ((100vw - 320px) / 1130)
     );
   }
+  .zoll__photo-img {
+    width: 60vw;
+  }
+  .zoll__text {
+    font-size: calc(
+      11.55px + 7.565 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      13px + 11.9 * ((100vw - 320px) / 1130)
+    );
+  }
+  .zoll__btn-learn {
+    margin-top: calc(
+      20px + 17 * ((100vw - 320px) / 1130)
+    );
+  }
   .feedback__subtitle {
     font-size: calc(
       13.847px + 13.8601 * ((100vw - 320px) / 1130)
@@ -3188,7 +3273,8 @@ button {
   .bafa__btn {
     height: 35px;
   }
-  .about__btn-learn--zurich {
+  .about__btn-learn--zurich,
+.zoll__btn-learn {
     width: 83%;
     font-size: 12px;
   }

@@ -1,0 +1,27 @@
+.zoll {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &-box {
+      max-width: 460px;
+    }
+  }
+  &__photo {
+    padding-right: 20px;
+    &-img {
+      box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.15);
+      border-radius: 30px;
+      max-width: 560px;
+    }
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.1875em;
+    margin-bottom: 20px;
+  }
+  &__btn-learn {
+    margin: 30px 0px 0px 0px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  }
+}
