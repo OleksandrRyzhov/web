@@ -664,6 +664,7 @@ button {
   position: relative;
   z-index: 2;
   padding: 15px 0 0 2.89%;
+  margin-top: -15px;
 }
 .about__photo::before {
   content: "";
@@ -709,10 +710,10 @@ button {
 .about__text--zurich {
   color: #fff;
 }
-.about__btn-more--zurich {
+.about__btn-learn--zurich {
   margin: 20px 0px 0px 0px;
 }
-.about__btn-more--zurich:hover {
+.about__btn-learn--zurich:hover {
   background-color: #c8dcf0;
   color: #002d62;
 }
@@ -1660,6 +1661,7 @@ button {
 }
 
 /* </COMMENT> ========== */
+/* ==================== ZURICH PAGE ==================== */
 /* <TAX-ZURICH> ========== */
 .tax-zurich__list {
   display: grid;
@@ -1723,7 +1725,60 @@ button {
 }
 
 /* </TAX-ZURICH> ========== */
-/* ==================== ZURICH PAGE ==================== */
+/* <PROBLEMS> ========== */
+.problems {
+  background-color: #c8dcf0;
+}
+.problems__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.problems__content-box {
+  max-width: 530px;
+  padding-top: 20px;
+}
+.problems__photo {
+  position: relative;
+  z-index: 2;
+  padding: 42px 30px 0 45px;
+}
+.problems__photo::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #002d62;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 86.86%;
+  max-height: 92.55%;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.problems__photo-img {
+  position: relative;
+  border-radius: 30px;
+  max-width: 431px;
+  width: 100%;
+}
+.problems__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.1875em;
+  padding-bottom: 1.1875em;
+}
+.problems__btn-learn {
+  margin: 10px 0px 0px 0px;
+}
+
+/* </PROBLEMS> ========== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1250px) {
   .services__content {
@@ -1834,7 +1889,7 @@ button {
   .about__text {
     font-size: calc(11.5px + 4.5 * (100vw / 1130));
   }
-  .about__btn-more--zurich {
+  .about__btn-learn--zurich {
     margin: 20px auto 0;
   }
   .support__list {
@@ -2030,6 +2085,13 @@ button {
     padding-bottom: calc(14.035px + 10.965 * (100vw / 1130));
     padding-left: calc(15.859px + 15.141 * (100vw / 1130));
   }
+  .problems__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .problems__text {
+    font-size: calc(11.55px + 4.45 * (100vw / 1130));
+  }
   .feedback__subtitle {
     font-size: calc(13.847px + 8.153 * (100vw / 1130));
     margin-bottom: calc(30px + 5 * (100vw / 1130));
@@ -2083,6 +2145,32 @@ button {
   .tax-zurich__item-btn {
     width: 75%;
     font-size: calc(11px + 4 * (100vw / 1130));
+  }
+  .problems__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 1065px) {
+  .problems__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: calc(20px + 10 * (100vw / 1130));
+  }
+  .problems__content-box {
+    padding: 0;
+  }
+  .problems__photo {
+    padding: 4.058% 0px 0px 4.348%;
+  }
+  .problems__photo::before {
+    width: 91%;
+  }
+  .problems__btn-learn {
+    margin: 10px auto 0;
   }
 }
 @media (max-width: 1044px) {
@@ -2791,6 +2879,22 @@ button {
       11px + 6.8 * ((100vw - 320px) / 1130)
     );
   }
+  .problems__content {
+    gap: calc(
+      20px + 17 * ((100vw - 320px) / 1130)
+    );
+  }
+  .problems__content-box {
+    max-width: 69vw;
+  }
+  .problems__photo-img {
+    width: 75vw;
+  }
+  .problems__text {
+    font-size: calc(
+      11.55px + 7.565 * ((100vw - 320px) / 1130)
+    );
+  }
   .feedback__subtitle {
     font-size: calc(
       13.847px + 13.8601 * ((100vw - 320px) / 1130)
@@ -2935,8 +3039,14 @@ button {
   .bafa__btn {
     height: 35px;
   }
-  .tax-zurich__btn-learn {
+  .about__btn-learn--zurich {
+    width: 83%;
+    font-size: 12px;
+  }
+  .tax-zurich__btn-learn,
+.problems__btn-learn {
     width: 50vw;
+    font-size: 12px;
   }
 }
 @media (max-width: 414px) {

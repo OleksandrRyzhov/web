@@ -24,6 +24,7 @@
     position: relative;
     z-index: 2;
     padding: 15px 0 0 2.89%;
+    margin-top: -15px;
     &::before {
       content: "";
       position: absolute;
@@ -70,7 +71,7 @@
       color: #fff;
     }
   }
-  &__btn-more--zurich {
+  &__btn-learn--zurich {
     margin: 20px 0px 0px 0px;
     &:hover {
       background-color: $colorSky;

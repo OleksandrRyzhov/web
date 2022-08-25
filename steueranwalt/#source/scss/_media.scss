@@ -107,8 +107,6 @@
     &__content {
       display: flex;
       flex-direction: column;
-      // grid-template-rows: 363px 1fr;
-      // justify-content: center;
       align-items: center;
       gap: 35px;
       padding: 0 49px;
@@ -125,7 +123,7 @@
     &__text {
       @include adaptive-value(font-size, 16, 11.5, 1);
     }
-    &__btn-more--zurich {
+    &__btn-learn--zurich {
       margin: 20px auto 0;
     }
   }
@@ -346,6 +344,15 @@
       }
     }
   }
+  // =====PROBLEMS=====
+  .problems {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__text {
+      @include adaptive-value(font-size, 16, 11.55, 1);
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -403,6 +410,32 @@
         width: 75%;
         @include adaptive-value(font-size, 15, 11, 1);
       }
+    }
+  }
+  .problems {
+    &__content {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1065px) {
+  .problems {
+    &__content {
+      flex-direction: column;
+      @include adaptive-value(gap, 30, 20, 1);
+      &-box {
+        padding: 0;
+      }
+    }
+    &__photo {
+      padding: 4.058% 0px 0px 4.348%;
+      &::before {
+        width: 91%;
+      }
+    }
+    &__btn-learn {
+      margin: 10px auto 0;
     }
   }
 }
@@ -965,6 +998,23 @@
       }
     }
   }
+  // =====PROBLEMS=====
+  .problems {
+    &__content {
+      @include adaptive-value(gap, 30, 20, 2);
+      &-box {
+        max-width: 69vw;
+      }
+    }
+    &__photo {
+      &-img {
+        width: 75vw;
+      }
+    }
+    &__text {
+      @include adaptive-value(font-size, 16, 11.55, 2);
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -1132,9 +1182,15 @@
       height: 35px;
     }
   }
-  .tax-zurich {
+  .about__btn-learn--zurich {
+    width: 83%;
+    font-size: 12px;
+  }
+  .tax-zurich,
+  .problems {
     &__btn-learn {
       width: 50vw;
+      font-size: 12px;
     }
   }
 }
