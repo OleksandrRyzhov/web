@@ -353,6 +353,25 @@
       @include adaptive-value(font-size, 16, 11.55, 1);
     }
   }
+  // =====CRIMINAL-ZURICH=====
+  .criminal-zurich {
+    &__item {
+      @include adaptive-value(height, 90, 55, 1);
+      &-title {
+        @include adaptive-value(font-size, 22, 14.5, 1);
+        @include adaptive-value(padding-right, 115, 60, 1);
+        @include adaptive-value(padding-left, 115, 60, 1);
+        &::before {
+          @include adaptive-icon(50, 25, 1);
+          @include adaptive-value(left, 50, 25, 1);
+        }
+        &::after {
+          @include adaptive-icon(40, 20, 1);
+          @include adaptive-value(right, 50, 25, 1);
+        }
+      }
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -623,6 +642,12 @@
   .bafa {
     &__title {
       width: 85vw;
+    }
+  }
+  .criminal-zurich {
+    &__item {
+      max-width: 67.54vw;
+      min-width: 250px;
     }
   }
 }
@@ -1013,6 +1038,25 @@
     }
     &__text {
       @include adaptive-value(font-size, 16, 11.55, 2);
+    }
+  }
+  // =====CRIMINAL-ZURICH=====
+  .criminal-zurich {
+    &__item {
+      @include adaptive-value(height, 90, 55, 2);
+      &-title {
+        @include adaptive-value(font-size, 22, 14.5, 2);
+        @include adaptive-value(padding-right, 115, 60, 2);
+        @include adaptive-value(padding-left, 115, 60, 2);
+        &::before {
+          @include adaptive-icon(50, 25, 2);
+          @include adaptive-value(left, 50, 25, 2);
+        }
+        &::after {
+          @include adaptive-icon(40, 20, 2);
+          @include adaptive-value(right, 50, 25, 2);
+        }
+      }
     }
   }
   // =====FEEDBACK=====
