@@ -1427,6 +1427,11 @@
       width: calc(100% + 2px);
     }
   }
+  .comment {
+    &__btn {
+      font-size: 10px;
+    }
+  }
   .feedback {
     &__photo {
       padding: 5.797vw 0 0 7.488vw;

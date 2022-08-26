@@ -6,6 +6,9 @@
     &-img {
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       border-radius: 30px;
+      &--zurich {
+        max-width: 475px;
+      }
     }
   }
   &__text {

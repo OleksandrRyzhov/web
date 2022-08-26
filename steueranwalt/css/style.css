@@ -1677,6 +1677,9 @@ button {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 30px;
 }
+.comment__photo-img--zurich {
+  max-width: 475px;
+}
 .comment__text {
   font-family: "Roboto", sans-serif;
   max-width: 970px;
@@ -3524,6 +3527,9 @@ button {
   }
   .criminal__item-btn {
     width: calc(100% + 2px);
+  }
+  .comment__btn {
+    font-size: 10px;
   }
   .feedback__photo {
     padding: 5.797vw 0 0 7.488vw;
