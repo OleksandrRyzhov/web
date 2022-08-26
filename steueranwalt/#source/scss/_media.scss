@@ -37,6 +37,9 @@
     @include adaptive-value(font-size, 40, 14, 1);
     @include adaptive-value(margin-bottom, 60, 30.9, 1);
   }
+  .btn-blue {
+    @include adaptive-value(margin-top, 60, 35, 1);
+  }
   // ==========HEADER==========
   .header {
     &__top {
@@ -382,6 +385,35 @@
       @include adaptive-value(margin-top, 30, 20, 1);
     }
   }
+  // =====ACQUAINTANCE=====
+  .acquaintance {
+    &__subtitle {
+      @include adaptive-value(font-size, 22, 14.5, 1);
+      @include adaptive-value(margin-bottom, 35, 20, 1);
+    }
+    &__item {
+      &-title {
+        @include adaptive-value(font-size, 24, 14.7, 1);
+        @include adaptive-value(margin-bottom, 20, 10, 1);
+        @include adaptive-value(margin-left, 95, 20, 1);
+      }
+      &-text {
+        @include adaptive-value(font-size, 20, 14.2, 1);
+        @include adaptive-value(margin-bottom, 20, 10, 1);
+        @include adaptive-value(margin-left, 95, 20, 1);
+      }
+    }
+    &__photo {
+      @include adaptive-value(margin-bottom, 30, 15, 1);
+      @include adaptive-value(padding-top, 47, 20, 1);
+      &--nils {
+        @include adaptive-value(padding-left, 45, 19, 1);
+      }
+      &--marcel {
+        @include adaptive-value(padding-right, 45, 19, 1);
+      }
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -483,6 +515,11 @@
     }
     &__btn-learn {
       margin: 10px auto 0;
+    }
+  }
+  .acquaintance {
+    &__photo-img {
+      height: 30vw;
     }
   }
 }
@@ -693,6 +730,9 @@
       height: 22px;
     }
   }
+  .btn-blue {
+    font-size: 15px;
+  }
   .work {
     &__list {
       grid-template: repeat(3, 1fr) / 33vw;
@@ -727,6 +767,9 @@
   .title {
     @include adaptive-value(font-size, 40, 14, 2);
     @include adaptive-value(margin-bottom, 60, 30.9, 2);
+  }
+  .btn-blue {
+    @include adaptive-value(margin-top, 60, 35, 2);
   }
   //
   // ==========HEADER==========
@@ -1105,6 +1148,48 @@
       @include adaptive-value(margin-top, 30, 20, 2);
     }
   }
+  // =====ACQUAINTANCE=====
+  .acquaintance {
+    &__subtitle {
+      @include adaptive-value(font-size, 22, 14.5, 2);
+      @include adaptive-value(margin-bottom, 35, 20, 2);
+    }
+    &__content {
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      @include adaptive-value(gap, 50, 20, 2);
+    }
+    &__item {
+      &-title {
+        @include adaptive-value(font-size, 24, 14, 2);
+        @include adaptive-value(margin-bottom, 20, 10, 2);
+        @include adaptive-value(margin-left, 95, 10, 2);
+      }
+      &-text {
+        @include adaptive-value(font-size, 20, 13, 2);
+        @include adaptive-value(margin-bottom, 20, 10, 2);
+        @include adaptive-value(margin-left, 95, 10, 2);
+      }
+    }
+    &__photo {
+      @include adaptive-value(margin-bottom, 30, 15, 2);
+      &::before {
+        display: none;
+      }
+      &--nils {
+        padding: 0;
+      }
+      &--marcel {
+        padding: 0;
+      }
+      &-img {
+        // max-height: 35vw;
+        height: auto;
+        width: 55vw;
+      }
+    }
+  }
   // =====FEEDBACK=====
   .feedback {
     &__subtitle {
@@ -1142,6 +1227,13 @@
       width: 16px;
       height: 16px;
     }
+  }
+  .btn-blue {
+    font-size: 12px;
+    width: 34.5415vw;
+    height: 6.27vw;
+    min-width: 175px;
+    min-height: 34px;
   }
   .support {
     &__item-btn {

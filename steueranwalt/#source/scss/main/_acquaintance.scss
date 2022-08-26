@@ -1,0 +1,72 @@
+.acquaintance {
+  &__inner {
+    background-color: $colorSky;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2273em;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    &-title {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 1.208em;
+      margin-bottom: 20px;
+      margin-left: 95px;
+    }
+    &-text {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.25em;
+      margin-bottom: 20px;
+      margin-left: 95px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__photo {
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 47px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 93%;
+      height: 92.5%;
+      border-radius: 30px;
+      top: 0;
+      border: 1px solid $colorBlue;
+    }
+    &--nils {
+      padding-left: 45px;
+      &::before {
+        left: 0;
+      }
+    }
+    &--marcel {
+      padding-right: 45px;
+      &::before {
+        right: 0;
+        width: 97%;
+      }
+    }
+    &-img {
+      max-height: 310px;
+      position: relative;
+      border-radius: 30px;
+      &--nils {
+      }
+      &--marcel {
+      }
+    }
+  }
+}

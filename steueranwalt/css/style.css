@@ -246,6 +246,34 @@ button {
   background-color: #002d62;
 }
 
+.btn-blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 340px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2353em;
+  background-color: #002d62;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 60px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.btn-blue:hover {
+  background-color: #1991e8;
+}
+
 /* </GLOBAL> ================================================== */
 /* <HEADER> ==================================================*/
 .header {
@@ -1904,6 +1932,76 @@ button {
 }
 
 /* </ZOLL> ========== */
+/* <ACQUAINTANCE> ========== */
+.acquaintance__inner {
+  background-color: #c8dcf0;
+}
+.acquaintance__subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2273em;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.acquaintance__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.acquaintance__item-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.208em;
+  margin-bottom: 20px;
+  margin-left: 95px;
+}
+.acquaintance__item-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25em;
+  margin-bottom: 20px;
+  margin-left: 95px;
+}
+.acquaintance__item-text:last-child {
+  margin-bottom: 0;
+}
+.acquaintance__photo {
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 47px;
+}
+.acquaintance__photo::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 93%;
+  height: 92.5%;
+  border-radius: 30px;
+  top: 0;
+  border: 1px solid #002d62;
+}
+.acquaintance__photo--nils {
+  padding-left: 45px;
+}
+.acquaintance__photo--nils::before {
+  left: 0;
+}
+.acquaintance__photo--marcel {
+  padding-right: 45px;
+}
+.acquaintance__photo--marcel::before {
+  right: 0;
+  width: 97%;
+}
+.acquaintance__photo-img {
+  max-height: 310px;
+  position: relative;
+  border-radius: 30px;
+}
+/* </ACQUAINTANCE> ========== */
 /* <MEDIA> ==================================================*/
 @media (max-width: 1250px) {
   .services__content {
@@ -1933,6 +2031,9 @@ button {
     font-size: 40px;
     font-size: calc(14px + 26 * (100vw / 1130));
     margin-bottom: calc(30.9px + 29.1 * (100vw / 1130));
+  }
+  .btn-blue {
+    margin-top: calc(35px + 25 * (100vw / 1130));
   }
   .header__top {
     padding-top: calc(55.15px + -36.15 * (100vw / 1130));
@@ -2242,6 +2343,30 @@ button {
   .zoll__btn-learn {
     margin-top: calc(20px + 10 * (100vw / 1130));
   }
+  .acquaintance__subtitle {
+    font-size: calc(14.5px + 7.5 * (100vw / 1130));
+    margin-bottom: calc(20px + 15 * (100vw / 1130));
+  }
+  .acquaintance__item-title {
+    font-size: calc(14.7px + 9.3 * (100vw / 1130));
+    margin-bottom: calc(10px + 10 * (100vw / 1130));
+    margin-left: calc(20px + 75 * (100vw / 1130));
+  }
+  .acquaintance__item-text {
+    font-size: calc(14.2px + 5.8 * (100vw / 1130));
+    margin-bottom: calc(10px + 10 * (100vw / 1130));
+    margin-left: calc(20px + 75 * (100vw / 1130));
+  }
+  .acquaintance__photo {
+    margin-bottom: calc(15px + 15 * (100vw / 1130));
+    padding-top: calc(20px + 27 * (100vw / 1130));
+  }
+  .acquaintance__photo--nils {
+    padding-left: calc(19px + 26 * (100vw / 1130));
+  }
+  .acquaintance__photo--marcel {
+    padding-right: calc(19px + 26 * (100vw / 1130));
+  }
   .feedback__subtitle {
     font-size: calc(13.847px + 8.153 * (100vw / 1130));
     margin-bottom: calc(30px + 5 * (100vw / 1130));
@@ -2344,6 +2469,9 @@ button {
   }
   .problems__btn-learn {
     margin: 10px auto 0;
+  }
+  .acquaintance__photo-img {
+    height: 30vw;
   }
 }
 @media (max-width: 1044px) {
@@ -2540,6 +2668,9 @@ button {
     width: 22px;
     height: 22px;
   }
+  .btn-blue {
+    font-size: 15px;
+  }
   .work__list {
     grid-template: repeat(3, 1fr)/33vw;
   }
@@ -2574,6 +2705,11 @@ button {
     );
     margin-bottom: calc(
       30.9px + 49.47 * ((100vw - 320px) / 1130)
+    );
+  }
+  .btn-blue {
+    margin-top: calc(
+      35px + 42.5 * ((100vw - 320px) / 1130)
     );
   }
   .header__top {
@@ -3129,6 +3265,69 @@ button {
       20px + 17 * ((100vw - 320px) / 1130)
     );
   }
+  .acquaintance__subtitle {
+    font-size: calc(
+      14.5px + 12.75 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      20px + 25.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .acquaintance__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: calc(
+      20px + 51 * ((100vw - 320px) / 1130)
+    );
+  }
+  .acquaintance__item-title {
+    font-size: calc(
+      14px + 17 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      10px + 17 * ((100vw - 320px) / 1130)
+    );
+    margin-left: calc(
+      10px + 144.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .acquaintance__item-text {
+    font-size: calc(
+      13px + 11.9 * ((100vw - 320px) / 1130)
+    );
+    margin-bottom: calc(
+      10px + 17 * ((100vw - 320px) / 1130)
+    );
+    margin-left: calc(
+      10px + 144.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .acquaintance__photo {
+    margin-bottom: calc(
+      15px + 25.5 * ((100vw - 320px) / 1130)
+    );
+  }
+  .acquaintance__photo::before {
+    display: none;
+  }
+  .acquaintance__photo--nils {
+    padding: 0;
+  }
+  .acquaintance__photo--marcel {
+    padding: 0;
+  }
+  .acquaintance__photo-img {
+    height: auto;
+    width: 55vw;
+  }
   .feedback__subtitle {
     font-size: calc(
       13.847px + 13.8601 * ((100vw - 320px) / 1130)
@@ -3162,6 +3361,13 @@ button {
   .btn-more::after {
     width: 16px;
     height: 16px;
+  }
+  .btn-blue {
+    font-size: 12px;
+    width: 34.5415vw;
+    height: 6.27vw;
+    min-width: 175px;
+    min-height: 34px;
   }
   .support__item-btn {
     width: 100%;

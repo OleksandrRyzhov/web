@@ -116,3 +116,23 @@ button {
     background-color: $colorBlue;
   }
 }
+
+.btn-blue {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 340px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.2353em;
+  background-color: $colorBlue;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 60px;
+  transition: all 0.5s ease 0s;
+  &:hover {
+    background-color: $colorAqua;
+  }
+}
