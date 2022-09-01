@@ -1,0 +1,257 @@
+/* <NULLSTYLE> ========== */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* </NULLSTYLE> ========== */
+/* <GLOBAL> ================================================== */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+a {
+  color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1370px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+}
+.logo span {
+  color: #939393;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 3rem;
+  color: #263238;
+}
+
+/* </GLOBAL> ================================================== */
+/* <HEADER> ==================================================*/
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 180px;
+}
+.header__top-btn {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  width: 220px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #263238;
+  border-radius: 5px;
+}
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__content {
+  max-width: 34.125rem;
+}
+.header__title {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 5rem;
+  padding-right: 130px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.header__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 88px;
+  width: 120px;
+  height: 120px;
+  background-image: url("../img/header-light.png");
+  background-size: cover;
+}
+.header__text {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #8f95a5;
+  margin-bottom: 60px;
+}
+.header__content-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 438px;
+  height: 118px;
+  background-color: #263238;
+  border-radius: 15px;
+  color: white;
+  font-size: 2.25rem;
+  line-height: 3.375rem;
+}
+.menu__icon {
+  display: none;
+}
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.menu__item {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #263238;
+}
+/* </HEADER> ================================================== */
+/* <MAIN> ================================================== */
+/* <ABOUT> ========== */
+/* </ABOUT> ========== */
+/* </MAIN> ================================================== */
+/* <FOOTER> ==================================================*/
+/* </FOOTER> ================================================== */
+/* <MEDIA> ==================================================*/
+/* </MEDIA> ================================================== */
