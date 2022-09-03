@@ -284,7 +284,7 @@
     }
     &__title {
       font-size: rem(34);
-      width: 500px;
+      max-width: 500px;
       padding: 0;
       text-align: center;
       &::after,
@@ -307,7 +307,7 @@
     padding: 0 15px;
   }
   .fixed {
-    width: calc(100% - 30px);
+    width: calc(100vw - 30px);
   }
   .header {
     &__top {
