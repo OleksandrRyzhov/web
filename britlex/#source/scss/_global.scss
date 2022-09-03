@@ -18,8 +18,8 @@ a {
 }
 
 .container {
-  max-width: $maxWidth;
-  padding: 0 15px;
+  max-width: 1400px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -42,4 +42,8 @@ a {
   font-size: rem(30);
   line-height: rem(48);
   color: $colorBlack;
+}
+
+._lock {
+  overflow: hidden;
 }

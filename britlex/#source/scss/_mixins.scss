@@ -2,8 +2,6 @@ $colorGray: #8f95a5;
 $colorBlack: #263238;
 $colorLogo: #939393;
 
-$maxWidth: 1370px;
-
 @use "sass:math";
 // TO %
 @function prc($pxOne, $pxTwo) {
