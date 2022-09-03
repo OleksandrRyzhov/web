@@ -291,7 +291,7 @@ a {
     line-height: 2.8125rem;
   }
   .header__title {
-    width: 450px;
+    max-width: 450px;
     font-size: 3.5rem;
     line-height: 4.5rem;
     padding-right: 100px;
@@ -341,7 +341,7 @@ a {
   .header__title {
     font-size: 3rem;
     line-height: 4rem;
-    width: 370px;
+    max-width: 370px;
     padding-right: 80px;
     margin-bottom: 27px;
   }
@@ -381,7 +381,7 @@ a {
   .header__title {
     font-size: 2.5rem;
     line-height: 3.375rem;
-    width: 310px;
+    max-width: 310px;
     padding-right: 60px;
     margin-bottom: 26px;
   }
@@ -415,7 +415,7 @@ a {
   .header__title {
     font-size: 2.25rem;
     line-height: 2.8125rem;
-    width: 275px;
+    max-width: 275px;
     margin-bottom: 25px;
     padding-right: 50px;
   }
@@ -616,6 +616,11 @@ a {
   .header__text {
     font-size: 0.875rem;
     line-height: 1.3125rem;
+  }
+}
+@media (max-width: 400px) {
+  .header__title br:last-child {
+    display: block;
   }
 }
 /* </MEDIA> ================================================== */

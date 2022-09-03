@@ -13,7 +13,7 @@
       }
     }
     &__title {
-      width: 450px;
+      max-width: 450px;
       font-size: rem(56);
       line-height: rem(72);
       padding-right: 100px;
@@ -66,7 +66,7 @@
     &__title {
       font-size: rem(48);
       line-height: rem(64);
-      width: 370px;
+      max-width: 370px;
       padding-right: 80px;
       margin-bottom: 27px;
       &::after {
@@ -111,7 +111,7 @@
     &__title {
       font-size: rem(40);
       line-height: rem(54);
-      width: 310px;
+      max-width: 310px;
       padding-right: 60px;
       margin-bottom: 26px;
       &::after {
@@ -148,7 +148,7 @@
     &__title {
       font-size: rem(36);
       line-height: rem(45);
-      width: 275px;
+      max-width: 275px;
       margin-bottom: 25px;
       padding-right: 50px;
       &::after {
@@ -333,6 +333,18 @@
     &__text {
       font-size: rem(14);
       line-height: rem(21);
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    &__title {
+      br {
+        &:last-child {
+          display: block;
+        }
+      }
     }
   }
 }
