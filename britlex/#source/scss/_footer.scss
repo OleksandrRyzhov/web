@@ -6,12 +6,17 @@
     align-items: center;
     border-top: 1px solid #c4c4c4;
   }
+  &__logo {
+    padding-right: 30px;
+  }
   &__list {
     display: flex;
     gap: 22px;
   }
   &__item {
     position: relative;
+    display: flex;
+    align-items: center;
     &::after {
       content: "";
       position: absolute;
@@ -29,6 +34,7 @@
       }
     }
     &-link {
+      text-align: center;
       font-size: rem(24);
       line-height: rem(36);
       color: $colorGray;

@@ -262,6 +262,9 @@ a {
   background-color: #fff;
 }
 
+.menu {
+  padding: 0 30px;
+}
 .menu__icon {
   display: none;
 }
@@ -297,6 +300,9 @@ a {
           align-items: center;
   border-top: 1px solid #c4c4c4;
 }
+.footer__logo {
+  padding-right: 30px;
+}
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,6 +311,12 @@ a {
 }
 .footer__item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .footer__item::after {
   content: "";
@@ -323,6 +335,7 @@ a {
   display: none;
 }
 .footer__item-link {
+  text-align: center;
   font-size: 1.5rem;
   line-height: 2.25rem;
   color: #8f95a5;
@@ -550,6 +563,29 @@ a {
   }
 }
 @media (max-width: 767px) {
+  .header__top-btn {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .header__top-btn._active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 25px;
+    z-index: 51;
+    background-color: #fff;
+  }
+  .menu {
+    padding: 0;
+  }
   .menu__icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -639,26 +675,6 @@ a {
         -ms-flex-align: center;
             align-items: center;
     gap: 0;
-  }
-  .header__top-btn {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-  }
-  .header__top-btn._active {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    top: 25px;
-    z-index: 51;
-    background-color: #fff;
   }
 }
 @media (max-width: 764px) {
