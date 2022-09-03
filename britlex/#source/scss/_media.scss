@@ -58,6 +58,9 @@
   .inner {
     margin: 60px 0;
   }
+  .fixed::before {
+    height: 99px;
+  }
   .header {
     &__top {
       height: 100px;
