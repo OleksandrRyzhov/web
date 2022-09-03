@@ -43,6 +43,11 @@
       background-image: url("../img/header-light.png");
       background-size: cover;
     }
+    br {
+      &:last-child {
+        display: none;
+      }
+    }
   }
   &__text {
     font-size: rem(24);

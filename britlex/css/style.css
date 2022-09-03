@@ -214,6 +214,9 @@ a {
   background-image: url("../img/header-light.png");
   background-size: cover;
 }
+.header__title br:last-child {
+  display: none;
+}
 .header__text {
   font-size: 1.5rem;
   line-height: 2.25rem;
