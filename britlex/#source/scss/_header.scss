@@ -88,8 +88,6 @@
   &__icon {
     display: none;
   }
-  &__body {
-  }
   &__list {
     display: flex;
     gap: 30px;
@@ -99,7 +97,5 @@
     font-size: rem(20);
     line-height: rem(30);
     color: $colorBlack;
-  }
-  &__link {
   }
 }
