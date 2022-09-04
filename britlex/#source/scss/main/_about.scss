@@ -1,8 +1,4 @@
 .about {
-  &__inner {
-  }
-  &__title {
-  }
   &__content {
     display: flex;
     justify-content: space-between;
@@ -40,6 +36,7 @@
   &__photo {
     margin-top: -80px;
     &-img {
+      max-width: 476px;
     }
   }
 }
