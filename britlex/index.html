@@ -14,23 +14,23 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header id="home" class="header">
         <div class="container">
           <div class="header__top"></div>
           <div class="header__top fixed">
-            <a href="#!" class="header__logo logo">Brit<span>lex</span></a>
+            <a href="./" class="header__logo logo">Brit<span>lex</span></a>
             <div class="header__menu menu">
               <button class="menu__icon"><span></span></button>
               <nav class="menu__body">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#!" class="menu__link">Home</a>
+                    <a href="#home" class="menu__link">Home</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#!" class="menu__link">Skills</a>
+                    <a href="#skills" class="menu__link">Skills</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#!" class="menu__link">About Us</a>
+                    <a href="#about" class="menu__link">About Us</a>
                   </li>
                   <li class="menu__item">
                     <a href="#!" class="menu__link">Pricing</a>
@@ -72,7 +72,7 @@
         </div>
       </header>
       <main class="main">
-        <sectoin class="skills">
+        <sectoin id="skills" class="skills">
           <div class="skills__inner inner">
             <div class="container">
               <h3 class="skills__title title">Skills</h3>
@@ -166,11 +166,51 @@
             </div>
           </div>
         </sectoin>
+        <section id="about" class="about">
+          <div class="about__inner inner">
+            <div class="container">
+              <h3 class="about__title title">About Us</h3>
+              <div class="about__content">
+                <div class="about__content-box">
+                  <p class="about__text">
+                    The model offers a framework for discussing problems related
+                    to the user's experience, as well as possible ways and means
+                    of solving them. Application development begins at the top
+                    level (strategy), where the future software product is
+                    described quite abstractly from the point of view of the
+                    expectations of both users and the customer.
+                  </p>
+                  <ul class="about__list">
+                    <li class="about__item">
+                      <h5 class="about__item-title">800</h5>
+                      <p class="about__item-text">Pupils</p>
+                    </li>
+                    <li class="about__item">
+                      <h5 class="about__item-title">18</h5>
+                      <p class="about__item-text">Teachers</p>
+                    </li>
+                    <li class="about__item">
+                      <h5 class="about__item-title">6</h5>
+                      <p class="about__item-text">Foreign languages</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="about__photo">
+                  <img
+                    src="./img/about-img.png"
+                    alt="About Us"
+                    class="about__photo-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
         <div class="container">
           <div class="footer__body">
-            <a href="#!" class="footer__logo logo">Brit<span>lex</span></a>
+            <a href="./" class="footer__logo logo">Brit<span>lex</span></a>
             <ul class="footer__list">
               <li class="footer__item">
                 <a href="#!" class="footer__item-link">Terms and Conditions</a>
