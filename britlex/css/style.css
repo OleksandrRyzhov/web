@@ -546,6 +546,9 @@ a {
   .inner {
     padding: 100px 0;
   }
+  .title {
+    font-size: 2.625rem;
+  }
   .item-title {
     font-size: 1.625rem;
   }
@@ -582,7 +585,6 @@ a {
     max-width: 580px;
   }
   .skills__title {
-    font-size: 2.625rem;
     margin-bottom: 75px;
   }
   .skills__list {
@@ -631,6 +633,9 @@ a {
 @media (max-width: 1150px) {
   .inner {
     padding: 60px 0;
+  }
+  .title {
+    font-size: 2.25rem;
   }
   .item-title {
     font-size: 1.375rem;
@@ -691,7 +696,6 @@ a {
     line-height: 1.5rem;
   }
   .skills__title {
-    font-size: 2.25rem;
     margin-bottom: 53px;
   }
   .skills__list {
@@ -748,6 +752,9 @@ a {
   .inner {
     padding: 47px 0;
   }
+  .title {
+    font-size: 2.0625rem;
+  }
   .item-title {
     font-size: 1.3125rem;
   }
@@ -784,7 +791,6 @@ a {
     max-width: 416px;
   }
   .skills__title {
-    font-size: 2.0625rem;
     margin-bottom: 45px;
   }
   .skills__item {
@@ -826,6 +832,9 @@ a {
   .inner {
     padding: 35px 0;
   }
+  .title {
+    font-size: 1.875rem;
+  }
   .item-title {
     font-size: 1.25rem;
   }
@@ -862,7 +871,6 @@ a {
     max-width: 355px;
   }
   .skills__title {
-    font-size: 1.875rem;
     margin-bottom: 37px;
   }
   .skills__item {
@@ -1170,6 +1178,9 @@ a {
   .container {
     padding: 0 15px;
   }
+  .title {
+    font-size: 1.5rem;
+  }
   .item-title {
     line-height: 4.375rem;
   }
@@ -1191,7 +1202,6 @@ a {
     line-height: 1.3125rem;
   }
   .skills__title {
-    font-size: 1.5rem;
     margin-bottom: 32px;
   }
   .skills__list {
