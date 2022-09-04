@@ -107,5 +107,8 @@
     font-size: rem(20);
     line-height: rem(30);
     color: $colorBlack;
+    &--burger {
+      display: none;
+    }
   }
 }
