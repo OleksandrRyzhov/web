@@ -151,6 +151,12 @@ a {
   color: #263238;
 }
 
+.text {
+  color: #8f95a5;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
 ._lock {
   overflow: hidden;
 }
@@ -442,9 +448,6 @@ a {
 }
 .about__text {
   margin-top: 25px;
-  color: #8f95a5;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
 }
 .about__list {
   margin-top: 40px;
@@ -484,6 +487,86 @@ a {
 }
 
 /* </ABOUT> ========== */
+/* <PRICE> ========== */
+.price__title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.price__list {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  gap: 60px;
+}
+.price-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.price-item__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 283px;
+  margin-bottom: 55px;
+}
+.price-item__photo-img {
+  max-height: 283px;
+  max-width: 99%;
+}
+.price-item__title {
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+.price-item__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 30px;
+}
+.price-item__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+  height: 45px;
+  background-color: #eeeeee;
+  color: #263238;
+  font-size: 1.875rem;
+  line-height: 2.8125rem;
+  gap: 9px;
+  border-radius: 5px;
+}
+.price-item__btn span {
+  color: #546269;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+/* </PRICE> ========== */
 /* </MAIN> ================================================== */
 /* <FOOTER> ==================================================*/
 .footer__body {
@@ -551,6 +634,10 @@ a {
   }
   .item-title {
     font-size: 1.625rem;
+  }
+  .text {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
   }
   .header__body {
     margin-top: 55px;
@@ -622,8 +709,6 @@ a {
   }
   .about__text {
     margin-top: 20px;
-    font-size: 1.125rem;
-    line-height: 1.6875rem;
   }
   .about__list {
     margin-top: 25px;
@@ -639,6 +724,33 @@ a {
   }
   .about__photo-img {
     max-width: 430px;
+  }
+  .price__title {
+    margin-bottom: 50px;
+  }
+  .price__list {
+    gap: 55px;
+  }
+  .price-item__photo {
+    height: 243px;
+    margin-bottom: 38px;
+  }
+  .price-item__photo-img {
+    max-height: 243px;
+  }
+  .price-item__title {
+    margin-bottom: 17px;
+    font-size: 1.625rem;
+    line-height: 2.5625rem;
+  }
+  .price-item__btn {
+    width: 223px;
+    font-size: 1.6875rem;
+    line-height: 2.5rem;
+  }
+  .price-item__btn span {
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
   }
   .footer__list {
     gap: 19px;
@@ -662,6 +774,10 @@ a {
   }
   .item-title {
     font-size: 1.375rem;
+  }
+  .text {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .fixed::before {
     height: 99px;
@@ -760,8 +876,6 @@ a {
   }
   .about__text {
     margin-top: 15px;
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
   .about__list {
     margin-top: 10px;
@@ -777,6 +891,33 @@ a {
   }
   .about__photo-img {
     max-width: 380px;
+  }
+  .price__title {
+    margin-bottom: 30px;
+  }
+  .price__list {
+    gap: 50px;
+  }
+  .price-item__photo {
+    height: 204px;
+    margin-bottom: 38px;
+  }
+  .price-item__photo-img {
+    max-height: 204px;
+  }
+  .price-item__title {
+    margin-bottom: 15px;
+    font-size: 1.375rem;
+    line-height: 2.125rem;
+  }
+  .price-item__btn {
+    width: 205px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .price-item__btn span {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .footer__body {
     min-height: 95px;
@@ -803,6 +944,10 @@ a {
   }
   .item-title {
     font-size: 1.3125rem;
+  }
+  .text {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
   }
   .header__body {
     margin-top: 55px;
@@ -866,8 +1011,6 @@ a {
   }
   .about__text {
     margin-top: 0;
-    font-size: 0.9375rem;
-    line-height: 1.375rem;
   }
   .about__list {
     margin-top: 7px;
@@ -883,6 +1026,30 @@ a {
   }
   .about__photo-img {
     max-width: 375px;
+  }
+  .price__title {
+    margin-bottom: 35px;
+  }
+  .price__list {
+    gap: 40px;
+  }
+  .price-item__photo {
+    height: 192px;
+    margin-bottom: 34px;
+  }
+  .price-item__photo-img {
+    max-height: 192px;
+  }
+  .price-item__title {
+    font-size: 1.3125rem;
+    line-height: 1.9375rem;
+  }
+  .price-item__text {
+    margin-bottom: 27px;
+  }
+  .price-item__btn {
+    font-size: 1.4375rem;
+    line-height: 2.1875rem;
   }
   .footer__list {
     gap: 14.5px;
@@ -906,6 +1073,10 @@ a {
   }
   .item-title {
     font-size: 1.25rem;
+  }
+  .text {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
   }
   .header__body {
     margin-top: 45px;
@@ -979,8 +1150,6 @@ a {
   }
   .about__text {
     margin-top: 0;
-    font-size: 0.875rem;
-    line-height: 1.3125rem;
   }
   .about__list {
     margin-top: 7px;
@@ -996,6 +1165,30 @@ a {
   }
   .about__photo-img {
     max-width: 350px;
+  }
+  .price__title {
+    margin-bottom: 40px;
+  }
+  .price__list {
+    gap: 30px;
+  }
+  .price-item__photo {
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  .price-item__photo-img {
+    max-height: 180px;
+  }
+  .price-item__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .price-item__text {
+    margin-bottom: 23px;
+  }
+  .price-item__btn {
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
   }
   .footer__list {
     gap: 13px;
@@ -1140,6 +1333,11 @@ a {
   .item-title {
     font-size: 1.125rem;
   }
+  .text {
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
   .header__body {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -1274,10 +1472,7 @@ a {
     max-width: 510px;
   }
   .about__text {
-    text-align: center;
     margin-top: 50px;
-    font-size: 0.875rem;
-    line-height: 1.3125rem;
   }
   .about__list {
     margin-top: 20px;
@@ -1300,6 +1495,39 @@ a {
   .about__photo-img {
     max-width: 336px;
   }
+  .price__title {
+    margin-bottom: 70px;
+  }
+  .price__list {
+    grid-template: 1fr/1fr;
+    gap: 90px;
+  }
+  .price-item {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 410px;
+  }
+  .price-item__photo {
+    height: 265px;
+    margin-bottom: 42px;
+  }
+  .price-item__photo-img {
+    max-height: 265px;
+  }
+  .price-item__title {
+    margin-bottom: 23px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .price-item__text {
+    margin-bottom: 30px;
+  }
+  .price-item__btn {
+    font-size: 1.375rem;
+    line-height: 2.0625rem;
+  }
   .footer__item-link {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -1317,6 +1545,10 @@ a {
   }
   .item-title {
     line-height: 4.375rem;
+  }
+  .text {
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
   }
   .fixed {
     width: calc(100vw - 30px);
@@ -1375,8 +1607,6 @@ a {
   }
   .about__text {
     margin-top: 40px;
-    font-size: 0.8125rem;
-    line-height: 1.25rem;
   }
   .about__list {
     margin-top: 10px;
@@ -1399,6 +1629,34 @@ a {
   }
   .about__photo-img {
     width: 84.375vw;
+  }
+  .price__title {
+    margin-bottom: 60px;
+  }
+  .price__list {
+    gap: 80px;
+  }
+  .price-item__photo {
+    height: 230px;
+    margin-bottom: 40px;
+  }
+  .price-item__photo-img {
+    max-height: 230px;
+  }
+  .price-item__title {
+    margin-bottom: 17px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .price-item__btn {
+    width: 170px;
+    height: 37px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+  .price-item__btn span {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
   }
   .footer__body {
     min-height: 140px;

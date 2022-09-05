@@ -8,6 +8,10 @@
   .item-title {
     font-size: rem(26);
   }
+  .text {
+    font-size: rem(18);
+    line-height: rem(27);
+  }
   .header {
     &__body {
       margin-top: 55px;
@@ -92,8 +96,6 @@
     }
     &__text {
       margin-top: 20px;
-      font-size: rem(18);
-      line-height: rem(27);
     }
     &__list {
       margin-top: 25px;
@@ -111,6 +113,37 @@
     }
     &__photo-img {
       max-width: 430px;
+    }
+  }
+  .price {
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__list {
+      gap: 55px;
+    }
+    &-item {
+      &__photo {
+        height: 243px;
+        margin-bottom: 38px;
+        &-img {
+          max-height: 243px;
+        }
+      }
+      &__title {
+        margin-bottom: 17px;
+        font-size: rem(26);
+        line-height: rem(41);
+      }
+      &__btn {
+        width: 223px;
+        font-size: rem(27);
+        line-height: rem(40);
+        span {
+          font-size: rem(17);
+          line-height: rem(25);
+        }
+      }
     }
   }
   .footer {
@@ -140,6 +173,10 @@
   }
   .item-title {
     font-size: rem(22);
+  }
+  .text {
+    font-size: rem(16);
+    line-height: rem(24);
   }
   .fixed::before {
     height: 99px;
@@ -254,8 +291,6 @@
     }
     &__text {
       margin-top: 15px;
-      font-size: rem(16);
-      line-height: rem(24);
     }
     &__list {
       margin-top: 10px;
@@ -273,6 +308,37 @@
     }
     &__photo-img {
       max-width: 380px;
+    }
+  }
+  .price {
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__list {
+      gap: 50px;
+    }
+    &-item {
+      &__photo {
+        height: 204px;
+        margin-bottom: 38px;
+        &-img {
+          max-height: 204px;
+        }
+      }
+      &__title {
+        margin-bottom: 15px;
+        font-size: rem(22);
+        line-height: rem(34);
+      }
+      &__btn {
+        width: 205px;
+        font-size: rem(24);
+        line-height: rem(36);
+        span {
+          font-size: rem(16);
+          line-height: rem(24);
+        }
+      }
     }
   }
   .footer {
@@ -305,6 +371,10 @@
   }
   .item-title {
     font-size: rem(21);
+  }
+  .text {
+    font-size: rem(15);
+    line-height: rem(22);
   }
   .header {
     &__body {
@@ -377,8 +447,6 @@
     }
     &__text {
       margin-top: 0;
-      font-size: rem(15);
-      line-height: rem(22);
     }
     &__list {
       margin-top: 7px;
@@ -396,6 +464,34 @@
     }
     &__photo-img {
       max-width: 375px;
+    }
+  }
+  .price {
+    &__title {
+      margin-bottom: 35px;
+    }
+    &__list {
+      gap: 40px;
+    }
+    &-item {
+      &__photo {
+        height: 192px;
+        margin-bottom: 34px;
+        &-img {
+          max-height: 192px;
+        }
+      }
+      &__title {
+        font-size: rem(21);
+        line-height: rem(31);
+      }
+      &__text {
+        margin-bottom: 27px;
+      }
+      &__btn {
+        font-size: rem(23);
+        line-height: rem(35);
+      }
     }
   }
   .footer {
@@ -425,6 +521,10 @@
   }
   .item-title {
     font-size: rem(20);
+  }
+  .text {
+    font-size: rem(14);
+    line-height: rem(21);
   }
   .header {
     &__body {
@@ -511,8 +611,6 @@
     }
     &__text {
       margin-top: 0;
-      font-size: rem(14);
-      line-height: rem(21);
     }
     &__list {
       margin-top: 7px;
@@ -530,6 +628,34 @@
     }
     &__photo-img {
       max-width: 350px;
+    }
+  }
+  .price {
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__list {
+      gap: 30px;
+    }
+    &-item {
+      &__photo {
+        height: 180px;
+        margin-bottom: 30px;
+        &-img {
+          max-height: 180px;
+        }
+      }
+      &__title {
+        font-size: rem(20);
+        line-height: rem(28);
+      }
+      &__text {
+        margin-bottom: 23px;
+      }
+      &__btn {
+        font-size: rem(22);
+        line-height: rem(33);
+      }
     }
   }
   .footer {
@@ -659,6 +785,11 @@
   .item-title {
     font-size: rem(18);
   }
+  .text {
+    text-align: center;
+    font-size: rem(14);
+    line-height: rem(21);
+  }
   .header {
     &__body {
       flex-wrap: wrap-reverse;
@@ -773,10 +904,7 @@
       }
     }
     &__text {
-      text-align: center;
       margin-top: 50px;
-      font-size: rem(14);
-      line-height: rem(21);
     }
     &__list {
       margin-top: 20px;
@@ -800,6 +928,39 @@
       }
     }
   }
+  .price {
+    &__title {
+      margin-bottom: 70px;
+    }
+    &__list {
+      grid-template: 1fr / 1fr;
+      gap: 90px;
+    }
+    &-item {
+      margin: 0 auto;
+      align-items: center;
+      max-width: 410px;
+      &__photo {
+        height: 265px;
+        margin-bottom: 42px;
+        &-img {
+          max-height: 265px;
+        }
+      }
+      &__title {
+        margin-bottom: 23px;
+        font-size: rem(24);
+        line-height: rem(28);
+      }
+      &__text {
+        margin-bottom: 30px;
+      }
+      &__btn {
+        font-size: rem(22);
+        line-height: rem(33);
+      }
+    }
+  }
   .footer {
     &__item-link {
       font-size: rem(12);
@@ -820,6 +981,10 @@
   }
   .item-title {
     line-height: rem(70);
+  }
+  .text {
+    font-size: rem(13);
+    line-height: rem(20);
   }
   .fixed {
     width: calc(100vw - 30px);
@@ -891,8 +1056,6 @@
     }
     &__text {
       margin-top: 40px;
-      font-size: rem(13);
-      line-height: rem(20);
     }
     &__list {
       margin-top: 10px;
@@ -909,6 +1072,38 @@
       margin-top: 40px;
       &-img {
         width: 84.375vw;
+      }
+    }
+  }
+  .price {
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__list {
+      gap: 80px;
+    }
+    &-item {
+      &__photo {
+        height: 230px;
+        margin-bottom: 40px;
+        &-img {
+          max-height: 230px;
+        }
+      }
+      &__title {
+        margin-bottom: 17px;
+        font-size: rem(18);
+        line-height: rem(28);
+      }
+      &__btn {
+        width: 170px;
+        height: 37px;
+        font-size: rem(18);
+        line-height: rem(27);
+        span {
+          font-size: rem(14);
+          line-height: rem(21);
+        }
       }
     }
   }

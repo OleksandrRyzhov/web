@@ -48,6 +48,12 @@ a {
   color: $colorBlack;
 }
 
+.text {
+  color: $colorGray;
+  font-size: rem(20);
+  line-height: rem(30);
+}
+
 ._lock {
   overflow: hidden;
 }
