@@ -441,7 +441,7 @@ a {
   max-width: 635px;
 }
 .about__text {
-  margin-top: 23px;
+  margin-top: 25px;
   color: #8f95a5;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -617,6 +617,29 @@ a {
   .skills__photo-img--4 {
     max-width: 283px;
   }
+  .about__content-box {
+    max-width: 580px;
+  }
+  .about__text {
+    margin-top: 20px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+  .about__list {
+    margin-top: 25px;
+    gap: 85px;
+  }
+  .about__item-title {
+    font-size: 2.4375rem;
+  }
+  .about__item-text {
+    margin-top: -7px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+  .about__photo-img {
+    max-width: 430px;
+  }
   .footer__list {
     gap: 19px;
   }
@@ -732,6 +755,29 @@ a {
   .skills__photo-img--4 {
     max-width: 225px;
   }
+  .about__content-box {
+    max-width: 525px;
+  }
+  .about__text {
+    margin-top: 15px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .about__list {
+    margin-top: 10px;
+    gap: 50px;
+  }
+  .about__item-title {
+    font-size: 1.875rem;
+  }
+  .about__item-text {
+    margin-top: -12px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .about__photo-img {
+    max-width: 380px;
+  }
   .footer__body {
     min-height: 95px;
   }
@@ -814,6 +860,29 @@ a {
   }
   .skills__photo-img--4 {
     max-width: 201px;
+  }
+  .about__content-box {
+    max-width: 423px;
+  }
+  .about__text {
+    margin-top: 0;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+  .about__list {
+    margin-top: 7px;
+    gap: 45px;
+  }
+  .about__item-title {
+    font-size: 1.625rem;
+  }
+  .about__item-text {
+    margin-top: -13px;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+  .about__photo-img {
+    max-width: 375px;
   }
   .footer__list {
     gap: 14.5px;
@@ -904,6 +973,29 @@ a {
   }
   .skills__photo-img--4 {
     max-width: 178px;
+  }
+  .about__content-box {
+    max-width: 321px;
+  }
+  .about__text {
+    margin-top: 0;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+  .about__list {
+    margin-top: 7px;
+    gap: 45px;
+  }
+  .about__item-title {
+    font-size: 1.375rem;
+  }
+  .about__item-text {
+    margin-top: -15px;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+  }
+  .about__photo-img {
+    max-width: 350px;
   }
   .footer__list {
     gap: 13px;
@@ -1166,6 +1258,48 @@ a {
   .skills__photo-img--1, .skills__photo-img--2, .skills__photo-img--3, .skills__photo-img--4 {
     max-width: 100%;
   }
+  .about__title {
+    text-align: center;
+  }
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__content-box {
+    max-width: 510px;
+  }
+  .about__text {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+  .about__list {
+    margin-top: 20px;
+    gap: 75px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__item-title {
+    font-size: 1.5rem;
+  }
+  .about__item-text {
+    margin-top: -15px;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+  .about__photo {
+    margin-top: 45px;
+  }
+  .about__photo-img {
+    max-width: 336px;
+  }
   .footer__item-link {
     font-size: 0.75rem;
     line-height: 1.125rem;
@@ -1235,6 +1369,36 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .about__content-box {
+    max-width: 100%;
+  }
+  .about__text {
+    margin-top: 40px;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+  }
+  .about__list {
+    margin-top: 10px;
+    gap: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about__item-text {
+    margin-top: -20px;
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+  }
+  .about__photo {
+    margin-top: 40px;
+  }
+  .about__photo-img {
+    width: 84.375vw;
   }
   .footer__body {
     min-height: 140px;
