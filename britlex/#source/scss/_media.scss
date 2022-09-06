@@ -12,18 +12,12 @@
     font-size: rem(18);
     line-height: rem(27);
   }
-  .header {
-    &__body {
+  .home {
+    &__content {
       margin-top: 55px;
     }
-    &__content {
+    &__content-box {
       width: 500px;
-      &-btn {
-        width: 365px;
-        height: 100px;
-        font-size: rem(30);
-        line-height: rem(45);
-      }
     }
     &__title {
       max-width: 450px;
@@ -41,6 +35,12 @@
       font-size: rem(22);
       line-height: rem(34);
       margin-bottom: 45px;
+    }
+    &__btn {
+      width: 365px;
+      height: 100px;
+      font-size: rem(30);
+      line-height: rem(45);
     }
     &__photo {
       max-width: 580px;
@@ -210,12 +210,9 @@
     font-size: rem(16);
     line-height: rem(24);
   }
-  .fixed::before {
-    height: 99px;
-  }
   .header {
+    height: 100px;
     &__top {
-      height: 100px;
       &-btn {
         font-size: rem(18);
         line-height: rem(27);
@@ -227,18 +224,14 @@
       font-size: rem(30);
       line-height: rem(45);
     }
-    &__body {
+  }
+  .home {
+    padding-top: 100px;
+    &__content {
       margin-top: 65px;
     }
-    &__content {
+    &__content-box {
       width: 435px;
-      &-btn {
-        width: 292px;
-        height: 80px;
-        font-size: rem(24);
-        line-height: rem(36);
-        border-radius: 5px;
-      }
     }
     &__title {
       font-size: rem(48);
@@ -255,6 +248,13 @@
       font-size: rem(20);
       line-height: rem(30);
       margin-bottom: 34px;
+    }
+    &__btn {
+      width: 292px;
+      height: 80px;
+      font-size: rem(24);
+      line-height: rem(36);
+      border-radius: 5px;
     }
     &__photo {
       max-width: 480px;
@@ -437,18 +437,12 @@
     font-size: rem(15);
     line-height: rem(22);
   }
-  .header {
-    &__body {
+  .home {
+    &__content {
       margin-top: 55px;
     }
-    &__content {
+    &__content-box {
       width: 390px;
-      &-btn {
-        width: 264px;
-        height: 72px;
-        font-size: rem(21);
-        line-height: rem(32);
-      }
     }
     &__title {
       font-size: rem(40);
@@ -466,6 +460,12 @@
       font-size: rem(18);
       line-height: rem(28);
       margin-bottom: 33px;
+    }
+    &__btn {
+      width: 264px;
+      height: 72px;
+      font-size: rem(21);
+      line-height: rem(32);
     }
     &__photo {
       max-width: 416px;
@@ -623,18 +623,12 @@
     font-size: rem(14);
     line-height: rem(21);
   }
-  .header {
-    &__body {
+  .home {
+    &__content {
       margin-top: 45px;
     }
-    &__content {
+    &__content-box {
       width: 350px;
-      &-btn {
-        width: 236px;
-        height: 65px;
-        font-size: rem(18);
-        line-height: rem(27);
-      }
     }
     &__title {
       font-size: rem(36);
@@ -652,6 +646,12 @@
       font-size: rem(16);
       line-height: rem(24);
       margin-bottom: 32px;
+    }
+    &__btn {
+      width: 236px;
+      height: 65px;
+      font-size: rem(18);
+      line-height: rem(27);
     }
     &__photo {
       max-width: 355px;
@@ -920,23 +920,19 @@
   .text {
     text-align: center;
   }
-  .header {
-    &__body {
+  .home {
+    &__content {
       flex-wrap: wrap-reverse;
       gap: 20px;
       justify-content: center;
     }
-    &__content {
+    &__content-box {
       display: flex;
       flex-direction: column;
       align-items: center;
       max-width: 640px;
       width: 100%;
       padding: 0;
-      &-btn {
-        width: 305px;
-        height: 75px;
-      }
     }
     &__title {
       font-size: rem(34);
@@ -951,6 +947,10 @@
     &__text {
       margin-bottom: 37px;
       text-align: center;
+    }
+    &__btn {
+      width: 305px;
+      height: 75px;
     }
     &__photo {
       max-width: 424px;
@@ -1170,19 +1170,11 @@
     font-size: rem(13);
     line-height: rem(20);
   }
-  .fixed {
+  .header__top {
     width: calc(100vw - 30px);
   }
-  .header {
-    &__content {
-      &-btn {
-        width: 289px;
-        height: 60px;
-        font-size: rem(16);
-        line-height: rem(24);
-      }
-    }
-    &__logo,
+  .home {
+    .header__logo,
     &__title {
       font-size: rem(24);
       line-height: rem(36);
@@ -1190,6 +1182,12 @@
     &__text {
       font-size: rem(14);
       line-height: rem(21);
+    }
+    &__btn {
+      width: 289px;
+      height: 60px;
+      font-size: rem(16);
+      line-height: rem(24);
     }
   }
   .skills {
@@ -1361,7 +1359,7 @@
 }
 
 @media (max-width: 400px) {
-  .header {
+  .home {
     &__title {
       br {
         &:last-child {
