@@ -28,6 +28,12 @@
       border-radius: 10px;
       margin-right: 12px;
       font-size: rem(20);
+      &:focus {
+        background-color: rgba(#1991e8, 0.2);
+      }
+      &._error {
+        border: 1px solid red;
+      }
       &::placeholder {
         color: $colorGray;
         font-size: rem(16);
@@ -42,6 +48,11 @@
       font-weight: 500;
       font-size: rem(20);
       line-height: rem(30);
+      transition: all 0.3s ease 0s;
+      &:hover {
+        box-shadow: 0 0 15px #19b4e8;
+        color: #24d8e8;
+      }
     }
   }
   &__text {
