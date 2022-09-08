@@ -931,6 +931,13 @@
           background-color: #fff;
         }
       }
+      &-btn {
+        &:hover {
+          &::before {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

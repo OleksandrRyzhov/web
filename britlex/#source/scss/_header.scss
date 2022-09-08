@@ -16,7 +16,7 @@
     height: 100%;
   }
   &__top-btn,
-  .menu__item-btn {
+  .menu__link-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,14 +53,6 @@
     &--burger {
       display: none;
     }
-    &-btn {
-      font-size: rem(18);
-      line-height: rem(27);
-      height: 50px;
-      width: 160px;
-      background-color: #fff;
-      color: $colorBlack;
-    }
   }
   &__link {
     &:hover {
@@ -85,6 +77,14 @@
           width: calc(100% - 10px);
         }
       }
+    }
+    &-btn {
+      font-size: rem(18);
+      line-height: rem(27);
+      height: 50px;
+      width: 160px;
+      background-color: #fff;
+      color: $colorBlack;
     }
   }
 }
