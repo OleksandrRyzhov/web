@@ -840,11 +840,6 @@
 }
 
 @media (max-width: 767px) {
-  .header {
-    &__top-btn {
-      display: none;
-    }
-  }
   .menu {
     padding: 0;
     &__icon {
@@ -929,13 +924,6 @@
       &:hover {
         &::before {
           background-color: #fff;
-        }
-      }
-      &-btn {
-        &:hover {
-          &::before {
-            display: none;
-          }
         }
       }
     }

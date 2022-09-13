@@ -15,11 +15,15 @@
     margin: 0 auto;
     height: 100%;
   }
-  &__top-btn,
-  .menu__link-btn {
+  &__top-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: rem(24);
+    line-height: rem(36);
+    width: 220px;
+    height: 70px;
+    background-color: #fff;
     border: 2px solid $colorBlack;
     border-radius: 5px;
     transition: all 0.3s ease 0s;
@@ -27,12 +31,6 @@
       background-color: #1991e8;
       color: #fff;
     }
-  }
-  &__top-btn {
-    font-size: rem(24);
-    line-height: rem(36);
-    width: 220px;
-    height: 70px;
   }
 }
 
@@ -77,14 +75,6 @@
           width: calc(100% - 10px);
         }
       }
-    }
-    &-btn {
-      font-size: rem(18);
-      line-height: rem(27);
-      height: 50px;
-      width: 160px;
-      background-color: #fff;
-      color: $colorBlack;
     }
   }
 }
