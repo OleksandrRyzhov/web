@@ -141,9 +141,9 @@ button {
   transition: all 0.5s ease 0s;
 }
 .img:hover {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .contact-btn {
@@ -787,9 +787,9 @@ button {
   left: 0;
 }
 .support__item:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .support__item-title {
   position: relative;
@@ -942,9 +942,9 @@ button {
   transition: all 0.5s ease 0s;
 }
 .international__item:hover {
-  -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .international__item-link {
   height: 109px;
@@ -1031,9 +1031,9 @@ button {
   border-radius: 30px;
 }
 .criminal__item:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .criminal__item-title {
   font-size: 17px;
@@ -1444,9 +1444,9 @@ button {
   transition: all 0.5s ease 0s;
 }
 .services-hamburg__item:hover {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .services-hamburg__item-link {
   margin-bottom: 10px;
@@ -1606,9 +1606,9 @@ button {
   transition: all 0.5s ease 0s;
 }
 .blog__item:hover {
-  -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .blog__item-link {
   height: 109px;
@@ -1715,9 +1715,9 @@ button {
   transition: all 0.5s ease 0s;
 }
 .tax-zurich__item:hover {
-  -webkit-transform: scale(1.07);
-      -ms-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .tax-zurich__item-link {
   height: 109px;
