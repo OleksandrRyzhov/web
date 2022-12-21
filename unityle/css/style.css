@@ -1,15 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;
-
-500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @font-face {
   font-family: icons;
   font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  src: url("../fonts/icons.woff2") format("woff2"),
+    url("../fonts/icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
-[class*=_icon-]::before {
+[class*="_icon-"]::before {
   font-family: "icons";
   font-style: normal;
   font-weight: normal;
@@ -20,7 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class*=_icon-]::before {
+[class*="_icon-"]::before {
   display: block;
 }
 
@@ -126,7 +125,7 @@ ul li {
 img {
   vertical-align: top;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 h1,
@@ -409,40 +408,9 @@ body {
   gap: 0.5rem;
   padding: 0.625rem 1.375rem;
   border-radius: 0.5rem;
-  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s, color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s,
+    color 0.3s ease 0s;
   position: relative;
-  isolation: isolate;
-  z-index: 1;
-}
-
-.primary-btn:focus,
-.second-fill-btn:focus,
-.second-bd-btn:focus,
-.tertiary-btn:focus {
-  outline: 0.125rem solid #1d90f5;
-  outline-offset: 0.125rem;
-}
-
-.primary-btn:disabled,
-.second-fill-btn:disabled,
-.second-bd-btn:disabled,
-.tertiary-btn:disabled {
-  cursor: auto;
-  color: #dad7e0;
-}
-
-.primary-btn:disabled::after,
-.second-fill-btn:disabled::after,
-.second-bd-btn:disabled::after,
-.tertiary-btn:disabled::after {
-  display: none;
-}
-
-.primary-btn:disabled:active,
-.second-fill-btn:disabled:active,
-.second-bd-btn:disabled:active,
-.tertiary-btn:disabled:active {
-  color: #dad7e0;
 }
 
 .primary-btn {
@@ -452,6 +420,8 @@ body {
 }
 
 .primary-btn:disabled {
+  cursor: auto;
+  color: #dad7e0;
   background-color: #f3f2f5;
   border-color: #f3f2f5;
 }
@@ -459,6 +429,7 @@ body {
 .primary-btn:disabled:active {
   background-color: #f3f2f5;
   border-color: #f3f2f5;
+  color: #dad7e0;
 }
 
 .primary-btn:active {
@@ -472,6 +443,8 @@ body {
 }
 
 .second-fill-btn:disabled {
+  cursor: auto;
+  color: #dad7e0;
   background-color: #f3f2f5;
   border-color: #f3f2f5;
 }
@@ -479,6 +452,7 @@ body {
 .second-fill-btn:disabled:active {
   background-color: #f3f2f5;
   border-color: #f3f2f5;
+  color: #dad7e0;
 }
 
 .second-fill-btn:active {
@@ -493,6 +467,8 @@ body {
 }
 
 .second-bd-btn:disabled {
+  cursor: auto;
+  color: #dad7e0;
   background-color: inherit;
   border-color: #eae9ed;
 }
@@ -500,6 +476,7 @@ body {
 .second-bd-btn:disabled:active {
   background-color: inherit;
   border-color: #eae9ed;
+  color: #dad7e0;
 }
 
 .second-bd-btn:active {
@@ -514,6 +491,8 @@ body {
 }
 
 .tertiary-btn:disabled {
+  cursor: auto;
+  color: #dad7e0;
   background-color: inherit;
   border-color: inherit;
 }
@@ -521,6 +500,7 @@ body {
 .tertiary-btn:disabled:active {
   background-color: inherit;
   border-color: inherit;
+  color: #dad7e0;
 }
 
 .tertiary-btn:active {
@@ -547,207 +527,139 @@ body {
 
 @media (max-width: 68.74875em) {
   .title-2 {
-    font-size: calc(
-        32px + 8 * (100vw / 1100)
-      );
+    font-size: calc(32px + 8 * (100vw / 1100));
   }
 
   .title-3 {
-    font-size: calc(
-        24px + 8 * (100vw / 1100)
-      );
+    font-size: calc(24px + 8 * (100vw / 1100));
   }
 
   .buttons__inner {
-    gap: calc(
-        30px + 20 * (100vw / 1100)
-      );
+    gap: calc(30px + 20 * (100vw / 1100));
   }
 
   .buttons__inner {
-    padding-top: calc(
-        30px + 20 * (100vw / 1100)
-      );
+    padding-top: calc(30px + 20 * (100vw / 1100));
   }
 
   .buttons__inner {
-    padding-right: calc(
-        10px + 30 * (100vw / 1100)
-      );
+    padding-right: calc(10px + 30 * (100vw / 1100));
   }
 
   .buttons__inner {
-    padding-bottom: calc(
-        10px + 30 * (100vw / 1100)
-      );
+    padding-bottom: calc(10px + 30 * (100vw / 1100));
   }
 
   .buttons__inner {
-    padding-left: calc(
-        10px + 30 * (100vw / 1100)
-      );
+    padding-left: calc(10px + 30 * (100vw / 1100));
   }
 
   .buttons__inner {
-    border-radius: calc(
-        30px + 10 * (100vw / 1100)
-      );
+    border-radius: calc(30px + 10 * (100vw / 1100));
   }
 
   .buttons__items {
-    gap: calc(
-        40px + 20 * (100vw / 1100)
-      );
+    gap: calc(40px + 20 * (100vw / 1100));
   }
 
   .buttons__items {
-    padding-top: calc(
-        10px + 70 * (100vw / 1100)
-      );
+    padding-top: calc(10px + 70 * (100vw / 1100));
   }
 
   .buttons__items {
-    padding-right: calc(
-        10px + 70 * (100vw / 1100)
-      );
+    padding-right: calc(10px + 70 * (100vw / 1100));
   }
 
   .buttons__items {
-    padding-bottom: calc(
-        10px + 70 * (100vw / 1100)
-      );
+    padding-bottom: calc(10px + 70 * (100vw / 1100));
   }
 
   .buttons__items {
-    padding-left: calc(
-        10px + 70 * (100vw / 1100)
-      );
+    padding-left: calc(10px + 70 * (100vw / 1100));
   }
 
   .buttons__items {
-    border-radius: calc(
-        22px + -2 * (100vw / 1100)
-      );
+    border-radius: calc(22px + -2 * (100vw / 1100));
   }
 
   .item-buttons {
-    gap: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    gap: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons {
-    border-radius: calc(
-        20px + 10 * (100vw / 1100)
-      );
+    border-radius: calc(20px + 10 * (100vw / 1100));
   }
 
   .item-buttons {
-    padding-top: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-top: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons {
-    padding-right: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-right: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons {
-    padding-bottom: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-bottom: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons {
-    padding-left: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-left: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__top {
-    padding-top: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-top: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__top {
-    padding-right: calc(
-        15px + 45 * (100vw / 1100)
-      );
+    padding-right: calc(15px + 45 * (100vw / 1100));
   }
 
   .item-buttons__top {
-    padding-bottom: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-bottom: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__top {
-    padding-left: calc(
-        15px + 45 * (100vw / 1100)
-      );
+    padding-left: calc(15px + 45 * (100vw / 1100));
   }
 
   .item-buttons__descr {
-    border-radius: calc(
-        12px + 8 * (100vw / 1100)
-      );
+    border-radius: calc(12px + 8 * (100vw / 1100));
   }
 
   .item-buttons__descr {
-    padding-top: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-top: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__descr {
-    padding-right: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-right: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__descr {
-    padding-bottom: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-bottom: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__descr {
-    padding-left: calc(
-        10px + 10 * (100vw / 1100)
-      );
+    padding-left: calc(10px + 10 * (100vw / 1100));
   }
 
   .item-buttons__list {
-    border-radius: calc(
-        12px + 8 * (100vw / 1100)
-      );
+    border-radius: calc(12px + 8 * (100vw / 1100));
   }
 
   .item-buttons__list {
-    padding-top: calc(
-        20px + 20 * (100vw / 1100)
-      );
+    padding-top: calc(20px + 20 * (100vw / 1100));
   }
 
   .item-buttons__list {
-    padding-right: calc(
-        20px + 60 * (100vw / 1100)
-      );
+    padding-right: calc(20px + 60 * (100vw / 1100));
   }
 
   .item-buttons__list {
-    padding-bottom: calc(
-        20px + 20 * (100vw / 1100)
-      );
+    padding-bottom: calc(20px + 20 * (100vw / 1100));
   }
 
   .item-buttons__list {
-    padding-left: calc(
-        20px + 60 * (100vw / 1100)
-      );
+    padding-left: calc(20px + 60 * (100vw / 1100));
   }
 }
 
@@ -770,249 +682,167 @@ body {
 
 @media (max-width: 59.99875em) and (max-width: 68.74875em) {
   .item-buttons__descr {
-    padding-right: calc(
-        30px + 70 * (100vw / 1100)
-      );
+    padding-right: calc(30px + 70 * (100vw / 1100));
   }
 
   .item-buttons__descr {
-    padding-left: calc(
-        30px + 70 * (100vw / 1100)
-      );
+    padding-left: calc(30px + 70 * (100vw / 1100));
   }
 }
 
 @media (max-width: 59.99875em) and (max-width: 47.99875em) {
   .item-buttons__descr {
-    padding-right: calc(
-        30px + 119 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(30px + 119 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__descr {
-    padding-left: calc(
-        30px + 119 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(30px + 119 * ((100vw - 320px) / 1100));
   }
 }
 
 @media (max-width: 47.99875em) {
   .title-2 {
-    font-size: calc(
-        32px + 13.6 * ((100vw - 320px) / 1100)
-      );
+    font-size: calc(32px + 13.6 * ((100vw - 320px) / 1100));
   }
 
   .title-3 {
-    font-size: calc(
-        24px + 13.6 * ((100vw - 320px) / 1100)
-      );
+    font-size: calc(24px + 13.6 * ((100vw - 320px) / 1100));
   }
 
   .buttons__inner {
-    gap: calc(
-        30px + 34 * ((100vw - 320px) / 1100)
-      );
+    gap: calc(30px + 34 * ((100vw - 320px) / 1100));
   }
 
   .buttons__inner {
-    padding-top: calc(
-        30px + 34 * ((100vw - 320px) / 1100)
-      );
+    padding-top: calc(30px + 34 * ((100vw - 320px) / 1100));
   }
 
   .buttons__inner {
-    padding-right: calc(
-        10px + 51 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(10px + 51 * ((100vw - 320px) / 1100));
   }
 
   .buttons__inner {
-    padding-bottom: calc(
-        10px + 51 * ((100vw - 320px) / 1100)
-      );
+    padding-bottom: calc(10px + 51 * ((100vw - 320px) / 1100));
   }
 
   .buttons__inner {
-    padding-left: calc(
-        10px + 51 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(10px + 51 * ((100vw - 320px) / 1100));
   }
 
   .buttons__inner {
-    border-radius: calc(
-        30px + 17 * ((100vw - 320px) / 1100)
-      );
+    border-radius: calc(30px + 17 * ((100vw - 320px) / 1100));
   }
 
   .buttons__items {
-    gap: calc(
-        40px + 34 * ((100vw - 320px) / 1100)
-      );
+    gap: calc(40px + 34 * ((100vw - 320px) / 1100));
   }
 
   .buttons__items {
-    padding-top: calc(
-        10px + 119 * ((100vw - 320px) / 1100)
-      );
+    padding-top: calc(10px + 119 * ((100vw - 320px) / 1100));
   }
 
   .buttons__items {
-    padding-right: calc(
-        10px + 119 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(10px + 119 * ((100vw - 320px) / 1100));
   }
 
   .buttons__items {
-    padding-bottom: calc(
-        10px + 119 * ((100vw - 320px) / 1100)
-      );
+    padding-bottom: calc(10px + 119 * ((100vw - 320px) / 1100));
   }
 
   .buttons__items {
-    padding-left: calc(
-        10px + 119 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(10px + 119 * ((100vw - 320px) / 1100));
   }
 
   .buttons__items {
-    border-radius: calc(
-        22px + -3.4 * ((100vw - 320px) / 1100)
-      );
+    border-radius: calc(22px + -3.4 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons {
-    gap: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    gap: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons {
-    border-radius: calc(
-        20px + 17 * ((100vw - 320px) / 1100)
-      );
+    border-radius: calc(20px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons {
-    padding-top: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-top: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons {
-    padding-right: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons {
-    padding-bottom: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-bottom: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons {
-    padding-left: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__top {
-    padding-top: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-top: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__top {
-    padding-right: calc(
-        15px + 76.5 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(15px + 76.5 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__top {
-    padding-bottom: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-bottom: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__top {
-    padding-left: calc(
-        15px + 76.5 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(15px + 76.5 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__descr {
-    border-radius: calc(
-        12px + 13.6 * ((100vw - 320px) / 1100)
-      );
+    border-radius: calc(12px + 13.6 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__descr {
-    padding-top: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-top: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__descr {
-    padding-right: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__descr {
-    padding-bottom: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-bottom: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__descr {
-    padding-left: calc(
-        10px + 17 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(10px + 17 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__list {
-    border-radius: calc(
-        12px + 13.6 * ((100vw - 320px) / 1100)
-      );
+    border-radius: calc(12px + 13.6 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__list {
-    padding-top: calc(
-        20px + 34 * ((100vw - 320px) / 1100)
-      );
+    padding-top: calc(20px + 34 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__list {
-    padding-right: calc(
-        20px + 102 * ((100vw - 320px) / 1100)
-      );
+    padding-right: calc(20px + 102 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__list {
-    padding-bottom: calc(
-        20px + 34 * ((100vw - 320px) / 1100)
-      );
+    padding-bottom: calc(20px + 34 * ((100vw - 320px) / 1100));
   }
 
   .item-buttons__list {
-    padding-left: calc(
-        20px + 102 * ((100vw - 320px) / 1100)
-      );
+    padding-left: calc(20px + 102 * ((100vw - 320px) / 1100));
   }
 }
 
 @media (any-hover: hover) {
-  .primary-btn:disabled:hover,
-  .second-fill-btn:disabled:hover,
-  .second-bd-btn:disabled:hover,
-  .tertiary-btn:disabled:hover {
-    color: #dad7e0;
-  }
-
   .primary-btn:disabled:hover {
     background-color: #f3f2f5;
     border-color: #f3f2f5;
+    color: #dad7e0;
   }
 
   .primary-btn:hover {
@@ -1020,9 +850,15 @@ body {
     border-color: #5928e1;
   }
 
+  .primary-btn:focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.125rem;
+  }
+
   .second-fill-btn:disabled:hover {
     background-color: #f3f2f5;
     border-color: #f3f2f5;
+    color: #dad7e0;
   }
 
   .second-fill-btn:hover {
@@ -1030,9 +866,15 @@ body {
     border-color: #eae9ed;
   }
 
+  .second-fill-btn:focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.125rem;
+  }
+
   .second-bd-btn:disabled:hover {
     background-color: inherit;
     border-color: #eae9ed;
+    color: #dad7e0;
   }
 
   .second-bd-btn:hover {
@@ -1040,13 +882,24 @@ body {
     border-color: #dad7e0;
   }
 
+  .second-bd-btn:focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.125rem;
+  }
+
   .tertiary-btn:disabled:hover {
     background-color: inherit;
     border-color: inherit;
+    color: #dad7e0;
   }
 
   .tertiary-btn:hover {
     background-color: #f3f2f5;
     border-color: #f3f2f5;
+  }
+
+  .tertiary-btn:focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.125rem;
   }
 }
