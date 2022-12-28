@@ -4,16 +4,26 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/style.min.css?_v=20221223014613">
+		<link rel="stylesheet" href="css/style.min.css?_v=20221228213145">
 		<title>Unitile</title>
 	</head>
   <body>
 		<div class="wrapper">
-			<header class="header ">
-        
+			<header class="header">
+        <div class="container">
+					<div class="header__body">
+						<a class="header__logo _icon-logo-icon" href="./">
+							<span class="_icon-logo-tm"></span>
+						</a>
+						<div class="header__tabs">
+							<button class="tab second-bd-btn tab--active" type="button">Buttons</button>
+							<button class="tab second-bd-btn" type="button">Text fields</button>
+						</div>
+					</div>
+				</div>
       </header>
       <main class="main">
-				<section class="buttons">
+				<section class="content buttons content--active">
 					<div class="container">
 						<div class="buttons__inner">
 							<h2 class="buttons__title title-2">Buttons</h2>
@@ -32,43 +42,43 @@
 									<ul class="item-buttons__list">
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Clear</p>
-											<button class="button primary-btn" type="button">
+											<button class="primary-btn" type="button">
 												Button
 											</button>
-											<button class="button primary-btn" type="button" disabled>
+											<button class="primary-btn" type="button" disabled>
 												Button
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Left icon</p>
-											<button class="button primary-btn" type="button">
+											<button class="primary-btn" type="button">
 												<span class="_icon-left-icon"></span>
 												Button
 											</button>
-											<button class="button primary-btn" type="button" disabled>
+											<button class="primary-btn" type="button" disabled>
 												<span class="_icon-left-icon"></span>
 												Button
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Right icon</p>
-											<button class="button primary-btn" type="button">
+											<button class="primary-btn" type="button">
 												Button
 												<span class="_icon-right-icon"></span>
 											</button>
-											<button class="button primary-btn" type="button" disabled>
+											<button class="primary-btn" type="button" disabled>
 												Button
 												<span class="_icon-right-icon"></span>
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Left + Right icon</p>
-											<button class="button primary-btn" type="button">
+											<button class="primary-btn" type="button">
 												<span class="_icon-left-icon"></span>
 												Button
 												<span class="_icon-right-icon"></span>
 											</button>
-											<button class="button primary-btn" type="button" disabled>
+											<button class="primary-btn" type="button" disabled>
 												<span class="_icon-left-icon"></span>
 												Button
 												<span class="_icon-right-icon"></span>
@@ -90,43 +100,43 @@
 									<ul class="item-buttons__list">
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Clear</p>
-											<button class="button second-fill-btn" type="button">
+											<button class="second-fill-btn" type="button">
 												Button
 											</button>
-											<button class="button second-fill-btn" type="button" disabled>
+											<button class="second-fill-btn" type="button" disabled>
 												Button
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Left icon</p>
-											<button class="button second-fill-btn" type="button">
+											<button class="second-fill-btn" type="button">
 												<span class="_icon-left-icon"></span>
 												Button
 											</button>
-											<button class="button second-fill-btn" type="button" disabled>
+											<button class="second-fill-btn" type="button" disabled>
 												<span class="_icon-left-icon"></span>
 												Button
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Right icon</p>
-											<button class="button second-fill-btn" type="button">
+											<button class="second-fill-btn" type="button">
 												Button
 												<span class="_icon-right-icon"></span>
 											</button>
-											<button class="button second-fill-btn" type="button" disabled>
+											<button class="second-fill-btn" type="button" disabled>
 												Button
 												<span class="_icon-right-icon"></span>
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Left + Right icon</p>
-											<button class="button second-fill-btn" type="button">
+											<button class="second-fill-btn" type="button">
 												<span class="_icon-left-icon"></span>
 												Button
 												<span class="_icon-right-icon"></span>
 											</button>
-											<button class="button second-fill-btn" type="button" disabled>
+											<button class="second-fill-btn" type="button" disabled>
 												<span class="_icon-left-icon"></span>
 												Button
 												<span class="_icon-right-icon"></span>
@@ -148,20 +158,20 @@
 									<ul class="item-buttons__list">
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Clear</p>
-											<button class="button second-bd-btn" type="button">
+											<button class="second-bd-btn" type="button">
 												Button
 											</button>
-											<button class="button second-bd-btn" type="button" disabled>
+											<button class="second-bd-btn" type="button" disabled>
 												Button
 											</button>
 										</li>
 										<li class="item-buttons__item">
 											<p class="item-buttons__text">Left icon</p>
-											<button class="button second-bd-btn" type="button">
+											<button class="second-bd-btn" type="button">
 												<span class="_icon-left-icon"></span>
 												Button
 											</button>
-											<button class="button second-bd-btn" type="button" disabled>
+											<button class="second-bd-btn" type="button" disabled>
 												<span class="_icon-left-icon"></span>
 												Button
 											</button>
@@ -254,11 +264,456 @@
 						</div>
 					</div>
 				</section>
+				<section class="content field">
+					<div class="container">
+						<div class="field__inner">
+							<h2 class="field__title title-2">Text fields</h2>
+							<div class="field__items">
+								<div class="field__item item-field">
+									<div class="item-field__top">
+										<h3 class="item-field__title title-3">Standart</h3>
+										<div class="item-field__logo _icon-logo-icon">
+											<span class="_icon-logo-tm"></span>
+										</div>
+									</div>
+									<ul class="item-field__list">
+										<li class="item-field__item">
+											<p class="item-field__text">Clear</p>
+											<span class="item-field__descr">Default</span>
+											<label class="text-field">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="text-field _error">
+												<p class="text-field__name">Field label<span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="text-field _success">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="text-field disabled">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Left icon</p>
+											<span class="item-field__descr">Default</span>
+											<label class="text-field">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="text-field _error">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="text-field _success">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="text-field disabled">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Optional</p>
+											<span class="item-field__descr">Default</span>
+											<label class="text-field">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="text-field _error">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="text-field _success">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="text-field disabled">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr"></p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Description</p>
+											<span class="item-field__descr">Default</span>
+											<label class="text-field descr">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="text-field descr _error">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="text-field descr _success">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="text-field descr disabled">
+												<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Full set</p>
+											<span class="item-field__descr">Default</span>
+											<label class="text-field descr">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="text-field descr _error">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="text-field descr _success">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text">
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="text-field descr disabled">
+												<p class="text-field__name">Field label <span class="text-field__optional">(Optional)</span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+												<div class="text-field__body left-icon">
+													<span class="text-field__icon-left _icon-user"></span>
+													<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+													<span class="text-field__icon-clear _icon-close"></span>
+												</div>
+												<p class="text-field__descr">Additional description and instructions</p>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="field__item item-field">
+									<div class="item-field__top">
+										<h3 class="item-field__title title-3">Password</h3>
+										<div class="item-field__logo _icon-logo-icon">
+											<span class="_icon-logo-tm"></span>
+										</div>
+									</div>
+									<ul class="item-field__list">
+										<li class="item-field__item">
+											<p class="item-field__text">Clear</p>
+											<span class="item-field__descr">Default</span>
+											<label class="password-field">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="password-field _error">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="password-field _success">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="password-field disabled">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Right icon</p>
+											<span class="item-field__descr">Default</span>
+											<label class="password-field">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body show-icon">
+													<input class="password-field__input" type="password" name="password" placeholder="********">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="password-field _error">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body show-icon">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="password-field _success">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body show-icon">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="password-field disabled">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Description</p>
+											<span class="item-field__descr">Default</span>
+											<label class="password-field descr">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="password-field descr _error">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="password-field descr _success">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="password-field descr disabled">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Full set</p>
+											<span class="item-field__descr">Default</span>
+											<label class="password-field descr">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body show-icon">
+													<input class="password-field__input" type="password" name="password" placeholder="********">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Error</span>
+											<label class="password-field descr _error">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body show-icon">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Success</span>
+											<label class="password-field descr _success">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body show-icon">
+													<input class="password-field__input" type="password" name="password" placeholder="********" value="Some text">
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+											<span class="item-field__descr">Disabled</span>
+											<label class="password-field descr disabled">
+												<p class="password-field__name">Password <span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+												<div class="password-field__body">
+													<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+													<span class="password-field__icon-show _icon-show-pass"></span>
+													<span class="password-field__icon-hide _icon-hide-pass"></span>
+												</div>
+												<p class="password-field__descr">Additional description and instructions</p>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="field__item item-field">
+									<div class="item-field__top">
+										<h3 class="item-field__title title-3">Quantity</h3>
+										<div class="item-field__logo _icon-logo-icon">
+											<span class="_icon-logo-tm"></span>
+										</div>
+									</div>
+									<div class="item-field__descr">
+										<p class="item-field__state">Default</p>
+										<p class="item-field__state">Disabled</p>
+									</div>
+									<ul class="item-field__list">
+										<li class="item-field__item">
+											<p class="item-field__text">Clear</p>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Currency</p>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Right icon</p>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Description</p>
+										</li>
+										<li class="item-field__item">
+											<p class="item-field__text">Full set</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
       <footer class="footer">
 				
 			</footer>
     </div>
-		<script src="js/app.min.js?_v=20221223014613"></script>
+		<script src="js/app.min.js?_v=20221228213145"></script>
   </body>
 </html>

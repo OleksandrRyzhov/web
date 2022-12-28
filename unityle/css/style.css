@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;
+
+500;600;700;800&display=swap");
 @font-face {
   font-family: icons;
   font-display: swap;
@@ -22,20 +24,88 @@
   display: block;
 }
 
-._icon-left-icon:before {
+._icon-arrow-lower:before {
   content: "\e900";
 }
 
-._icon-logo-icon:before {
+._icon-arrow-next:before {
   content: "\e901";
 }
 
-._icon-logo-tm:before {
+._icon-arrow-prev:before {
   content: "\e902";
 }
 
-._icon-right-icon:before {
+._icon-arrow-up:before {
   content: "\e903";
+}
+
+._icon-checked:before {
+  content: "\e904";
+}
+
+._icon-close:before {
+  content: "\e905";
+}
+
+._icon-error:before {
+  content: "\e906";
+}
+
+._icon-hide-pass:before {
+  content: "\e907";
+}
+
+._icon-info:before {
+  content: "\e908";
+}
+
+._icon-left-icon:before {
+  content: "\e909";
+}
+
+._icon-logo-icon:before {
+  content: "\e90a";
+}
+
+._icon-logo-tm:before {
+  content: "\e90b";
+}
+
+._icon-multichoise:before {
+  content: "\e90c";
+}
+
+._icon-quantity-info:before {
+  content: "\e90d";
+}
+
+._icon-right-icon:before {
+  content: "\e90e";
+}
+
+._icon-show-pass:before {
+  content: "\e90f";
+}
+
+._icon-standart:before {
+  content: "\e910";
+}
+
+._icon-success:before {
+  content: "\e911";
+}
+
+._icon-tag:before {
+  content: "\e912";
+}
+
+._icon-user:before {
+  content: "\e913";
+}
+
+._icon-warning:before {
+  content: "\e914";
 }
 
 /* <NULLSTYLE> ========== */
@@ -151,6 +221,9 @@ h6 {
 
 .main {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6.25rem;
   padding: 5rem 0;
 }
 
@@ -186,82 +259,66 @@ body {
 
 /* <HEADER> ==================================================*/
 
-.menu__body {
-  position: fixed;
-  padding: 8.75rem 1.875rem 1.875rem;
-  left: -100%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(15, 2, 51, 0.9);
-  overflow: auto;
-  transition: all 0.3s ease 0s;
-  z-index: -1;
+.header {
+  background-color: #0f0233;
+  color: #fff;
 }
 
-.menu-open .menu__body {
-  left: 0;
-}
-
-.menu__list {
+.header__body {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  min-height: 6.25rem;
+  padding: 0.9375rem 1.875rem;
+  gap: 1.875rem;
 }
 
-.icon-menu {
-  display: block;
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2.625rem;
+  height: 2.5rem;
+  font-size: 2.25rem;
   position: relative;
-  flex: 0 0 1.875rem;
-  width: 1.875rem;
-  height: 1.125rem;
-  background-color: inherit;
-  z-index: 10;
 }
 
-.icon-menu span,
-.icon-menu::before,
-.icon-menu::after {
-  content: "";
-  left: 0;
+.header__logo span {
   position: absolute;
-  height: 0.125rem;
+  font-size: 0.1875rem;
+  top: 0.125rem;
+  right: 0;
+}
+
+.header__tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  transition: all 0.3s ease 0s;
-  background-color: #fff;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  row-gap: 0.9375rem;
 }
 
-.icon-menu::before {
-  top: 0;
-}
-
-.icon-menu::after {
-  bottom: 0;
-}
-
-.icon-menu span {
-  top: calc(50% - 0.0625rem);
-}
-
-.menu-open .icon-menu span {
-  scale: 0;
-}
-
-.menu-open .icon-menu::before {
-  top: calc(50% - 0.0625rem);
-  rotate: 45deg;
-}
-
-.menu-open .icon-menu::after {
-  bottom: calc(50% - 0.0625rem);
-  rotate: -45deg;
+.tab--active {
+  background-color: #f0ebff !important;
+  border-color: #daccff !important;
+  color: #6933ff !important;
 }
 
 /* </HEADER> ================================================== */
 
 /* <MAIN> ================================================== */
 
-.buttons__inner {
+.content {
+  display: none;
+}
+
+.content.content--active {
+  display: block;
+}
+
+.buttons__inner,
+.field__inner {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -274,11 +331,13 @@ body {
   border-radius: 2.5rem;
 }
 
-.buttons__title {
+.buttons__title,
+.field__title {
   color: #fff;
 }
 
-.buttons__items {
+.buttons__items,
+.field__items {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -291,7 +350,8 @@ body {
   border-radius: 1.25rem;
 }
 
-.item-buttons {
+.item-buttons,
+.item-field {
   display: flex;
   flex-direction: column;
   background-color: #0f0233;
@@ -303,7 +363,8 @@ body {
   padding-left: 1.25rem;
 }
 
-.item-buttons__top {
+.item-buttons__top,
+.item-field__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -315,21 +376,51 @@ body {
   padding-left: 3.75rem;
 }
 
-.item-buttons__logo {
+.item-buttons__logo,
+.item-field__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 2.625rem;
+  min-width: 2.625rem;
   height: 2.5rem;
   font-size: 2.25rem;
   position: relative;
 }
 
-.item-buttons__logo span {
+.item-buttons__logo span,
+.item-field__logo span {
   position: absolute;
   font-size: 0.1875rem;
   top: 0.125rem;
   right: 0;
+}
+
+.item-buttons__list,
+.item-field__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  padding-top: 2.5rem;
+  padding-right: 5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 5rem;
+}
+
+.item-buttons__item,
+.item-field__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-buttons__text,
+.item-field__text {
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 .item-buttons__descr {
@@ -352,29 +443,31 @@ body {
   color: #878199;
 }
 
-.item-buttons__list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.25rem;
-  background-color: #fafafa;
-  border-radius: 1.25rem;
-  padding-top: 2.5rem;
-  padding-right: 5rem;
-  padding-bottom: 2.5rem;
-  padding-left: 5rem;
+.item-field__list {
+  gap: 3.75rem;
 }
 
-.item-buttons__item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  align-items: center;
-  justify-content: space-between;
+.item-field__item {
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  row-gap: 2.5rem;
 }
 
-.item-buttons__text {
-  font-weight: 500;
-  line-height: 1.25;
+.item-field__text {
+  text-align: center;
+  width: 100%;
+  background-color: #0f0233;
+  color: #fff;
+  border-radius: 0.75rem;
+  padding: 0.625rem;
+}
+
+.item-field__descr {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  color: #878199;
+  width: 20%;
 }
 
 /* <button> ========== */
@@ -419,16 +512,9 @@ body {
 
 .primary-btn:disabled {
   cursor: auto;
-  background-color: #f3f2f5;
-  border-color: #f3f2f5;
-  color: #dad7e0;
-}
-
-.primary-btn:disabled:hover,
-.primary-btn:disabled:active {
-  background-color: #f3f2f5;
-  border-color: #f3f2f5;
-  color: #dad7e0;
+  background-color: #f3f2f5 !important;
+  border-color: #f3f2f5 !important;
+  color: #dad7e0 !important;
 }
 
 .primary-btn:active,
@@ -440,20 +526,14 @@ body {
 .second-fill-btn {
   border: 0.125rem solid #f3f2f5;
   background-color: #f3f2f5;
+  color: #0f0233;
 }
 
 .second-fill-btn:disabled {
   cursor: auto;
-  background-color: #f3f2f5;
-  border-color: #f3f2f5;
-  color: #dad7e0;
-}
-
-.second-fill-btn:disabled:hover,
-.second-fill-btn:disabled:active {
-  background-color: #f3f2f5;
-  border-color: #f3f2f5;
-  color: #dad7e0;
+  background-color: #f3f2f5 !important;
+  border-color: #f3f2f5 !important;
+  color: #dad7e0 !important;
 }
 
 .second-fill-btn:active,
@@ -466,20 +546,14 @@ body {
 .second-bd-btn {
   border: 0.125rem solid #eae9ed;
   background-color: inherit;
+  color: inherit;
 }
 
 .second-bd-btn:disabled {
   cursor: auto;
-  background-color: inherit;
-  border-color: #eae9ed;
-  color: #dad7e0;
-}
-
-.second-bd-btn:disabled:hover,
-.second-bd-btn:disabled:active {
-  background-color: inherit;
-  border-color: #eae9ed;
-  color: #dad7e0;
+  background-color: inherit !important;
+  border-color: #eae9ed !important;
+  color: #dad7e0 !important;
 }
 
 .second-bd-btn:active,
@@ -492,20 +566,14 @@ body {
 .tertiary-btn {
   border: 0.125rem solid inherit;
   background-color: inherit;
+  color: inherit;
 }
 
 .tertiary-btn:disabled {
   cursor: auto;
-  color: #dad7e0;
-  background-color: inherit;
-  border-color: inherit;
-}
-
-.tertiary-btn:disabled:hover,
-.tertiary-btn:disabled:active {
-  background-color: inherit;
-  border-color: inherit;
-  color: #dad7e0;
+  color: #dad7e0 !important;
+  background-color: inherit !important;
+  border-color: inherit !important;
 }
 
 .tertiary-btn:active,
@@ -524,6 +592,251 @@ body {
 }
 
 /* </button> ========== */
+
+/* <text-field> ========== */
+
+.text-field,
+.password-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 70%;
+}
+
+.text-field__error,
+.text-field__success,
+.password-field__error,
+.password-field__success {
+  display: none;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+}
+
+.text-field__error::before,
+.text-field__success::before,
+.password-field__error::before,
+.password-field__success::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
+.text-field__error,
+.password-field__error {
+  color: #e00909;
+}
+
+.text-field__success,
+.password-field__success {
+  color: #009966;
+}
+
+.text-field__name,
+.password-field__name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  color: #3e345c;
+}
+
+.disabled .text-field__name,
+.disabled .password-field__name {
+  color: #dad7e0;
+}
+
+.text-field__body,
+.password-field__body {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #f3f2f5;
+  border-radius: 0.5rem;
+}
+
+.text-field__input,
+.password-field__input {
+  width: 100%;
+  caret-color: #0f0233;
+}
+
+.text-field__input::-moz-placeholder, .password-field__input::-moz-placeholder {
+  color: #878199;
+}
+
+.text-field__input::placeholder,
+.password-field__input::placeholder {
+  color: #878199;
+}
+
+.disabled .text-field__input::-moz-placeholder, .disabled .password-field__input::-moz-placeholder {
+  color: #dad7e0;
+}
+
+.disabled .text-field__input::placeholder,
+.disabled .password-field__input::placeholder {
+  color: #dad7e0;
+}
+
+.text-field__input:active::-moz-placeholder, .text-field__input.input-active::-moz-placeholder, .password-field__input:active::-moz-placeholder, .password-field__input.input-active::-moz-placeholder {
+  color: #dad7e0;
+}
+
+.text-field__input:active::placeholder,
+.text-field__input.input-active::placeholder,
+.password-field__input:active::placeholder,
+.password-field__input.input-active::placeholder {
+  color: #dad7e0;
+}
+
+.text-field__descr,
+.password-field__descr {
+  display: none;
+  font-size: 0.875rem;
+  line-height: 1.1428571429;
+  color: #878199;
+  padding: 0.25rem;
+  padding-bottom: 0;
+}
+
+.disabled .text-field__descr,
+.disabled .password-field__descr {
+  color: #dad7e0;
+}
+
+.descr .text-field__descr,
+.descr .password-field__descr {
+  display: block;
+}
+
+.text-field__icon-left,
+.text-field__icon-clear {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 1.25rem;
+  aspect-ratio: 1;
+  color: #878199;
+}
+
+.text-field__icon-left {
+  font-size: 1.09375rem;
+}
+
+.disabled .text-field__icon-left {
+  color: #dad7e0;
+}
+
+.text-field__icon-clear {
+  cursor: pointer;
+  font-size: 0.6625rem;
+}
+
+.text-field._error .text-field__optional {
+  display: none;
+}
+
+.text-field._error .text-field__error {
+  display: flex;
+}
+
+.text-field._error .text-field__body {
+  border: 0.125rem solid #e00909;
+  border-radius: 0.5rem;
+}
+
+.text-field._success .text-field__optional {
+  display: none;
+}
+
+.text-field._success .text-field__success {
+  display: flex;
+}
+
+.text-field._success .text-field__body {
+  border: 0.125rem solid #009966;
+  border-radius: 0.5rem;
+}
+
+.text-field__optional {
+  font-weight: 400;
+  color: #878199;
+}
+
+.disabled .text-field__optional {
+  color: #dad7e0;
+}
+
+.text-field__body.left-icon .text-field__icon-left {
+  display: flex;
+}
+
+.text-field__input:not(:-moz-placeholder-shown) + .text-field__icon-clear {
+  display: flex;
+}
+
+.text-field__input:not(:placeholder-shown) + .text-field__icon-clear {
+  display: flex;
+}
+
+.password-field__icon-show,
+.password-field__icon-hide {
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #878199;
+  min-width: 1.25rem;
+  aspect-ratio: 1;
+}
+
+.password-field__icon-show {
+  font-size: 1.0625rem;
+}
+
+.show-icon .password-field__icon-show {
+  display: flex;
+}
+
+.password-field__icon-hide {
+  font-size: 0.9375rem;
+}
+
+.hide-icon .password-field__icon-hide {
+  display: flex;
+}
+
+.password-field._error .password-field__error {
+  display: flex;
+}
+
+.password-field._error .password-field__body {
+  border: 0.125rem solid #e00909;
+  border-radius: 0.5rem;
+}
+
+.password-field._success .password-field__success {
+  display: flex;
+}
+
+.password-field._success .password-field__body {
+  border: 0.125rem solid #009966;
+  border-radius: 0.5rem;
+}
+
+.field-S {
+  padding: 0.75rem;
+}
+
+/* </text-field> ========== */
 
 /* </MAIN> ================================================== */
 
@@ -544,135 +857,192 @@ body {
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     gap: calc(
         30px + 20 * (100vw / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-top: calc(
         30px + 20 * (100vw / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-right: calc(
         10px + 30 * (100vw / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-bottom: calc(
         10px + 30 * (100vw / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-left: calc(
         10px + 30 * (100vw / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     border-radius: calc(
         30px + 10 * (100vw / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     gap: calc(
         40px + 20 * (100vw / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-top: calc(
         10px + 70 * (100vw / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-right: calc(
         10px + 70 * (100vw / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-bottom: calc(
         10px + 70 * (100vw / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-left: calc(
         10px + 70 * (100vw / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     border-radius: calc(
         22px + -2 * (100vw / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     gap: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     border-radius: calc(
         20px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-top: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-right: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-bottom: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-left: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-top: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-right: calc(
         15px + 45 * (100vw / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-bottom: calc(
         10px + 10 * (100vw / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-left: calc(
         15px + 45 * (100vw / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    border-radius: calc(
+        12px + 8 * (100vw / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-top: calc(
+        20px + 20 * (100vw / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-right: calc(
+        20px + 60 * (100vw / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-bottom: calc(
+        20px + 20 * (100vw / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-left: calc(
+        20px + 60 * (100vw / 1100)
       );
   }
 
@@ -703,36 +1073,6 @@ body {
   .item-buttons__descr {
     padding-left: calc(
         10px + 10 * (100vw / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    border-radius: calc(
-        12px + 8 * (100vw / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-top: calc(
-        20px + 20 * (100vw / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-right: calc(
-        20px + 60 * (100vw / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-bottom: calc(
-        20px + 20 * (100vw / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-left: calc(
-        20px + 60 * (100vw / 1100)
       );
   }
 }
@@ -795,135 +1135,192 @@ body {
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     gap: calc(
         30px + 34 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-top: calc(
         30px + 34 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-right: calc(
         10px + 51 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-bottom: calc(
         10px + 51 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     padding-left: calc(
         10px + 51 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__inner {
+  .buttons__inner,
+  .field__inner {
     border-radius: calc(
         30px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     gap: calc(
         40px + 34 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-top: calc(
         10px + 119 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-right: calc(
         10px + 119 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-bottom: calc(
         10px + 119 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     padding-left: calc(
         10px + 119 * ((100vw - 320px) / 1100)
       );
   }
 
-  .buttons__items {
+  .buttons__items,
+  .field__items {
     border-radius: calc(
         22px + -3.4 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     gap: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     border-radius: calc(
         20px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-top: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-right: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-bottom: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons {
+  .item-buttons,
+  .item-field {
     padding-left: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-top: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-right: calc(
         15px + 76.5 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-bottom: calc(
         10px + 17 * ((100vw - 320px) / 1100)
       );
   }
 
-  .item-buttons__top {
+  .item-buttons__top,
+  .item-field__top {
     padding-left: calc(
         15px + 76.5 * ((100vw - 320px) / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    border-radius: calc(
+        12px + 13.6 * ((100vw - 320px) / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-top: calc(
+        20px + 34 * ((100vw - 320px) / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-right: calc(
+        20px + 102 * ((100vw - 320px) / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-bottom: calc(
+        20px + 34 * ((100vw - 320px) / 1100)
+      );
+  }
+
+  .item-buttons__list,
+  .item-field__list {
+    padding-left: calc(
+        20px + 102 * ((100vw - 320px) / 1100)
       );
   }
 
@@ -957,34 +1354,13 @@ body {
       );
   }
 
-  .item-buttons__list {
-    border-radius: calc(
-        12px + 13.6 * ((100vw - 320px) / 1100)
-      );
+  .item-field__descr {
+    width: 100%;
   }
 
-  .item-buttons__list {
-    padding-top: calc(
-        20px + 34 * ((100vw - 320px) / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-right: calc(
-        20px + 102 * ((100vw - 320px) / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-bottom: calc(
-        20px + 34 * ((100vw - 320px) / 1100)
-      );
-  }
-
-  .item-buttons__list {
-    padding-left: calc(
-        20px + 102 * ((100vw - 320px) / 1100)
-      );
+  .text-field,
+  .password-field {
+    width: 100%;
   }
 }
 
@@ -1028,6 +1404,7 @@ body {
   .second-bd-btn:hover {
     background-color: #f3f2f5;
     border-color: #dad7e0;
+    color: #0f0233;
   }
 
   .second-bd-btn:active {
@@ -1039,11 +1416,52 @@ body {
   .tertiary-btn:hover {
     background-color: #f3f2f5;
     border-color: #f3f2f5;
+    color: #0f0233;
   }
 
   .tertiary-btn:active {
     background-color: #f0ebff;
     border-color: #f0ebff;
     color: #6933ff;
+  }
+
+  .text-field__body.input-focus,
+  .password-field__body.input-focus {
+    outline: 0.125rem solid #1d90f5;
+    outline-offset: 0.125rem;
+  }
+
+  body:not(.user-is-tabbing) .text-field__body.input-focus,
+  body:not(.user-is-tabbing) .password-field__body.input-focus {
+    outline: none;
+  }
+
+  .text-field__input:hover::-moz-placeholder, .password-field__input:hover::-moz-placeholder {
+    color: #3e345c;
+  }
+
+  .text-field__input:hover::placeholder,
+  .password-field__input:hover::placeholder {
+    color: #3e345c;
+  }
+
+  .disabled .text-field__input:hover::-moz-placeholder, .disabled .password-field__input:hover::-moz-placeholder {
+    color: #dad7e0;
+  }
+
+  .disabled .text-field__input:hover::placeholder,
+  .disabled .password-field__input:hover::placeholder {
+    color: #dad7e0;
+  }
+
+  .text-field__input:active::-moz-placeholder, .text-field__input.input-active::-moz-placeholder, .password-field__input:active::-moz-placeholder, .password-field__input.input-active::-moz-placeholder {
+    color: #dad7e0;
+  }
+
+  .text-field__input:active::placeholder,
+  .text-field__input.input-active::placeholder,
+  .password-field__input:active::placeholder,
+  .password-field__input.input-active::placeholder {
+    color: #dad7e0;
   }
 }
