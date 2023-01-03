@@ -596,7 +596,8 @@ body {
 /* <text-field> ========== */
 
 .text-field,
-.password-field {
+.password-field,
+.quantity-field {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -606,7 +607,9 @@ body {
 .text-field__error,
 .text-field__success,
 .password-field__error,
-.password-field__success {
+.password-field__success,
+.quantity-field__error,
+.quantity-field__success {
   display: none;
   flex-direction: row-reverse;
   align-items: center;
@@ -618,7 +621,9 @@ body {
 .text-field__error::before,
 .text-field__success::before,
 .password-field__error::before,
-.password-field__success::before {
+.password-field__success::before,
+.quantity-field__error::before,
+.quantity-field__success::before {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -627,17 +632,20 @@ body {
 }
 
 .text-field__error,
-.password-field__error {
+.password-field__error,
+.quantity-field__error {
   color: #e00909;
 }
 
 .text-field__success,
-.password-field__success {
+.password-field__success,
+.quantity-field__success {
   color: #009966;
 }
 
 .text-field__name,
-.password-field__name {
+.password-field__name,
+.quantity-field__name {
   display: flex;
   justify-content: space-between;
   padding: 0 0.25rem;
@@ -647,58 +655,67 @@ body {
   color: #3e345c;
 }
 
-.disabled .text-field__name,
-.disabled .password-field__name {
+._disabled .text-field__name,
+._disabled .password-field__name,
+._disabled .quantity-field__name {
   color: #dad7e0;
 }
 
 .text-field__body,
-.password-field__body {
+.password-field__body,
+.quantity-field__body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 1rem;
+  padding: 0.875rem;
   background-color: #f3f2f5;
+  border: 0.125rem solid transparent;
   border-radius: 0.5rem;
 }
 
 .text-field__input,
-.password-field__input {
+.password-field__input,
+.quantity-field__input {
   width: 100%;
   caret-color: #0f0233;
 }
 
-.text-field__input::-moz-placeholder, .password-field__input::-moz-placeholder {
+.text-field__input::-moz-placeholder, .password-field__input::-moz-placeholder, .quantity-field__input::-moz-placeholder {
   color: #878199;
 }
 
 .text-field__input::placeholder,
-.password-field__input::placeholder {
+.password-field__input::placeholder,
+.quantity-field__input::placeholder {
   color: #878199;
 }
 
-.disabled .text-field__input::-moz-placeholder, .disabled .password-field__input::-moz-placeholder {
+._disabled .text-field__input::-moz-placeholder, ._disabled .password-field__input::-moz-placeholder, ._disabled .quantity-field__input::-moz-placeholder {
   color: #dad7e0;
 }
 
-.disabled .text-field__input::placeholder,
-.disabled .password-field__input::placeholder {
+._disabled .text-field__input::placeholder,
+._disabled .password-field__input::placeholder,
+._disabled .quantity-field__input::placeholder {
   color: #dad7e0;
 }
 
-.text-field__input:active::-moz-placeholder, .text-field__input.input-active::-moz-placeholder, .password-field__input:active::-moz-placeholder, .password-field__input.input-active::-moz-placeholder {
+.text-field__input:active::-moz-placeholder, .input-active .text-field__input::-moz-placeholder, .password-field__input:active::-moz-placeholder, .input-active .password-field__input::-moz-placeholder, .quantity-field__input:active::-moz-placeholder, .input-active .quantity-field__input::-moz-placeholder {
   color: #dad7e0;
 }
 
 .text-field__input:active::placeholder,
-.text-field__input.input-active::placeholder,
+.input-active .text-field__input::placeholder,
 .password-field__input:active::placeholder,
-.password-field__input.input-active::placeholder {
+.input-active .password-field__input::placeholder,
+.quantity-field__input:active::placeholder,
+.input-active .quantity-field__input::placeholder {
   color: #dad7e0;
 }
 
 .text-field__descr,
-.password-field__descr {
+.password-field__descr,
+.quantity-field__descr {
   display: none;
   font-size: 0.875rem;
   line-height: 1.1428571429;
@@ -707,13 +724,15 @@ body {
   padding-bottom: 0;
 }
 
-.disabled .text-field__descr,
-.disabled .password-field__descr {
+._disabled .text-field__descr,
+._disabled .password-field__descr,
+._disabled .quantity-field__descr {
   color: #dad7e0;
 }
 
 .descr .text-field__descr,
-.descr .password-field__descr {
+.descr .password-field__descr,
+.descr .quantity-field__descr {
   display: block;
 }
 
@@ -731,7 +750,7 @@ body {
   font-size: 1.09375rem;
 }
 
-.disabled .text-field__icon-left {
+._disabled .text-field__icon-left {
   color: #dad7e0;
 }
 
@@ -749,8 +768,19 @@ body {
 }
 
 .text-field._error .text-field__body {
-  border: 0.125rem solid #e00909;
-  border-radius: 0.5rem;
+  border-color: #e00909;
+}
+
+.text-field._error.input-active .text-field__error {
+  display: none;
+}
+
+.text-field._error.input-active .text-field__body {
+  border-color: transparent;
+}
+
+.text-field._error.input-active .text-field__optional {
+  display: block;
 }
 
 .text-field._success .text-field__optional {
@@ -771,7 +801,7 @@ body {
   color: #878199;
 }
 
-.disabled .text-field__optional {
+._disabled .text-field__optional {
   color: #dad7e0;
 }
 
@@ -798,6 +828,12 @@ body {
   aspect-ratio: 1;
 }
 
+._disabled .password-field__icon-show,
+._disabled .password-field__icon-hide {
+  color: #dad7e0;
+  cursor: auto;
+}
+
 .password-field__icon-show {
   font-size: 1.0625rem;
 }
@@ -814,13 +850,38 @@ body {
   display: flex;
 }
 
+.password-field__optional {
+  display: none;
+  font-weight: 400;
+  color: #878199;
+}
+
+.input-active .password-field__optional {
+  display: block;
+}
+
+._success .password-field__optional {
+  display: none;
+}
+
+._disabled .password-field__optional {
+  color: #dad7e0;
+}
+
 .password-field._error .password-field__error {
   display: flex;
 }
 
 .password-field._error .password-field__body {
-  border: 0.125rem solid #e00909;
-  border-radius: 0.5rem;
+  border-color: #e00909;
+}
+
+.password-field._error.input-active .password-field__error {
+  display: none;
+}
+
+.password-field._error.input-active .password-field__body {
+  border-color: transparent;
 }
 
 .password-field._success .password-field__success {
@@ -832,8 +893,104 @@ body {
   border-radius: 0.5rem;
 }
 
+.quantity-field._error .quantity-field__error {
+  display: flex;
+}
+
+.quantity-field._error .quantity-field__body {
+  border-color: #e00909;
+}
+
+.quantity-field._error.input-active .quantity-field__error {
+  display: none;
+}
+
+.quantity-field._error.input-active .quantity-field__body {
+  border-color: transparent;
+}
+
+.quantity-field._success .quantity-field__success {
+  display: flex;
+}
+
+.quantity-field._success .quantity-field__body {
+  border: 0.125rem solid #009966;
+  border-radius: 0.5rem;
+}
+
+.quantity-field__body {
+  position: relative;
+}
+
+.quantity-field__currency {
+  display: none;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  color: #878199;
+}
+
+.cur .quantity-field__currency {
+  display: block;
+}
+
+._disabled .quantity-field__currency {
+  color: #dad7e0;
+}
+
+.quantity-field__input {
+  -moz-appearance: textfield;
+}
+
+.quantity-field__input::-webkit-outer-spin-button,
+.quantity-field__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-field__show-info {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: #878199;
+  min-width: 1.25rem;
+  aspect-ratio: 1;
+  font-size: 1.0625rem;
+  cursor: pointer;
+}
+
+.info-icon .quantity-field__show-info {
+  display: flex;
+}
+
+._disabled .quantity-field__show-info {
+  color: #dad7e0;
+  cursor: auto;
+}
+
+.quantity-field__arrows {
+  display: flex;
+  flex-direction: column;
+  height: 1.25rem;
+  aspect-ratio: 1;
+  gap: 0.25rem;
+}
+
+.quantity-field__up,
+.quantity-field__lower {
+  padding: 0.0625rem 0.25rem;
+  font-size: 0.375rem;
+  cursor: pointer;
+  color: #878199;
+}
+
+._disabled .quantity-field__up,
+._disabled .quantity-field__lower {
+  color: #dad7e0;
+  cursor: auto;
+}
+
 .field-S {
-  padding: 0.75rem;
+  padding: 0.625rem;
 }
 
 /* </text-field> ========== */
@@ -1359,7 +1516,8 @@ body {
   }
 
   .text-field,
-  .password-field {
+  .password-field,
+  .quantity-field {
     width: 100%;
   }
 }
@@ -1425,43 +1583,49 @@ body {
     color: #6933ff;
   }
 
-  .text-field__body.input-focus,
-  .password-field__body.input-focus {
+  .input-focus .text-field__body,
+  .input-focus .password-field__body,
+  .input-focus .quantity-field__body {
     outline: 0.125rem solid #1d90f5;
     outline-offset: 0.125rem;
   }
 
-  body:not(.user-is-tabbing) .text-field__body.input-focus,
-  body:not(.user-is-tabbing) .password-field__body.input-focus {
+  body:not(.user-is-tabbing) .input-focus .text-field__body,
+  body:not(.user-is-tabbing) .input-focus .password-field__body,
+  body:not(.user-is-tabbing) .input-focus .quantity-field__body {
     outline: none;
   }
 
-  .text-field__input:hover::-moz-placeholder, .password-field__input:hover::-moz-placeholder {
+  .text-field__input:hover::-moz-placeholder, .password-field__input:hover::-moz-placeholder, .quantity-field__input:hover::-moz-placeholder {
     color: #3e345c;
   }
 
   .text-field__input:hover::placeholder,
-  .password-field__input:hover::placeholder {
+  .password-field__input:hover::placeholder,
+  .quantity-field__input:hover::placeholder {
     color: #3e345c;
   }
 
-  .disabled .text-field__input:hover::-moz-placeholder, .disabled .password-field__input:hover::-moz-placeholder {
+  ._disabled .text-field__input:hover::-moz-placeholder, ._disabled .password-field__input:hover::-moz-placeholder, ._disabled .quantity-field__input:hover::-moz-placeholder {
     color: #dad7e0;
   }
 
-  .disabled .text-field__input:hover::placeholder,
-  .disabled .password-field__input:hover::placeholder {
+  ._disabled .text-field__input:hover::placeholder,
+  ._disabled .password-field__input:hover::placeholder,
+  ._disabled .quantity-field__input:hover::placeholder {
     color: #dad7e0;
   }
 
-  .text-field__input:active::-moz-placeholder, .text-field__input.input-active::-moz-placeholder, .password-field__input:active::-moz-placeholder, .password-field__input.input-active::-moz-placeholder {
+  .text-field__input:active::-moz-placeholder, .input-active .text-field__input::-moz-placeholder, .password-field__input:active::-moz-placeholder, .input-active .password-field__input::-moz-placeholder, .quantity-field__input:active::-moz-placeholder, .input-active .quantity-field__input::-moz-placeholder {
     color: #dad7e0;
   }
 
   .text-field__input:active::placeholder,
-  .text-field__input.input-active::placeholder,
+  .input-active .text-field__input::placeholder,
   .password-field__input:active::placeholder,
-  .password-field__input.input-active::placeholder {
+  .input-active .password-field__input::placeholder,
+  .quantity-field__input:active::placeholder,
+  .input-active .quantity-field__input::placeholder {
     color: #dad7e0;
   }
 }
