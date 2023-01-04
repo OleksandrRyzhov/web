@@ -678,6 +678,12 @@ body {
   caret-color: #0f0233;
 }
 
+._disabled .text-field__input,
+._disabled .password-field__input,
+._disabled .quantity-field__input {
+  cursor: not-allowed;
+}
+
 .text-field__input::-moz-placeholder, .password-field__input::-moz-placeholder, .quantity-field__input::-moz-placeholder {
   font-size: 1rem;
   line-height: 1.25;
@@ -811,11 +817,11 @@ body {
   display: flex;
 }
 
-.text-field__input:not(:-moz-placeholder-shown) + .text-field__icon-clear {
+.input-active .text-field__input:not(:-moz-placeholder-shown) + .text-field__icon-clear {
   display: flex;
 }
 
-.text-field__input:not(:placeholder-shown) + .text-field__icon-clear {
+.input-active .text-field__input:not(:placeholder-shown) + .text-field__icon-clear {
   display: flex;
 }
 
@@ -833,7 +839,7 @@ body {
 ._disabled .password-field__icon-show,
 ._disabled .password-field__icon-hide {
   color: #dad7e0;
-  cursor: auto;
+  cursor: not-allowed;
 }
 
 .password-field__icon-show {
@@ -966,7 +972,7 @@ body {
 
 ._disabled .quantity-field__show-info {
   color: #dad7e0;
-  cursor: auto;
+  cursor: not-allowed;
 }
 
 .quantity-field__arrows {
@@ -988,7 +994,7 @@ body {
 ._disabled .quantity-field__up,
 ._disabled .quantity-field__lower {
   color: #dad7e0;
-  cursor: auto;
+  cursor: not-allowed;
 }
 
 .field-S {
@@ -1585,6 +1591,12 @@ body {
     color: #6933ff;
   }
 
+  .text-field__body:hover,
+  .password-field__body:hover,
+  .quantity-field__body:hover {
+    background-color: #eae9ed;
+  }
+
   .input-focus .text-field__body,
   .input-focus .password-field__body,
   .input-focus .quantity-field__body {
@@ -1596,6 +1608,13 @@ body {
   body:not(.user-is-tabbing) .input-focus .password-field__body,
   body:not(.user-is-tabbing) .input-focus .quantity-field__body {
     outline: none;
+  }
+
+  ._disabled .text-field__body,
+  ._disabled .password-field__body,
+  ._disabled .quantity-field__body {
+    background-color: #f3f2f5;
+    cursor: not-allowed;
   }
 
   .text-field__input:hover::-moz-placeholder, .password-field__input:hover::-moz-placeholder, .quantity-field__input:hover::-moz-placeholder {
