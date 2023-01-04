@@ -679,12 +679,16 @@ body {
 }
 
 .text-field__input::-moz-placeholder, .password-field__input::-moz-placeholder, .quantity-field__input::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.25;
   color: #878199;
 }
 
 .text-field__input::placeholder,
 .password-field__input::placeholder,
 .quantity-field__input::placeholder {
+  font-size: 1rem;
+  line-height: 1.25;
   color: #878199;
 }
 
