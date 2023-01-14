@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/style.min.css?_v=20230115010757">
+		<title>Text field Unityle</title>
+	</head>
+  <body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__top">
+					<div class="header__inner">
+						<a class="logo" href="./">
+							<div class="logo__icon">
+								<img src="img/icons/logo.svg" alt="logo">
+							</div>
+							<div class="logo__text _icon-logo-text"></div>
+						</a>
+					</div>
+				</div>
+				<div class="header__menu menu"  data-da=".header__inner,991.98">
+					<button class="menu__icon icon-menu" type="button" data-da=".header__inner,991.98,first"><span></span></button>
+					<div class="menu__inner">
+						<nav class="menu__body">
+							<p class="menu__title">Components</p>
+							<ul class="menu__list" data-spoilers>
+								<li class="menu__item">
+									<button class="menu__item-title _icon-menu-arrow" data-spoiler type="button">Action</button>
+									<ul class="menu__sublist">
+										<li class="menu__subitem">
+											<a class="menu__link" href="action-list.html">Action list</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link" href="button.html">Button</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link" href="checkbox.html">Checkbox</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link" href="link.html">Link</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link" href="radio-button.html">Radio button</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link" href="toggle.html">Toggle</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button class="menu__item-title _icon-menu-arrow _spoiler-active" data-spoiler type="button">Field & Search</button>
+									<ul class="menu__sublist">
+										<li class="menu__subitem">
+											<a class="menu__link" href="text-area.html">Text area</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link" href="search.html">Search</a>
+										</li>
+										<li class="menu__subitem">
+											<a class="menu__link active" href="text-field.html">Text field</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button class="menu__item-title _icon-menu-arrow" data-spoiler type="button">Navigation</button>
+									<ul class="menu__sublist">
+										<li class="menu__subitem">
+											<a class="menu__link" href="example.html">Example</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button class="menu__item-title _icon-menu-arrow" data-spoiler type="button">Selection</button>
+									<ul class="menu__sublist">
+										<li class="menu__subitem">
+											<a class="menu__link" href="example.html">Example</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item">
+									<button class="menu__item-title _icon-menu-arrow" data-spoiler type="button">Status</button>
+									<ul class="menu__sublist">
+										<li class="menu__subitem">
+											<a class="menu__link" href="example.html">Example</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+      </header>
+      <div class="inner">
+      	<main class="main">
+					<section class="main-content">
+						<div class="container">
+							<div class="main-content__inner">
+								<h2 class="main-content__title">Text field</h2>
+								<p class="main-content__descr">
+									A text field is an input field that merchants can type into. It has a range of options and supports several text formats including numbers.
+								</p>
+								<div class="main-content__tabs"> 
+									<button class="tab main-content__tab tab--active" type="button">Standart</button>
+									<button class="tab main-content__tab" type="button">Password</button>
+									<button class="tab main-content__tab" type="button">Quantity</button>
+								</div>
+								<div class="main-content__contents">
+									<div class="content content--active">
+										<form class="form form--active" action="#">
+											<div class="form__body">
+												<div class="text-field">
+													<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+													<label class="text-field__body field-S">
+														<span class="text-field__icon-left _icon-user"></span>
+														<input class="text-field__input" type="text" name="text" placeholder="Text">
+														<span class="text-field__icon-clear _icon-close"></span>
+													</label>
+													<p class="text-field__descr"></p>
+												</div>
+											</div>
+											<button class="form__btn standart-btn btn-S" type="submit">Submit</button>
+										</form>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<div class="text-field">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Default</span>
+												</li>
+												<li class="examples__item">
+													<div class="text-field hover">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<div class="text-field input-active">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Active</span>
+												</li>
+												<li class="examples__item">
+													<div class="text-field">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Filled</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<div class="text-field input-focus input-active">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<div class="text-field _error">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Error</span>
+												</li>
+												<li class="examples__item">
+													<div class="text-field _success">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" value="Some text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Success</span>
+												</li>
+												<li class="examples__item">
+													<div class="text-field _disabled">
+														<p class="text-field__name">Field label <span class="text-field__optional"></span><span class="text-field__error _icon-error">Error</span><span class="text-field__success _icon-success">Success</span></p>
+														<label class="text-field__body field-S">
+															<span class="text-field__icon-left _icon-user"></span>
+															<input class="text-field__input" type="text" name="text" placeholder="Text" disabled>
+															<span class="text-field__icon-clear _icon-close"></span>
+														</label>
+														<p class="text-field__descr"></p>
+													</div>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<form class="form" action="#">
+											<div class="form__body">
+												<div class="password-field">
+													<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+													<label class="password-field__body field-S">
+														<input class="password-field__input" type="password" name="password" placeholder="********">
+														<span class="password-field__icon-show _icon-show-pass"></span>
+														<span class="password-field__icon-hide _icon-hide-pass"></span>
+													</label>
+													<p class="password-field__descr">Additional description and instructions</p>
+												</div>
+											</div>
+											<button class="form__btn standart-btn btn-S" type="submit">Submit</button>
+										</form>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<div class="password-field">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Default</span>
+												</li>
+												<li class="examples__item">
+													<div class="password-field hover">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<div class="password-field input-active">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Active</span>
+												</li>
+												<li class="examples__item">
+													<div class="password-field">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" value="ExamplePass" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Filled</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<div class="password-field input-focus input-active">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<div class="password-field _error">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Error</span>
+												</li>
+												<li class="examples__item">
+													<div class="password-field _success">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Success</span>
+												</li>
+												<li class="examples__item">
+													<div class="password-field _disabled">
+														<p class="password-field__name">Password <span class="password-field__optional">At least 8 characters</span><span class="password-field__error _icon-error">Error</span><span class="password-field__success _icon-success">Success</span></p>
+														<label class="password-field__body field-S">
+															<input class="password-field__input" type="password" name="password" placeholder="********" disabled>
+															<span class="password-field__icon-show _icon-show-pass"></span>
+															<span class="password-field__icon-hide _icon-hide-pass"></span>
+														</label>
+														<p class="password-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<form class="form" action="#">
+											<div class="form__body">
+												<div class="quantity-field">
+													<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+													<label class="quantity-field__body field-S">
+														<span class="quantity-field__currency">$</span>
+														<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00">
+														<span class="quantity-field__show-info _icon-quantity-info"></span>
+														<div class="quantity-field__arrows">
+															<span class="quantity-field__up _icon-arrow-up"></span>
+															<span class="quantity-field__lower _icon-arrow-lower"></span>
+														</div>
+													</label>
+													<p class="quantity-field__descr">Additional description and instructions</p>
+												</div>
+											</div>
+											<button class="form__btn standart-btn btn-S" type="submit">Submit</button>
+										</form>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<div class="quantity-field">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Default</span>
+												</li>
+												<li class="examples__item">
+													<div class="quantity-field hover">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<div class="quantity-field input-active">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Active</span>
+												</li>
+												<li class="examples__item">
+													<div class="quantity-field">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" value="5.00" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Filled</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<div class="quantity-field input-focus input-active">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<div class="quantity-field _error">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" value="4.99" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Error</span>
+												</li>
+												<li class="examples__item">
+													<div class="quantity-field _success">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="number" placeholder="0.00" value="4.45" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Success</span>
+												</li>
+												<li class="examples__item">
+													<div class="quantity-field _disabled">
+														<p class="quantity-field__name">Quantity <span class="password-field__optional">Multiples of 5 only</span><span class="quantity-field__error _icon-error">Error</span><span class="quantity-field__success _icon-success">Success</span></p>
+														<label class="quantity-field__body field-S">
+															<span class="quantity-field__currency">$</span>
+															<input class="quantity-field__input" type="number" min="0" step="0.05" name="password" placeholder="0.00" disabled>
+															<span class="quantity-field__show-info _icon-quantity-info"></span>
+															<div class="quantity-field__arrows">
+																<span class="quantity-field__up _icon-arrow-up"></span>
+																<span class="quantity-field__lower _icon-arrow-lower"></span>
+															</div>
+														</label>
+														<p class="quantity-field__descr">Additional description and instructions</p>
+													</div>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+	      <footer class="footer">
+				footer
+			</footer>
+      </div>
+    </div>
+		<script src="js/app.min.js?_v=20230115010757"></script>
+  </body>
+</html>
