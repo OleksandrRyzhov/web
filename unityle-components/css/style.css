@@ -524,7 +524,7 @@ body {
 }
 
 .primary-btn:disabled {
-  cursor: auto;
+  cursor: not-allowed;
   background-color: #f3f2f5;
   border-color: #f3f2f5;
   color: #dad7e0;
@@ -544,7 +544,7 @@ body {
 }
 
 .standart-btn:disabled {
-  cursor: auto;
+  cursor: not-allowed;
   background-color: #f3f2f5;
   border-color: #f3f2f5;
   color: #dad7e0;
@@ -562,7 +562,7 @@ body {
 }
 
 .secondary-btn:disabled {
-  cursor: auto;
+  cursor: not-allowed;
   background-color: transparent;
   border-color: #eae9ed;
   color: #dad7e0;
@@ -576,7 +576,7 @@ body {
 }
 
 .tertiary-btn:disabled {
-  cursor: auto;
+  cursor: not-allowed;
   color: #dad7e0;
   background-color: transparent;
   border-color: transparent;
@@ -1558,7 +1558,7 @@ body {
   }
 
   .primary-btn:disabled {
-    cursor: auto;
+    cursor: not-allowed;
     background-color: #f3f2f5;
     border-color: #f3f2f5;
     color: #dad7e0;
@@ -1576,7 +1576,7 @@ body {
   }
 
   .standart-btn:disabled {
-    cursor: auto;
+    cursor: not-allowed;
     background-color: #f3f2f5;
     border-color: #f3f2f5;
     color: #dad7e0;
@@ -1595,7 +1595,7 @@ body {
   }
 
   .secondary-btn:disabled {
-    cursor: auto;
+    cursor: not-allowed;
     background-color: transparent;
     border-color: #eae9ed;
     color: #dad7e0;
@@ -1614,7 +1614,7 @@ body {
   }
 
   .tertiary-btn:disabled {
-    cursor: auto;
+    cursor: not-allowed;
     color: #dad7e0;
     background-color: transparent;
     border-color: transparent;
