@@ -618,6 +618,14 @@ body {
   position: relative;
 }
 
+.primary-btn._focus,
+.standart-btn._focus,
+.secondary-btn._focus,
+.tertiary-btn._focus {
+  outline: 0.125rem solid #1d90f5;
+  outline-offset: 0.125rem;
+}
+
 .primary-btn {
   border-color: #6933ff;
   background-color: #6933ff;
@@ -880,6 +888,13 @@ body {
 .hover .password-field__body,
 .hover .quantity-field__body {
   background-color: #eae9ed;
+}
+
+._focus .text-field__body,
+._focus .password-field__body,
+._focus .quantity-field__body {
+  outline: 0.125rem solid #1d90f5;
+  outline-offset: 0.125rem;
 }
 
 .text-field__input,
@@ -1425,13 +1440,9 @@ body {
   }
 
   .primary-btn:focus,
-  .primary-btn._focus,
   .standart-btn:focus,
-  .standart-btn._focus,
   .secondary-btn:focus,
-  .secondary-btn._focus,
-  .tertiary-btn:focus,
-  .tertiary-btn._focus {
+  .tertiary-btn:focus {
     outline: 0.125rem solid #1d90f5;
     outline-offset: 0.125rem;
   }
