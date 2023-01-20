@@ -935,9 +935,17 @@ body {
   background-color: #dad7e0;
 }
 
+._disabled .checkbox__body.active::before {
+  scale: 1;
+}
+
 ._disabled .checkbox__body::after {
   border-color: #eae9ed;
   background-color: #f3f2f5;
+}
+
+._disabled .checkbox__body::before {
+  scale: 0;
 }
 
 .checkbox__input {
