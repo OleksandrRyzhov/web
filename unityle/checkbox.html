@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="css/style.min.css?_v=20230115170811">
+		<link rel="stylesheet" href="css/style.min.css?_v=20230120221215">
 		<title>Checkbox Unityle</title>
 	</head>
   <body>
@@ -104,35 +104,296 @@
 								</p>
 								<div class="main-content__tabs"> 
 									<button class="tab main-content__tab tab--active" type="button">Standart</button>
+									<button class="tab main-content__tab" type="button">Checked</button>
+									<button class="tab main-content__tab" type="button">Multichoice</button>
 								</div>
 								<div class="main-content__contents">
 									<div class="content content--active">
-										
+										<form class="form form--active" action="#">
+											<div class="form__body">
+												<div class="checkbox">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label01">
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label02" checked>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+												</div>
+											</div>
+										</form>
 										<div class="examples">
 											<h4 class="examples__title">All states</h4>
 											<ul class="examples__list">
 												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _default">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
 													<span>Default</span>
 												</li>
 												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _hover">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
 													<span>Hover</span>
 												</li>
 												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _active">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
 													<span>Active</span>
 												</li>
 												<li class="examples__item">
-													<span>Filled</span>
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _default active">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Checked</span>
 												</li>
 												<li class="examples__item user-is-tabbing">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _default _focus">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
 													<span>Focus</span>
 												</li>
 												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _default _error">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
 													<span>Error</span>
 												</li>
 												<li class="examples__item">
-													<span>Success</span>
+													<div class="checkbox__item _disabled">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label01" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<form class="form form--active" action="#">
+											<div class="form__body">
+												<div class="checkbox">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label03" checked>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label04">
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked active _default">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Default</span>
 												</li>
 												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked active _hover">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked active _active">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Active</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _default">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Unchecked</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked _default active _focus">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked active _default _error">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Error</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item _disabled">
+														<label class="checkbox__body _icon-checked active">
+															<input class="checkbox__input" type="checkbox" name="label03" disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<form class="form form--active" action="#">
+											<div class="form__body">
+												<div class="checkbox">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label" checked>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-checked">
+															<input class="checkbox__input" type="checkbox" name="label">
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+												</div>
+											</div>
+										</form>
+										<div class="examples">
+											<h4 class="examples__title">All states (checked)</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-multichoise _default active">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Default</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-multichoise active _hover">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-multichoise active _active">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Active</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-multichoise _default">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Unchecked</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-multichoise _default active _focus">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item">
+														<label class="checkbox__body _icon-multichoise active _default _error">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
+													<span>Error</span>
+												</li>
+												<li class="examples__item">
+													<div class="checkbox__item _disabled">
+														<label class="checkbox__body _icon-multichoise active">
+															<input class="checkbox__input" type="checkbox" name="label03" checked disabled>
+															<span class="checkbox__name">Label</span>
+														</label>
+														<p class="checkbox__descr">Help text goes here</p>
+													</div>
 													<span>Disabled</span>
 												</li>
 											</ul>
@@ -143,11 +404,11 @@
 						</div>
 					</section>
 				</main>
-	      <footer class="footer">
+				<footer class="footer">
 				footer
 			</footer>
       </div>
     </div>
-		<script src="js/app.min.js?_v=20230115170811"></script>
+		<script src="js/app.min.js?_v=20230120221215"></script>
   </body>
 </html>
