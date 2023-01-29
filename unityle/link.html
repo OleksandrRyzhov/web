@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="css/style.min.css?_v=20230122014158">
+		<link rel="stylesheet" href="css/style.min.css?_v=20230129141654">
 		<title>Link Unityle</title>
 	</head>
   <body>
@@ -104,36 +104,84 @@
 								</p>
 								<div class="main-content__tabs"> 
 									<button class="tab main-content__tab tab--active" type="button">Standart</button>
+									<button class="tab main-content__tab" type="button">No underline</button>
+									<button class="tab main-content__tab" type="button">Monochrome</button>
 								</div>
 								<div class="main-content__contents">
 									<div class="content content--active">
-										
+										<div class="content__body">
+											<a class="link _icon-link" href="#">Label</a>
+										</div>
 										<div class="examples">
 											<h4 class="examples__title">All states</h4>
 											<ul class="examples__list">
 												<li class="examples__item">
+													<p class="link _icon-link">Label</p>
 													<span>Default</span>
 												</li>
 												<li class="examples__item">
+													<p class="link _icon-link _hover">Label</p>
 													<span>Hover</span>
 												</li>
 												<li class="examples__item">
-													<span>Active</span>
-												</li>
-												<li class="examples__item">
-													<span>Filled</span>
+													<p class="link _icon-link _pressed">Label</p>
+													<span>Pressed</span>
 												</li>
 												<li class="examples__item user-is-tabbing">
+													<p class="link _icon-link _focus">Label</p>
 													<span>Focus</span>
 												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<div class="content__body">
+											<a class="link no-under _icon-link" href="#">Label</a>
+										</div>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
 												<li class="examples__item">
-													<span>Error</span>
+													<p class="link no-under _icon-link">Label</p>
+													<span>Default</span>
 												</li>
 												<li class="examples__item">
-													<span>Success</span>
+													<p class="link no-under _icon-link _hover">Label</p>
+													<span>Hover</span>
 												</li>
 												<li class="examples__item">
-													<span>Disabled</span>
+													<p class="link no-under _icon-link _pressed">Label</p>
+													<span>Pressed</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<p class="link no-under _icon-link _focus">Label</p>
+													<span>Focus</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<div class="content__body">
+											<a class="link mono" href="#">Label</a>
+										</div>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<p class="link mono">Label</p>
+													<span>Default</span>
+												</li>
+												<li class="examples__item">
+													<p class="link mono _hover">Label</p>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<p class="link mono _pressed">Label</p>
+													<span>Pressed</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<p class="link mono _focus">Label</p>
+													<span>Focus</span>
 												</li>
 											</ul>
 										</div>
@@ -148,6 +196,6 @@
 			</footer>
       </div>
     </div>
-		<script src="js/app.min.js?_v=20230122014158"></script>
+		<script src="js/app.min.js?_v=20230129141654"></script>
   </body>
 </html>
