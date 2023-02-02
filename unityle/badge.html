@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/style.min.css?_v=20230202195141">
-		<title>Radio button Unityle</title>
+		<title>Bagde Unityle</title>
 	</head>
   <body>
 		<div class="wrapper">
@@ -34,7 +34,7 @@
 											<a class="menu__link" href="action-list.html">Action list</a>
 										</li>
 										<li class="menu__subitem">
-											<a class="menu__link" href="badge.html">Badge</a>
+											<a class="menu__link active" href="badge.html">Badge</a>
 										</li>
 										<li class="menu__subitem">
 											<a class="menu__link" href="button.html">Button</a>
@@ -46,7 +46,7 @@
 											<a class="menu__link" href="link.html">Link</a>
 										</li>
 										<li class="menu__subitem">
-											<a class="menu__link active" href="radio-button.html">Radio button</a>
+											<a class="menu__link" href="radio-button.html">Radio button</a>
 										</li>
 										<li class="menu__subitem">
 											<a class="menu__link" href="toast-message.html">Toast message</a>
@@ -104,43 +104,101 @@
 					<section class="main-content">
 						<div class="container">
 							<div class="main-content__inner">
-								<h2 class="main-content__title">Radio button</h2>
+								<h2 class="main-content__title">Bagde</h2>
 								<p class="main-content__descr">
 									On development stage
 								</p>
 								<div class="main-content__tabs"> 
 									<button class="tab main-content__tab tab--active" type="button">Standart</button>
+									<button class="tab main-content__tab" type="button">Fill</button>
+									<button class="tab main-content__tab" type="button">Border</button>
 								</div>
 								<div class="main-content__contents">
 									<div class="content content--active">
-										<form class="form form--active" action="#">
-											
-										</form>
+										<div class="content__body">
+											<button class="badge _icon-standart" type="button"><span>Label</span></button>
+										</div>
 										<div class="examples">
 											<h4 class="examples__title">All states</h4>
 											<ul class="examples__list">
 												<li class="examples__item">
+													<button class="badge _icon-standart _default" type="button" disabled><span>Label</span></button>
 													<span>Default</span>
 												</li>
 												<li class="examples__item">
+													<button class="badge _icon-standart _hover" type="button" disabled><span>Label</span></button>
 													<span>Hover</span>
 												</li>
 												<li class="examples__item">
-													<span>Active</span>
-												</li>
-												<li class="examples__item">
-													<span>Filled</span>
+													<button class="badge _icon-standart _pressed" type="button" disabled><span>Label</span></button>
+													<span>Pressed</span>
 												</li>
 												<li class="examples__item user-is-tabbing">
+													<button class="badge _icon-standart _focus" type="button" disabled><span>Label</span></button>
 													<span>Focus</span>
 												</li>
 												<li class="examples__item">
-													<span>Error</span>
+													<button class="badge _icon-standart" type="button" disabled><span>Label</span></button>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<div class="content__body">
+											<button class="badge _icon-standart fill" type="button"><span>Label</span></button>
+										</div>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<button class="badge _icon-standart fill _default" type="button" disabled><span>Label</span></button>
+													<span>Default</span>
 												</li>
 												<li class="examples__item">
-													<span>Success</span>
+													<button class="badge _icon-standart fill _hover" type="button" disabled><span>Label</span></button>
+													<span>Hover</span>
 												</li>
 												<li class="examples__item">
+													<button class="badge _icon-standart fill _pressed" type="button" disabled><span>Label</span></button>
+													<span>Pressed</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<button class="badge _icon-standart fill _focus" type="button" disabled><span>Label</span></button>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<button class="badge _icon-standart fill" type="button" disabled><span>Label</span></button>
+													<span>Disabled</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="content">
+										<div class="content__body">
+											<button class="badge _icon-standart border" type="button"><span>Label</span></button>
+										</div>
+										<div class="examples">
+											<h4 class="examples__title">All states</h4>
+											<ul class="examples__list">
+												<li class="examples__item">
+													<button class="badge _icon-standart border _default" type="button" disabled><span>Label</span></button>
+													<span>Default</span>
+												</li>
+												<li class="examples__item">
+													<button class="badge _icon-standart border _hover" type="button" disabled><span>Label</span></button>
+													<span>Hover</span>
+												</li>
+												<li class="examples__item">
+													<button class="badge _icon-standart border _pressed" type="button" disabled><span>Label</span></button>
+													<span>Pressed</span>
+												</li>
+												<li class="examples__item user-is-tabbing">
+													<button class="badge _icon-standart border _focus" type="button" disabled><span>Label</span></button>
+													<span>Focus</span>
+												</li>
+												<li class="examples__item">
+													<button class="badge _icon-standart border" type="button" disabled><span>Label</span></button>
 													<span>Disabled</span>
 												</li>
 											</ul>
