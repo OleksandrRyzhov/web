@@ -2441,6 +2441,7 @@ button {
   }
   .menu {
     display: block;
+    height: 1.875rem;
   }
   .menu__body {
     position: fixed;
