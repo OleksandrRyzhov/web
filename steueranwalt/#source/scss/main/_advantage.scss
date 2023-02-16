@@ -2,40 +2,39 @@
   background-color: $colorSky;
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 271px);
-    gap: 50px;
+    grid-template-columns: repeat(3, rem(271));
+    gap: rem(50);
     justify-content: center;
   }
   &__item {
     text-align: center;
     &-link {
       display: inline-flex;
-      margin-bottom: 10px;
+      margin-bottom: rem(10);
       background-color: $colorBlue;
-      width: 100px;
-      height: 100px;
+      width: rem(100);
+      height: rem(100);
       border-radius: 50%;
       justify-content: center;
       align-items: center;
       transition: all 0.5s ease 0s;
-      &:hover {
-        box-shadow: 0 0 15px $colorAqua;
-      }
     }
     &-img {
-      width: 61px;
-      height: 61px;
+      width: rem(61);
+      height: rem(61);
     }
     &-title {
       display: block;
-      font-size: 22px;
+      font-size: rem(22);
       line-height: 1.227em;
       font-weight: 700;
-      margin-bottom: 10px;
+      width: min-content;
+      margin: 0 auto rem(10);
+      border-radius: rem(4);
     }
     &-text {
-      width: 271px;
-      font-size: 16px;
+      width: rem(271);
+      font-size: rem(16);
       line-height: 1.25em;
       margin: 0 auto;
     }

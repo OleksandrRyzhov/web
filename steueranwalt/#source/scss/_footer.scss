@@ -1,29 +1,32 @@
 .footer {
   background-color: $colorBlue;
   color: #fff;
-  min-height: 92px;
+  min-height: rem(92);
   &__inner {
-    padding: 80px 0;
+    padding: rem(80) 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: -32px;
-    margin-right: 32px;
+    margin-left: rem(-32);
+    margin-right: rem(32);
   }
-  // &__logo {
-  // }
+  &__logo {
+    border-radius: rem(16);
+  }
   &__list {
-    padding: 0 15px;
+    padding: 0 rem(15);
   }
   &__item {
-    margin-bottom: 18px;
+    margin-bottom: rem(18);
     &:last-child {
       margin-bottom: 0;
     }
     // &-text {
     // }
-    // &-phone {
-    // }
+    &-title,
+    &-phone {
+      border-radius: rem(4);
+    }
   }
   // &__btn {
   // }

@@ -26,60 +26,54 @@ button {
 }
 
 .container {
-  max-width: 1130px;
-  padding: 0 15px;
+  max-width: rem(1130);
+  padding: 0 rem(15);
   margin: 0 auto;
 }
 
 .inner {
-  padding: 120px 0;
+  padding: rem(120) 0;
 }
 
 .img {
   transition: all 0.5s ease 0s;
-  &:hover {
-    transform: scale(1.2);
-  }
 }
 
 .contact-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  width: 200px;
-  height: 45px;
-  border-radius: 50px;
-  border: 1px solid #fff;
+  padding: rem(10);
+  width: rem(200);
+  height: rem(45);
+  border-radius: rem(50);
+  border: rem(1) solid #fff;
   background-color: transparent;
-  font-size: 20px;
+  font-size: rem(20);
   line-height: 1.2em;
   text-align: center;
   transition: all 0.5s ease 0s;
-  &:hover {
-    box-shadow: 0 0 15px $colorAqua;
-  }
 }
 
 .title {
-  font-size: 40px;
+  font-size: rem(40);
   line-height: 1.225em;
   font-weight: 700;
   color: #002d62;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: rem(60);
 }
 
 .btn-more {
   display: flex;
   margin: 0 auto;
-  height: 50px;
+  height: rem(50);
   align-items: center;
   justify-content: center;
-  width: 300px;
-  border-radius: 20px;
-  font-size: 17px;
-  line-height: 21px;
+  width: rem(300);
+  border-radius: rem(20);
+  font-size: rem(17);
+  line-height: math.div(21, 17);
   font-weight: 500;
   background-color: $colorAqua;
   position: relative;
@@ -91,12 +85,9 @@ button {
     position: absolute;
     background: url("../img/arrow-bottom.png") 0 0 no-repeat;
     background-size: cover;
-    width: 25px;
-    height: 25px;
-    right: 12px;
-  }
-  &:hover {
-    background-color: $colorBlue;
+    width: rem(25);
+    height: rem(25);
+    right: rem(12);
   }
 }
 
@@ -105,16 +96,13 @@ button {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 226px;
+  height: rem(40);
+  width: rem(226);
   background-color: $colorAqua;
   color: #fff;
-  border-radius: 50px;
+  border-radius: rem(50);
   font-weight: 500;
   transition: all 0.5s ease 0s;
-  &:hover {
-    background-color: $colorBlue;
-  }
 }
 
 .btn-blue {
@@ -122,17 +110,14 @@ button {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  height: 60px;
-  width: 340px;
+  height: rem(60);
+  width: rem(340);
   font-weight: 700;
-  font-size: 17px;
+  font-size: rem(17);
   line-height: 1.2353em;
   background-color: $colorBlue;
   color: #fff;
-  border-radius: 20px;
-  margin-top: 60px;
+  border-radius: rem(20);
+  margin-top: rem(60);
   transition: all 0.5s ease 0s;
-  &:hover {
-    background-color: $colorAqua;
-  }
 }

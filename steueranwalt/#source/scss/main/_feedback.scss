@@ -1,28 +1,28 @@
 .feedback {
   background-color: $colorSky;
   &__subtitle {
-    font-size: 22px;
+    font-size: rem(22);
     line-height: 1.227em;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35);
   }
   &__content {
     display: grid;
-    grid-template: 1fr / 467px 305px;
-    gap: 83px;
+    grid-template: 1fr / rem(467) rem(305);
+    gap: rem(83);
     &-box {
-      margin-top: 42px;
+      margin-top: rem(42);
     }
   }
   &__photo {
     position: relative;
     z-index: 2;
-    padding: 21px 0 0 36px;
+    padding: rem(21) 0 0 rem(36);
     &::before {
       content: "";
       position: absolute;
-      border: 1px solid $colorBlue;
+      border: rem(1) solid $colorBlue;
       top: 0;
       bottom: 0;
       left: 0;
@@ -33,51 +33,48 @@
     }
     &-img {
       position: relative;
-      border-radius: 30px;
-      max-width: 431px;
+      border-radius: rem(30);
+      max-width: rem(431);
       width: 100%;
     }
   }
   &__form {
-    min-width: 177.5px;
-    width: 305px;
+    min-width: rem(177.5);
+    width: rem(305);
     text-align: center;
     &-input {
-      margin-bottom: 36px;
-      min-height: 34px;
-      height: 60px;
-      min-width: 175px;
-      width: 301px;
-      border-radius: 50px;
-      border: 1px solid $colorBlue;
-      padding: 0 20px;
+      margin-bottom: rem(36);
+      min-height: rem(34);
+      height: rem(60);
+      min-width: rem(175);
+      width: rem(301);
+      border-radius: rem(50);
+      border: rem(1) solid $colorBlue;
+      padding: 0 rem(20);
       transition: all 0.5s ease 0s;
       &:focus {
-        box-shadow: 0 0 15px $colorAqua;
+        box-shadow: 0 0 rem(15) $colorAqua;
       }
       &._error {
-        border: 1px solid red;
+        border: rem(1) solid red;
       }
       &::placeholder {
-        font-size: 18px;
+        font-size: rem(18);
         line-height: 1.222em;
         color: rgba($colorBlue, 0.7);
       }
     }
     &-btn {
-      border-radius: 20px;
-      min-height: 34px;
-      height: 60px;
+      border-radius: rem(20);
+      min-height: rem(34);
+      height: rem(60);
       width: 100%;
       background-color: $colorBlue;
       color: #fff;
-      font-size: 17px;
-      line-height: 21px;
+      font-size: rem(17);
+      line-height: rem(21);
       font-weight: 700;
       transition: all 0.5s ease 0s;
-      &:hover {
-        background-color: $colorAqua;
-      }
     }
   }
 }

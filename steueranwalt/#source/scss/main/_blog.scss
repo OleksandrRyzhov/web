@@ -2,49 +2,48 @@
   background-color: $colorBlue;
   &__title {
     color: #fff;
-    max-width: 860px;
+    max-width: rem(860);
     margin-left: auto;
     margin-right: auto;
   }
   &__list {
     display: grid;
-    grid-template: 1fr / repeat(3, 297px);
-    gap: 31px;
+    grid-template: 1fr / repeat(3, rem(297));
+    gap: rem(31);
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35);
   }
   &__item {
     text-align: center;
     margin: 0 auto;
     background-color: #fff;
-    border-radius: 30px;
-    border: 1px solid $colorBlue;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    max-width: 297px;
+    border-radius: rem(30);
+    border: rem(1) solid $colorBlue;
+    filter: drop-shadow(0 rem(4) rem(4) rgba(0, 0, 0, 0.25));
+    max-width: rem(297);
     transition: all 0.5s ease 0s;
-    &:hover {
-      transform: scale(1.07);
-    }
     &-link {
-      height: 109px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: block;
+      margin: rem(20) auto;
+      height: rem(69);
+      width: rem(69);
+      border-radius: rem(16);
     }
     &-img {
-      height: 69px;
-      width: 69px;
+      max-width: 100%;
     }
     &-title {
       display: block;
-      margin-bottom: 20px;
-      font-size: 20px;
+      margin: 0 auto rem(20);
+      width: min-content;
+      border-radius: rem(4);
+      font-size: rem(20);
       line-height: 1.2em;
       font-weight: 700;
     }
     &-text {
-      padding: 0 31px 35px;
-      min-height: 90px;
+      padding: 0 rem(31) rem(35);
+      min-height: rem(90);
     }
   }
   &__btn {
@@ -54,18 +53,10 @@
       position: absolute;
       background: url("../img/arrow-bottom.png") 0 0 no-repeat;
       background-size: cover;
-      width: 25px;
-      height: 25px;
-      right: 12px;
+      width: rem(25);
+      height: rem(25);
+      right: rem(12);
       border-radius: 50%;
-    }
-    &:hover {
-      background-color: $colorSky;
-      color: $colorBlue;
-      &::after {
-        background-color: $colorBlue;
-        background-size: cover;
-      }
     }
   }
 }

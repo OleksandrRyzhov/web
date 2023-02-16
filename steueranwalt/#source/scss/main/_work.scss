@@ -6,26 +6,27 @@
   }
   &__list {
     display: grid;
-    grid-template: 1fr / repeat(3, 230px);
-    gap: 50px;
+    grid-template: 1fr / repeat(3, rem(230));
+    gap: rem(50);
     justify-content: center;
   }
   &__item {
     background-color: #fff;
     color: $colorBlue;
-    border-radius: 30px;
+    border-radius: rem(30);
     &-link {
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 92px;
+      margin: rem(20) auto;
+      height: rem(52);
+      width: rem(51);
+      border-radius: rem(8);
     }
     &-img {
-      height: 51px;
-      width: 51px;
+      max-width: 100%;
     }
     &-text {
-      padding: 0 15px 21px;
+      padding: 0 rem(15) rem(21);
       line-height: 1.2em;
       text-align: center;
     }

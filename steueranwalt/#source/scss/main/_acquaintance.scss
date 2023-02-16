@@ -4,10 +4,10 @@
   }
   &__subtitle {
     font-weight: 600;
-    font-size: 22px;
+    font-size: rem(22);
     line-height: 1.2273em;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35);
   }
   &__content {
     display: flex;
@@ -16,53 +16,53 @@
   &__item {
     &-title {
       font-weight: 900;
-      font-size: 24px;
+      font-size: rem(24);
       line-height: 1.208em;
-      margin-bottom: 20px;
-      margin-left: 95px;
+      margin-bottom: rem(20);
+      margin-left: rem(95);
     }
     &-text {
       font-weight: 600;
-      font-size: 20px;
+      font-size: rem(20);
       line-height: 1.25em;
-      margin-bottom: 20px;
-      margin-left: 95px;
+      margin-bottom: rem(20);
+      margin-left: rem(95);
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
   &__photo {
-    margin-bottom: 30px;
+    margin-bottom: rem(30);
     position: relative;
-    padding-top: 47px;
+    padding-top: rem(47);
     &::before {
       content: "";
       position: absolute;
       background-color: #fff;
       width: 93%;
       height: 92.5%;
-      border-radius: 30px;
+      border-radius: rem(30);
       top: 0;
-      border: 1px solid $colorBlue;
+      border: rem(1) solid $colorBlue;
     }
     &--nils {
-      padding-left: 45px;
+      padding-left: rem(45);
       &::before {
         left: 0;
       }
     }
     &--marcel {
-      padding-right: 45px;
+      padding-right: rem(45);
       &::before {
         right: 0;
         width: 97%;
       }
     }
     &-img {
-      max-height: 310px;
+      max-height: rem(310);
       position: relative;
-      border-radius: 30px;
+      border-radius: rem(30);
       &--nils {
       }
       &--marcel {

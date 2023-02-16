@@ -3,72 +3,68 @@
     background-color: $colorSky;
   }
   &__title {
-    width: 1000px;
+    width: rem(1000);
     margin-right: auto;
     margin-left: auto;
   }
   &__list {
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(2, 421px);
+    grid-template: repeat(3, 1fr) / repeat(2, rem(421));
     justify-content: center;
-    gap: 50px;
-    margin-bottom: 60px;
+    gap: rem(50);
+    margin-bottom: rem(60);
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 358px;
-    border-radius: 30px;
-    border: 1px solid $colorBlue;
+    max-height: rem(358);
+    border-radius: rem(30);
+    border: rem(1) solid $colorBlue;
     background-color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: rem(20);
     transition: all 0.5s ease 0s;
-    &:hover {
-      transform: scale(1.05);
-    }
     &-link {
-      margin-bottom: 10px;
+      margin-bottom: rem(10);
+      border-radius: rem(16);
     }
     &-img {
-      height: 51px;
-      width: 51px;
+      height: rem(51);
+      width: rem(51);
     }
     &-title {
-      font-size: 20px;
+      font-size: rem(20);
       line-height: 1.2em;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: rem(20);
+      border-radius: rem(4);
     }
     &-text {
       font-family: "Roboto", sans-serif;
-      font-size: 16px;
+      font-size: rem(16);
       line-height: 1.1875em;
-      width: 378px;
-      margin-bottom: 20px;
+      width: rem(378);
+      margin-bottom: rem(20);
       flex: 1 1 auto;
     }
     &-btn {
-      height: 40px;
+      height: rem(40);
     }
   }
   &__btn {
-    height: 60px;
+    height: rem(60);
     margin: 0 auto;
     &-style {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 262px;
+      width: rem(262);
       background-color: $colorBlue;
       color: #fff;
-      border-radius: 50px;
-      padding: 0 30px;
+      border-radius: rem(50);
+      padding: 0 rem(30);
       transition: all 0.5s ease 0s;
-      &:hover {
-        background-color: $colorAqua;
-      }
     }
   }
 }
