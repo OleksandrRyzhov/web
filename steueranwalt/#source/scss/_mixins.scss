@@ -31,10 +31,10 @@ $maxWidth: 1130;
   // max-width: 767px
   @else if $type==2 {
     width: calc(
-      #{$mobSize + px} + #{$addMobSize} * ((100vw - rem(320)) / #{$maxWidth})
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );
     height: calc(
-      #{$mobSize + px} + #{$addMobSize} * ((100vw - rem(320)) / #{$maxWidth})
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );
   } @else if $type==0 {
     width: rem($pcSize);
@@ -45,10 +45,10 @@ $maxWidth: 1130;
     }
     @media (max-width: em(767.98, 16)) {
       width: calc(
-        #{$mobSize + px} + #{$addMobSize} * ((100vw - rem(320)) / #{$maxWidth})
+        #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
       );
       height: calc(
-        #{$mobSize + px} + #{$addMobSize} * ((100vw - rem(320)) / #{$maxWidth})
+        #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
       );
     }
   }
@@ -63,7 +63,7 @@ $maxWidth: 1130;
   // max-width: 767px
   @else if $type==2 {
     #{$property}: calc(
-      #{$mobSize + px} + #{$addMobSize} * ((100vw - rem(320)) / #{$maxWidth})
+      #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
     );
   } @else if $type==0 {
     #{$property}: rem($pcSize);
@@ -74,7 +74,7 @@ $maxWidth: 1130;
     }
     @media (max-width: em(767.98, 16)) {
       #{$property}: calc(
-        #{$mobSize + px} + #{$addMobSize} * ((100vw - rem(320)) / #{$maxWidth})
+        #{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth})
       );
     }
   }

@@ -2570,36 +2570,36 @@ button {
 @media (max-width: 47.99875em) {
   .contact-btn {
     font-size: calc(
-      14.5px + 9.35 * ((100vw - rem(320)) / 1130)
+      14.5px + 9.35 * ((100vw - 320px) / 1130)
     );
   }
   .inner {
     padding-top: calc(
-      61.8px + 98.94 * ((100vw - rem(320)) / 1130)
+      61.8px + 98.94 * ((100vw - 320px) / 1130)
     );
     padding-bottom: calc(
-      61.8px + 98.94 * ((100vw - rem(320)) / 1130)
+      61.8px + 98.94 * ((100vw - 320px) / 1130)
     );
   }
   .title {
     font-size: calc(
-      14px + 44.2 * ((100vw - rem(320)) / 1130)
+      14px + 44.2 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      30.9px + 49.47 * ((100vw - rem(320)) / 1130)
+      30.9px + 49.47 * ((100vw - 320px) / 1130)
     );
   }
   .btn-blue {
     margin-top: calc(
-      35px + 42.5 * ((100vw - rem(320)) / 1130)
+      35px + 42.5 * ((100vw - 320px) / 1130)
     );
   }
   .header__top {
     padding-top: calc(
-      55.15px + -61.455 * ((100vw - rem(320)) / 1130)
+      55.15px + -61.455 * ((100vw - 320px) / 1130)
     );
     padding-bottom: calc(
-      40px + 13.6 * ((100vw - rem(320)) / 1130)
+      40px + 13.6 * ((100vw - 320px) / 1130)
     );
   }
   .header__choice-btn {
@@ -2609,28 +2609,28 @@ button {
   }
   .header__content {
     margin-bottom: calc(
-      43.8px + 75.14 * ((100vw - rem(320)) / 1130)
+      43.8px + 75.14 * ((100vw - 320px) / 1130)
     );
   }
   .header__title {
     margin-bottom: calc(
-      17px + 11.9 * ((100vw - rem(320)) / 1130)
+      17px + 11.9 * ((100vw - 320px) / 1130)
     );
     font-size: calc(
-      16px + 27.2 * ((100vw - rem(320)) / 1130)
+      16px + 27.2 * ((100vw - 320px) / 1130)
     );
   }
   .header__text {
     font-size: calc(
-      12.5px + 19.55 * ((100vw - rem(320)) / 1130)
+      12.5px + 19.55 * ((100vw - 320px) / 1130)
     );
   }
   .header__body {
     padding-top: calc(
-      70px + 129.2 * ((100vw - rem(320)) / 1130)
+      70px + 129.2 * ((100vw - 320px) / 1130)
     );
     padding-bottom: calc(
-      70px + 129.2 * ((100vw - rem(320)) / 1130)
+      70px + 129.2 * ((100vw - 320px) / 1130)
     );
   }
   .top-header__contact {
@@ -2638,23 +2638,23 @@ button {
   }
   .menu__list {
     gap: calc(
-      -60px + 153 * ((100vw - rem(320)) / 1130)
+      -60px + 153 * ((100vw - 320px) / 1130)
     );
     font-size: calc(
-      12px + 10.2 * ((100vw - rem(320)) / 1130)
+      12px + 10.2 * ((100vw - 320px) / 1130)
     );
   }
   .body-header__title {
     font-size: calc(
-      16px + 39.1 * ((100vw - rem(320)) / 1130)
+      16px + 39.1 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      17px + 34 * ((100vw - rem(320)) / 1130)
+      17px + 34 * ((100vw - 320px) / 1130)
     );
   }
   .body-header__text {
     margin-bottom: calc(
-      25px + 28.9 * ((100vw - rem(320)) / 1130)
+      25px + 28.9 * ((100vw - 320px) / 1130)
     );
   }
   .body-header__choice {
@@ -2668,12 +2668,12 @@ button {
   .body-header__btn {
     max-width: 100%;
     font-size: calc(
-      10px + 8.5 * ((100vw - rem(320)) / 1130)
+      10px + 8.5 * ((100vw - 320px) / 1130)
     );
   }
   .body-header__photo {
     margin-left: calc(
-      15px + 25.5 * ((100vw - rem(320)) / 1130)
+      15px + 25.5 * ((100vw - 320px) / 1130)
     );
   }
   .body-header__photo-img {
@@ -2681,204 +2681,204 @@ button {
   }
   .advantage__list {
     gap: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
   }
   .advantage__item-link {
     margin-bottom: calc(
-      22px + -20.4 * ((100vw - rem(320)) / 1130)
+      22px + -20.4 * ((100vw - 320px) / 1130)
     );
     width: calc(
-      65px + 59.5 * ((100vw - rem(320)) / 1130)
+      65px + 59.5 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      65px + 59.5 * ((100vw - rem(320)) / 1130)
+      65px + 59.5 * ((100vw - 320px) / 1130)
     );
   }
   .advantage__item-img {
     width: calc(
-      30px + 52.7 * ((100vw - rem(320)) / 1130)
+      30px + 52.7 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      30px + 52.7 * ((100vw - rem(320)) / 1130)
+      30px + 52.7 * ((100vw - 320px) / 1130)
     );
   }
   .advantage__item-title {
     font-size: calc(
-      13.5px + 14.45 * ((100vw - rem(320)) / 1130)
+      13.5px + 14.45 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      16px + -10.2 * ((100vw - rem(320)) / 1130)
+      16px + -10.2 * ((100vw - 320px) / 1130)
     );
   }
   .advantage__item-text {
     font-size: calc(
-      11.5px + 7.65 * ((100vw - rem(320)) / 1130)
+      11.5px + 7.65 * ((100vw - 320px) / 1130)
     );
     width: calc(
-      176px + 465.8 * ((100vw - rem(320)) / 1130)
+      176px + 465.8 * ((100vw - 320px) / 1130)
     );
   }
   .about__text {
     font-size: calc(
-      11.5px + 7.65 * ((100vw - rem(320)) / 1130)
+      11.5px + 7.65 * ((100vw - 320px) / 1130)
     );
   }
   .support__list {
     margin-bottom: calc(
-      32.55px + 29.665 * ((100vw - rem(320)) / 1130)
+      32.55px + 29.665 * ((100vw - 320px) / 1130)
     );
     gap: calc(
-      15.1px + 59.33 * ((100vw - rem(320)) / 1130)
+      15.1px + 59.33 * ((100vw - 320px) / 1130)
     );
     grid-template: repeat(3, 33vw)/repeat(2, 34.5415vw);
   }
   .support__item-title {
     font-size: calc(
-      11px + 15.3 * ((100vw - rem(320)) / 1130)
+      11px + 15.3 * ((100vw - 320px) / 1130)
     );
   }
   .tax__list {
     margin-bottom: calc(
-      25.1px + 59.33 * ((100vw - rem(320)) / 1130)
+      25.1px + 59.33 * ((100vw - 320px) / 1130)
     );
   }
   .tax__item-link {
     width: calc(
-      62.45px + 114.835 * ((100vw - rem(320)) / 1130)
+      62.45px + 114.835 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      62.45px + 114.835 * ((100vw - rem(320)) / 1130)
+      62.45px + 114.835 * ((100vw - 320px) / 1130)
     );
   }
   .tax__item-img {
     width: calc(
-      30.73px + 63.359 * ((100vw - rem(320)) / 1130)
+      30.73px + 63.359 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      30.73px + 63.359 * ((100vw - rem(320)) / 1130)
+      30.73px + 63.359 * ((100vw - 320px) / 1130)
     );
   }
   .tax__item-title {
     font-size: calc(
-      14px + 13.6 * ((100vw - rem(320)) / 1130)
+      14px + 13.6 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      14.2px + 11.56 * ((100vw - rem(320)) / 1130)
+      14.2px + 11.56 * ((100vw - 320px) / 1130)
     );
   }
   .tax__item-text {
     font-size: calc(
-      11.3px + 9.69 * ((100vw - rem(320)) / 1130)
+      11.3px + 9.69 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      12px + 15.3 * ((100vw - rem(320)) / 1130)
+      12px + 15.3 * ((100vw - 320px) / 1130)
     );
   }
   .international__list,
   .blog__list {
     gap: calc(
-      24.05px + 11.815 * ((100vw - rem(320)) / 1130)
+      24.05px + 11.815 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      29.2px + 9.86 * ((100vw - rem(320)) / 1130)
+      29.2px + 9.86 * ((100vw - 320px) / 1130)
     );
   }
   .international__item-link,
   .blog__item-link {
     height: calc(
-      70.57px + 65.331 * ((100vw - rem(320)) / 1130)
+      70.57px + 65.331 * ((100vw - 320px) / 1130)
     );
   }
   .international__item-img,
   .blog__item-img {
     width: calc(
-      37.57px + 53.431 * ((100vw - rem(320)) / 1130)
+      37.57px + 53.431 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      37.57px + 53.431 * ((100vw - rem(320)) / 1130)
+      37.57px + 53.431 * ((100vw - 320px) / 1130)
     );
   }
   .international__item-title,
   .blog__item-title {
     margin-bottom: calc(
-      8.5px + 19.55 * ((100vw - rem(320)) / 1130)
+      8.5px + 19.55 * ((100vw - 320px) / 1130)
     );
     font-size: calc(
-      14.3px + 9.69 * ((100vw - rem(320)) / 1130)
+      14.3px + 9.69 * ((100vw - 320px) / 1130)
     );
   }
   .international__item-text,
   .blog__item-text {
     font-size: calc(
-      11.55px + 5.865 * ((100vw - rem(320)) / 1130)
+      11.55px + 5.865 * ((100vw - 320px) / 1130)
     );
     line-height: 1.25em;
     padding-right: calc(
-      14.035px + 35.6405 * ((100vw - rem(320)) / 1130)
+      14.035px + 35.6405 * ((100vw - 320px) / 1130)
     );
     padding-bottom: calc(
-      15.859px + 25.7397 * ((100vw - rem(320)) / 1130)
+      15.859px + 25.7397 * ((100vw - 320px) / 1130)
     );
     padding-left: calc(
-      14.035px + 35.6405 * ((100vw - rem(320)) / 1130)
+      14.035px + 35.6405 * ((100vw - 320px) / 1130)
     );
   }
   .criminal__content {
     gap: calc(
-      24.1765px + 9.89995 * ((100vw - rem(320)) / 1130)
+      24.1765px + 9.89995 * ((100vw - 320px) / 1130)
     );
   }
   .criminal__content-text {
     font-size: calc(
-      11.0117px + 11.88011 * ((100vw - rem(320)) / 1130)
+      11.0117px + 11.88011 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      14.012px + 11.8796 * ((100vw - rem(320)) / 1130)
+      14.012px + 11.8796 * ((100vw - 320px) / 1130)
     );
   }
   .criminal__list {
     grid-template: 1fr/18.6875rem;
     gap: calc(
-      24.1765px + 9.89995 * ((100vw - rem(320)) / 1130)
+      24.1765px + 9.89995 * ((100vw - 320px) / 1130)
     );
   }
   .criminal__btn-more {
     margin-top: calc(
-      13.744px + 36.1352 * ((100vw - rem(320)) / 1130)
+      13.744px + 36.1352 * ((100vw - 320px) / 1130)
     );
   }
   .work__list {
     gap: calc(
-      20.8823px + 49.50009 * ((100vw - rem(320)) / 1130)
+      20.8823px + 49.50009 * ((100vw - 320px) / 1130)
     );
   }
   .work__item-link {
     height: calc(
-      72.2px + 33.66 * ((100vw - rem(320)) / 1130)
+      72.2px + 33.66 * ((100vw - 320px) / 1130)
     );
   }
   .work__item-img {
     width: calc(
-      38.2px + 21.76 * ((100vw - rem(320)) / 1130)
+      38.2px + 21.76 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      38.2px + 21.76 * ((100vw - rem(320)) / 1130)
+      38.2px + 21.76 * ((100vw - 320px) / 1130)
     );
   }
   .work__item-text {
     font-size: calc(
-      11.5059px + 5.93997 * ((100vw - rem(320)) / 1130)
+      11.5059px + 5.93997 * ((100vw - 320px) / 1130)
     );
   }
   .topics__content {
     gap: calc(
-      18px + 71.4 * ((100vw - rem(320)) / 1130)
+      18px + 71.4 * ((100vw - 320px) / 1130)
     );
   }
   .topics__text {
     font-size: calc(
-      11.0117px + 11.88011 * ((100vw - rem(320)) / 1130)
+      11.0117px + 11.88011 * ((100vw - 320px) / 1130)
     );
   }
   .services__content {
@@ -2907,87 +2907,87 @@ button {
   }
   .services__item {
     height: calc(
-      50px + 68 * ((100vw - rem(320)) / 1130)
+      50px + 68 * ((100vw - 320px) / 1130)
     );
   }
   .services__item-title {
     font-size: calc(
-      11px + 18.7 * ((100vw - rem(320)) / 1130)
+      11px + 18.7 * ((100vw - 320px) / 1130)
     );
     padding-right: calc(
-      45px + 90.1 * ((100vw - rem(320)) / 1130)
+      45px + 90.1 * ((100vw - 320px) / 1130)
     );
     padding-left: calc(
-      50px + 81.6 * ((100vw - rem(320)) / 1130)
+      50px + 81.6 * ((100vw - 320px) / 1130)
     );
   }
   .services__item-title::before {
     width: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
     left: calc(
-      15px + 25.5 * ((100vw - rem(320)) / 1130)
+      15px + 25.5 * ((100vw - 320px) / 1130)
     );
   }
   .services__item-title::after {
     width: calc(
-      13px + 27.2 * ((100vw - rem(320)) / 1130)
+      13px + 27.2 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      13px + 27.2 * ((100vw - rem(320)) / 1130)
+      13px + 27.2 * ((100vw - 320px) / 1130)
     );
     right: calc(
-      20px + 39.1 * ((100vw - rem(320)) / 1130)
+      20px + 39.1 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__list {
     gap: calc(
-      20px + 51 * ((100vw - rem(320)) / 1130)
+      20px + 51 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      25px + 59.5 * ((100vw - rem(320)) / 1130)
+      25px + 59.5 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__item-link {
     margin-bottom: calc(
-      7px + 5.1 * ((100vw - rem(320)) / 1130)
+      7px + 5.1 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__item-img {
     width: calc(
-      25px + 44.2 * ((100vw - rem(320)) / 1130)
+      25px + 44.2 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      25px + 44.2 * ((100vw - rem(320)) / 1130)
+      25px + 44.2 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__item-title {
     font-size: calc(
-      12px + 13.6 * ((100vw - rem(320)) / 1130)
+      12px + 13.6 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      13px + 11.9 * ((100vw - rem(320)) / 1130)
+      13px + 11.9 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__item-text {
     font-size: calc(
-      11px + 8.5 * ((100vw - rem(320)) / 1130)
+      11px + 8.5 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      13px + 11.9 * ((100vw - rem(320)) / 1130)
+      13px + 11.9 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__item-btn {
     height: calc(
-      30px + 17 * ((100vw - rem(320)) / 1130)
+      30px + 17 * ((100vw - 320px) / 1130)
     );
   }
   .services-hamburg__btn {
     height: calc(
-      35px + 57.8 * ((100vw - rem(320)) / 1130)
+      35px + 57.8 * ((100vw - 320px) / 1130)
     );
   }
   .bafa__photo {
@@ -2999,87 +2999,87 @@ button {
   .bafa__text {
     width: 70vw;
     font-size: calc(
-      11px + 15.3 * ((100vw - rem(320)) / 1130)
+      11px + 15.3 * ((100vw - 320px) / 1130)
     );
     margin-top: calc(
-      13px + 11.9 * ((100vw - rem(320)) / 1130)
+      13px + 11.9 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      13px + 11.9 * ((100vw - rem(320)) / 1130)
+      13px + 11.9 * ((100vw - 320px) / 1130)
     );
     padding: 0;
   }
   .bafa__btn {
     font-size: calc(
-      11.5px + 5.95 * ((100vw - rem(320)) / 1130)
+      11.5px + 5.95 * ((100vw - 320px) / 1130)
     );
     height: 3.125rem;
   }
   .comment__photo {
     margin-bottom: calc(
-      30.9px + 49.47 * ((100vw - rem(320)) / 1130)
+      30.9px + 49.47 * ((100vw - 320px) / 1130)
     );
   }
   .comment__text {
     font-size: calc(
-      11.5px + 17.85 * ((100vw - rem(320)) / 1130)
+      11.5px + 17.85 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      12px + 23.8 * ((100vw - rem(320)) / 1130)
+      12px + 23.8 * ((100vw - 320px) / 1130)
     );
   }
   .tax-zurich__list {
     gap: calc(
-      24.05px + 44.115 * ((100vw - rem(320)) / 1130)
+      24.05px + 44.115 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      29.2px + 52.36 * ((100vw - rem(320)) / 1130)
+      29.2px + 52.36 * ((100vw - 320px) / 1130)
     );
   }
   .tax-zurich__item-link {
     height: calc(
-      70.57px + 65.331 * ((100vw - rem(320)) / 1130)
+      70.57px + 65.331 * ((100vw - 320px) / 1130)
     );
   }
   .tax-zurich__item-img {
     width: calc(
-      37.57px + 53.431 * ((100vw - rem(320)) / 1130)
+      37.57px + 53.431 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      37.57px + 53.431 * ((100vw - rem(320)) / 1130)
+      37.57px + 53.431 * ((100vw - 320px) / 1130)
     );
   }
   .tax-zurich__item-title {
     margin-bottom: calc(
-      8.5px + 19.55 * ((100vw - rem(320)) / 1130)
+      8.5px + 19.55 * ((100vw - 320px) / 1130)
     );
     font-size: calc(
-      14.3px + 9.69 * ((100vw - rem(320)) / 1130)
+      14.3px + 9.69 * ((100vw - 320px) / 1130)
     );
   }
   .tax-zurich__item-text {
     font-size: calc(
-      11.55px + 5.865 * ((100vw - rem(320)) / 1130)
+      11.55px + 5.865 * ((100vw - 320px) / 1130)
     );
     line-height: 1.25em;
     padding-right: calc(
-      15.859px + 25.7397 * ((100vw - rem(320)) / 1130)
+      15.859px + 25.7397 * ((100vw - 320px) / 1130)
     );
     padding-bottom: calc(
-      14.035px + 18.6405 * ((100vw - rem(320)) / 1130)
+      14.035px + 18.6405 * ((100vw - 320px) / 1130)
     );
     padding-left: calc(
-      15.859px + 25.7397 * ((100vw - rem(320)) / 1130)
+      15.859px + 25.7397 * ((100vw - 320px) / 1130)
     );
   }
   .tax-zurich__item-btn {
     font-size: calc(
-      11px + 6.8 * ((100vw - rem(320)) / 1130)
+      11px + 6.8 * ((100vw - 320px) / 1130)
     );
   }
   .problems__content {
     gap: calc(
-      20px + 17 * ((100vw - rem(320)) / 1130)
+      20px + 17 * ((100vw - 320px) / 1130)
     );
   }
   .problems__content-box {
@@ -3090,45 +3090,45 @@ button {
   }
   .problems__text {
     font-size: calc(
-      11.55px + 7.565 * ((100vw - rem(320)) / 1130)
+      11.55px + 7.565 * ((100vw - 320px) / 1130)
     );
   }
   .criminal-zurich__item {
     height: calc(
-      55px + 59.5 * ((100vw - rem(320)) / 1130)
+      55px + 59.5 * ((100vw - 320px) / 1130)
     );
   }
   .criminal-zurich__item-title {
     font-size: calc(
-      14.5px + 12.75 * ((100vw - rem(320)) / 1130)
+      14.5px + 12.75 * ((100vw - 320px) / 1130)
     );
     padding-right: calc(
-      60px + 93.5 * ((100vw - rem(320)) / 1130)
+      60px + 93.5 * ((100vw - 320px) / 1130)
     );
     padding-left: calc(
-      60px + 93.5 * ((100vw - rem(320)) / 1130)
+      60px + 93.5 * ((100vw - 320px) / 1130)
     );
   }
   .criminal-zurich__item-title::before {
     width: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
     left: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
   }
   .criminal-zurich__item-title::after {
     width: calc(
-      20px + 34 * ((100vw - rem(320)) / 1130)
+      20px + 34 * ((100vw - 320px) / 1130)
     );
     height: calc(
-      20px + 34 * ((100vw - rem(320)) / 1130)
+      20px + 34 * ((100vw - 320px) / 1130)
     );
     right: calc(
-      25px + 42.5 * ((100vw - rem(320)) / 1130)
+      25px + 42.5 * ((100vw - 320px) / 1130)
     );
   }
   .zoll__photo-img {
@@ -3136,23 +3136,23 @@ button {
   }
   .zoll__text {
     font-size: calc(
-      11.55px + 7.565 * ((100vw - rem(320)) / 1130)
+      11.55px + 7.565 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      13px + 11.9 * ((100vw - rem(320)) / 1130)
+      13px + 11.9 * ((100vw - 320px) / 1130)
     );
   }
   .zoll__btn-learn {
     margin-top: calc(
-      20px + 17 * ((100vw - rem(320)) / 1130)
+      20px + 17 * ((100vw - 320px) / 1130)
     );
   }
   .acquaintance__subtitle {
     font-size: calc(
-      14.5px + 12.75 * ((100vw - rem(320)) / 1130)
+      14.5px + 12.75 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      20px + 25.5 * ((100vw - rem(320)) / 1130)
+      20px + 25.5 * ((100vw - 320px) / 1130)
     );
   }
   .acquaintance__content {
@@ -3167,34 +3167,34 @@ button {
         -ms-flex-align: center;
             align-items: center;
     gap: calc(
-      20px + 51 * ((100vw - rem(320)) / 1130)
+      20px + 51 * ((100vw - 320px) / 1130)
     );
   }
   .acquaintance__item-title {
     font-size: calc(
-      14px + 17 * ((100vw - rem(320)) / 1130)
+      14px + 17 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      10px + 17 * ((100vw - rem(320)) / 1130)
+      10px + 17 * ((100vw - 320px) / 1130)
     );
     margin-left: calc(
-      10px + 144.5 * ((100vw - rem(320)) / 1130)
+      10px + 144.5 * ((100vw - 320px) / 1130)
     );
   }
   .acquaintance__item-text {
     font-size: calc(
-      13px + 11.9 * ((100vw - rem(320)) / 1130)
+      13px + 11.9 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      10px + 17 * ((100vw - rem(320)) / 1130)
+      10px + 17 * ((100vw - 320px) / 1130)
     );
     margin-left: calc(
-      10px + 144.5 * ((100vw - rem(320)) / 1130)
+      10px + 144.5 * ((100vw - 320px) / 1130)
     );
   }
   .acquaintance__photo {
     margin-bottom: calc(
-      15px + 25.5 * ((100vw - rem(320)) / 1130)
+      15px + 25.5 * ((100vw - 320px) / 1130)
     );
   }
   .acquaintance__photo::before {
@@ -3212,20 +3212,20 @@ button {
   }
   .feedback__subtitle {
     font-size: calc(
-      13.847px + 13.8601 * ((100vw - rem(320)) / 1130)
+      13.847px + 13.8601 * ((100vw - 320px) / 1130)
     );
     margin-bottom: calc(
-      30px + 8.5 * ((100vw - rem(320)) / 1130)
+      30px + 8.5 * ((100vw - 320px) / 1130)
     );
   }
   .feedback__content {
     gap: calc(
-      30.7px + 49.81 * ((100vw - rem(320)) / 1130)
+      30.7px + 49.81 * ((100vw - 320px) / 1130)
     );
   }
   .feedback__form-input {
     margin-bottom: calc(
-      18px + 30.6 * ((100vw - rem(320)) / 1130)
+      18px + 30.6 * ((100vw - 320px) / 1130)
     );
   }
 }
@@ -3391,7 +3391,7 @@ button {
   }
   .body-header__text {
     margin-bottom: calc(
-      25px + 28.9 * ((100vw - rem(320)) / 1130)
+      25px + 28.9 * ((100vw - 320px) / 1130)
     );
   }
   .about__content {
@@ -3428,7 +3428,7 @@ button {
   }
   .body-header__text {
     margin-bottom: calc(
-      25px + 28.9 * ((100vw - rem(320)) / 1130)
+      25px + 28.9 * ((100vw - 320px) / 1130)
     );
   }
 }
